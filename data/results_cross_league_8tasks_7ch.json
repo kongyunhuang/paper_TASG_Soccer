@@ -1,0 +1,290 @@
+[
+  {
+    "task": "pass",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9255240463159574,
+    "time_s": 409.4
+  },
+  {
+    "task": "pass",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9273965498235915,
+    "time_s": 415.5
+  },
+  {
+    "task": "dribble",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9452491846811527,
+    "time_s": 67.1
+  },
+  {
+    "task": "dribble",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9471144247396812,
+    "time_s": 68.9
+  },
+  {
+    "task": "ball_receipt",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9895334026741983,
+    "time_s": 270.0
+  },
+  {
+    "task": "ball_receipt",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9898819267590047,
+    "time_s": 225.0
+  },
+  {
+    "task": "shot",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7852265154140176,
+    "time_s": 67.5
+  },
+  {
+    "task": "shot",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.783809606345489,
+    "time_s": 67.7
+  },
+  {
+    "task": "duel",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.87088805728227,
+    "time_s": 189.3
+  },
+  {
+    "task": "duel",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.8702352748502218,
+    "time_s": 190.4
+  },
+  {
+    "task": "interception",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.6155134864775972,
+    "time_s": 48.1
+  },
+  {
+    "task": "interception",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.6179545203786787,
+    "time_s": 53.7
+  },
+  {
+    "task": "ball_recovery",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7115835181080008,
+    "time_s": 269.0
+  },
+  {
+    "task": "ball_recovery",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7132399730653566,
+    "time_s": 269.9
+  },
+  {
+    "task": "pressure",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.655145732059004,
+    "time_s": 422.4
+  },
+  {
+    "task": "pressure",
+    "model": "G1_Gating_7ch",
+    "experiment": "EPL\u2192LaLiga",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.626334328874823,
+    "time_s": 426.8
+  },
+  {
+    "task": "pass",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9306654615311053,
+    "time_s": 403.3
+  },
+  {
+    "task": "pass",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9329936750408117,
+    "time_s": 403.9
+  },
+  {
+    "task": "dribble",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9572781282729729,
+    "time_s": 70.4
+  },
+  {
+    "task": "dribble",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9620743199602356,
+    "time_s": 81.5
+  },
+  {
+    "task": "ball_receipt",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.9931124345184358,
+    "time_s": 396.8
+  },
+  {
+    "task": "ball_receipt",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.992963491238554,
+    "time_s": 237.8
+  },
+  {
+    "task": "shot",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7689058193282649,
+    "time_s": 41.4
+  },
+  {
+    "task": "shot",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7705897772341012,
+    "time_s": 62.6
+  },
+  {
+    "task": "duel",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.8735896742713174,
+    "time_s": 172.2
+  },
+  {
+    "task": "duel",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.8713457252022845,
+    "time_s": 121.9
+  },
+  {
+    "task": "interception",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.6269619574219181,
+    "time_s": 49.4
+  },
+  {
+    "task": "interception",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.6277025181948781,
+    "time_s": 48.4
+  },
+  {
+    "task": "ball_recovery",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7070855481428281,
+    "time_s": 260.6
+  },
+  {
+    "task": "ball_recovery",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.7084057251807819,
+    "time_s": 224.6
+  },
+  {
+    "task": "pressure",
+    "model": "M4_CNN_Full_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.6628621091024679,
+    "time_s": 399.0
+  },
+  {
+    "task": "pressure",
+    "model": "G1_Gating_7ch",
+    "experiment": "LaLiga\u2192EPL",
+    "task_type": "binary",
+    "cnn_channels": 7,
+    "test_auc": 0.638222961241703,
+    "time_s": 395.1
+  }
+]

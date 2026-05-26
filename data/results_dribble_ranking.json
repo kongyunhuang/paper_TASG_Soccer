@@ -1,0 +1,746 @@
+{
+  "M4_CNN_2ch": {
+    "min_n": 20,
+    "total_players_ranked": 32,
+    "top20": [
+      {
+        "player_id": 11333.0,
+        "player_name": "Adama Traor\u00e9 Diarra",
+        "team_name": "Fulham",
+        "n": 23,
+        "actual_rate": 0.6956521739130435,
+        "predicted_rate": 0.5680241228241674,
+        "quality": 0.1276280510888761
+      },
+      {
+        "player_id": 44455.0,
+        "player_name": "S\u00e1vio Moreira de Oliveira",
+        "team_name": "Manchester City",
+        "n": 23,
+        "actual_rate": 0.7391304347826086,
+        "predicted_rate": 0.6531610864206058,
+        "quality": 0.08596934836200287
+      },
+      {
+        "player_id": 23650.0,
+        "player_name": "Jeremy Doku",
+        "team_name": "Manchester City",
+        "n": 29,
+        "actual_rate": 0.6551724137931034,
+        "predicted_rate": 0.5804914665997064,
+        "quality": 0.07468094719339702
+      },
+      {
+        "player_id": 12423.0,
+        "player_name": "Jadon Sancho",
+        "team_name": "Chelsea",
+        "n": 33,
+        "actual_rate": 0.5151515151515151,
+        "predicted_rate": 0.44962208075514465,
+        "quality": 0.06552943439637049
+      },
+      {
+        "player_id": 23230.0,
+        "player_name": "Ryan Gravenberch",
+        "team_name": "Liverpool",
+        "n": 21,
+        "actual_rate": 0.5238095238095238,
+        "predicted_rate": 0.46750205112281645,
+        "quality": 0.05630747268670738
+      },
+      {
+        "player_id": 3647.0,
+        "player_name": "Alex Iwobi",
+        "team_name": "Fulham",
+        "n": 23,
+        "actual_rate": 0.7391304347826086,
+        "predicted_rate": 0.6845694723627315,
+        "quality": 0.05456096241987718
+      },
+      {
+        "player_id": 29638.0,
+        "player_name": "Chidera Ejuke",
+        "team_name": "Sevilla",
+        "n": 22,
+        "actual_rate": 0.6363636363636364,
+        "predicted_rate": 0.5875649148041372,
+        "quality": 0.04879872155949916
+      },
+      {
+        "player_id": 37211.0,
+        "player_name": "Kaoru Mitoma",
+        "team_name": "Brighton & Hove Albion",
+        "n": 25,
+        "actual_rate": 0.36,
+        "predicted_rate": 0.31848253382948316,
+        "quality": 0.041517466170516826
+      },
+      {
+        "player_id": 9286.0,
+        "player_name": "Antoine Semenyo",
+        "team_name": "AFC Bournemouth",
+        "n": 25,
+        "actual_rate": 0.68,
+        "predicted_rate": 0.6422526419176938,
+        "quality": 0.037747358082306226
+      },
+      {
+        "player_id": 3531.0,
+        "player_name": "Mohamed Salah",
+        "team_name": "Liverpool",
+        "n": 42,
+        "actual_rate": 0.40476190476190477,
+        "predicted_rate": 0.3912436227764634,
+        "quality": 0.01351828198544136
+      },
+      {
+        "player_id": 316046.0,
+        "player_name": "Lamine Yamal Nasraoui Ebana",
+        "team_name": "Barcelona",
+        "n": 39,
+        "actual_rate": 0.6410256410256411,
+        "predicted_rate": 0.630762709086674,
+        "quality": 0.010262931938967101
+      },
+      {
+        "player_id": 4614.0,
+        "player_name": "Antonee Robinson",
+        "team_name": "Fulham",
+        "n": 25,
+        "actual_rate": 0.68,
+        "predicted_rate": 0.6889142327179434,
+        "quality": -0.008914232717943338
+      },
+      {
+        "player_id": 27158.0,
+        "player_name": "Luis Fernando D\u00edaz Marulanda",
+        "team_name": "Liverpool",
+        "n": 40,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.5741437228395512,
+        "quality": -0.02414372283955113
+      },
+      {
+        "player_id": 22418.0,
+        "player_name": "Bryan Gil Salvatierra",
+        "team_name": "Girona",
+        "n": 25,
+        "actual_rate": 0.52,
+        "predicted_rate": 0.5441544228552084,
+        "quality": -0.024154422855208413
+      },
+      {
+        "player_id": 8063.0,
+        "player_name": "Justin Kluivert",
+        "team_name": "AFC Bournemouth",
+        "n": 21,
+        "actual_rate": 0.6190476190476191,
+        "predicted_rate": 0.6535236096305241,
+        "quality": -0.03447599058290507
+      },
+      {
+        "player_id": 47368.0,
+        "player_name": "Jofre Carreras Pag\u00e8s",
+        "team_name": "Espanyol",
+        "n": 27,
+        "actual_rate": 0.3333333333333333,
+        "predicted_rate": 0.3741374150688022,
+        "quality": -0.0408040817354689
+      },
+      {
+        "player_id": 28104.0,
+        "player_name": "Anthony Gordon",
+        "team_name": "Newcastle United",
+        "n": 20,
+        "actual_rate": 0.4,
+        "predicted_rate": 0.44736530759994364,
+        "quality": -0.04736530759994362
+      },
+      {
+        "player_id": 39461.0,
+        "player_name": "Cole Palmer",
+        "team_name": "Chelsea",
+        "n": 30,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.6509668464497735,
+        "quality": -0.05096684644977356
+      },
+      {
+        "player_id": 30714.0,
+        "player_name": "Jude Bellingham",
+        "team_name": "Real Madrid",
+        "n": 20,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.602491160142813,
+        "quality": -0.052491160142812965
+      },
+      {
+        "player_id": 4935.0,
+        "player_name": "Bryan Mbeumo",
+        "team_name": "Brentford",
+        "n": 22,
+        "actual_rate": 0.45454545454545453,
+        "predicted_rate": 0.5356381752335437,
+        "quality": -0.0810927206880892
+      }
+    ],
+    "bot20": [
+      {
+        "player_id": 27158.0,
+        "player_name": "Luis Fernando D\u00edaz Marulanda",
+        "team_name": "Liverpool",
+        "n": 40,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.5741437228395512,
+        "quality": -0.02414372283955113
+      },
+      {
+        "player_id": 22418.0,
+        "player_name": "Bryan Gil Salvatierra",
+        "team_name": "Girona",
+        "n": 25,
+        "actual_rate": 0.52,
+        "predicted_rate": 0.5441544228552084,
+        "quality": -0.024154422855208413
+      },
+      {
+        "player_id": 8063.0,
+        "player_name": "Justin Kluivert",
+        "team_name": "AFC Bournemouth",
+        "n": 21,
+        "actual_rate": 0.6190476190476191,
+        "predicted_rate": 0.6535236096305241,
+        "quality": -0.03447599058290507
+      },
+      {
+        "player_id": 47368.0,
+        "player_name": "Jofre Carreras Pag\u00e8s",
+        "team_name": "Espanyol",
+        "n": 27,
+        "actual_rate": 0.3333333333333333,
+        "predicted_rate": 0.3741374150688022,
+        "quality": -0.0408040817354689
+      },
+      {
+        "player_id": 28104.0,
+        "player_name": "Anthony Gordon",
+        "team_name": "Newcastle United",
+        "n": 20,
+        "actual_rate": 0.4,
+        "predicted_rate": 0.44736530759994364,
+        "quality": -0.04736530759994362
+      },
+      {
+        "player_id": 39461.0,
+        "player_name": "Cole Palmer",
+        "team_name": "Chelsea",
+        "n": 30,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.6509668464497735,
+        "quality": -0.05096684644977356
+      },
+      {
+        "player_id": 30714.0,
+        "player_name": "Jude Bellingham",
+        "team_name": "Real Madrid",
+        "n": 20,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.602491160142813,
+        "quality": -0.052491160142812965
+      },
+      {
+        "player_id": 4935.0,
+        "player_name": "Bryan Mbeumo",
+        "team_name": "Brentford",
+        "n": 22,
+        "actual_rate": 0.45454545454545453,
+        "predicted_rate": 0.5356381752335437,
+        "quality": -0.0810927206880892
+      },
+      {
+        "player_id": 9000.0,
+        "player_name": "Eberechi Eze",
+        "team_name": "Crystal Palace",
+        "n": 26,
+        "actual_rate": 0.5769230769230769,
+        "predicted_rate": 0.6598394279188562,
+        "quality": -0.08291635099577932
+      },
+      {
+        "player_id": 5691.0,
+        "player_name": "Johan Andr\u00e9s Mojica Palacio",
+        "team_name": "Mallorca",
+        "n": 22,
+        "actual_rate": 0.36363636363636365,
+        "predicted_rate": 0.44891309923146266,
+        "quality": -0.08527673559509902
+      },
+      {
+        "player_id": 42933.0,
+        "player_name": "Raul Moro Prescoli",
+        "team_name": "Real Valladolid",
+        "n": 23,
+        "actual_rate": 0.34782608695652173,
+        "predicted_rate": 0.44220729376921436,
+        "quality": -0.09438120681269263
+      },
+      {
+        "player_id": 39354.0,
+        "player_name": "Morgan Rogers",
+        "team_name": "Aston Villa",
+        "n": 29,
+        "actual_rate": 0.41379310344827586,
+        "predicted_rate": 0.512883501652619,
+        "quality": -0.09909039820434312
+      },
+      {
+        "player_id": 299064.0,
+        "player_name": "Carlos Romero Serrano",
+        "team_name": "Espanyol",
+        "n": 20,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.6996686404255115,
+        "quality": -0.09966864042551149
+      },
+      {
+        "player_id": 68574.0,
+        "player_name": "Nicholas Williams Arthuer",
+        "team_name": "Athletic Club",
+        "n": 35,
+        "actual_rate": 0.3142857142857143,
+        "predicted_rate": 0.42198757655977326,
+        "quality": -0.10770186227405898
+      },
+      {
+        "player_id": 3009.0,
+        "player_name": "Kylian Mbapp\u00e9 Lottin",
+        "team_name": "Real Madrid",
+        "n": 27,
+        "actual_rate": 0.4444444444444444,
+        "predicted_rate": 0.5802751168153767,
+        "quality": -0.13583067237093227
+      },
+      {
+        "player_id": 56409.0,
+        "player_name": "Omari Giraud-Hutchinson",
+        "team_name": "Ipswich Town",
+        "n": 29,
+        "actual_rate": 0.3103448275862069,
+        "predicted_rate": 0.45153885294223134,
+        "quality": -0.14119402535602443
+      },
+      {
+        "player_id": 18395.0,
+        "player_name": "Vin\u00edcius Jos\u00e9 Paix\u00e3o de Oliveira J\u00fanior",
+        "team_name": "Real Madrid",
+        "n": 33,
+        "actual_rate": 0.30303030303030304,
+        "predicted_rate": 0.5140840327014689,
+        "quality": -0.2110537296711658
+      },
+      {
+        "player_id": 47653.0,
+        "player_name": "Alberto Moleiro Gonz\u00e1lez",
+        "team_name": "Las Palmas",
+        "n": 31,
+        "actual_rate": 0.16129032258064516,
+        "predicted_rate": 0.38588997782731427,
+        "quality": -0.2245996552466691
+      },
+      {
+        "player_id": 165149.0,
+        "player_name": "Bryan Zaragoza Mart\u00ednez",
+        "team_name": "Osasuna",
+        "n": 27,
+        "actual_rate": 0.4444444444444444,
+        "predicted_rate": 0.6782932060217448,
+        "quality": -0.2338487615773004
+      },
+      {
+        "player_id": 24861.0,
+        "player_name": "Andrei Florin Ratiu",
+        "team_name": "Rayo Vallecano",
+        "n": 26,
+        "actual_rate": 0.5384615384615384,
+        "predicted_rate": 0.8244576144676942,
+        "quality": -0.28599607600615573
+      }
+    ]
+  },
+  "G1_Gating_2ch": {
+    "min_n": 20,
+    "total_players_ranked": 32,
+    "top20": [
+      {
+        "player_id": 11333.0,
+        "player_name": "Adama Traor\u00e9 Diarra",
+        "team_name": "Fulham",
+        "n": 23,
+        "actual_rate": 0.6956521739130435,
+        "predicted_rate": 0.5987132369539366,
+        "quality": 0.09693893695910683
+      },
+      {
+        "player_id": 44455.0,
+        "player_name": "S\u00e1vio Moreira de Oliveira",
+        "team_name": "Manchester City",
+        "n": 23,
+        "actual_rate": 0.7391304347826086,
+        "predicted_rate": 0.6575621159256274,
+        "quality": 0.08156831885698124
+      },
+      {
+        "player_id": 23650.0,
+        "player_name": "Jeremy Doku",
+        "team_name": "Manchester City",
+        "n": 29,
+        "actual_rate": 0.6551724137931034,
+        "predicted_rate": 0.5951727836469092,
+        "quality": 0.05999963014619425
+      },
+      {
+        "player_id": 12423.0,
+        "player_name": "Jadon Sancho",
+        "team_name": "Chelsea",
+        "n": 33,
+        "actual_rate": 0.5151515151515151,
+        "predicted_rate": 0.48396132487025834,
+        "quality": 0.031190190281256802
+      },
+      {
+        "player_id": 37211.0,
+        "player_name": "Kaoru Mitoma",
+        "team_name": "Brighton & Hove Albion",
+        "n": 25,
+        "actual_rate": 0.36,
+        "predicted_rate": 0.3364253606123384,
+        "quality": 0.023574639387661578
+      },
+      {
+        "player_id": 3531.0,
+        "player_name": "Mohamed Salah",
+        "team_name": "Liverpool",
+        "n": 42,
+        "actual_rate": 0.40476190476190477,
+        "predicted_rate": 0.3957850225896913,
+        "quality": 0.008976882172213485
+      },
+      {
+        "player_id": 316046.0,
+        "player_name": "Lamine Yamal Nasraoui Ebana",
+        "team_name": "Barcelona",
+        "n": 39,
+        "actual_rate": 0.6410256410256411,
+        "predicted_rate": 0.6340602735795889,
+        "quality": 0.00696536744605214
+      },
+      {
+        "player_id": 29638.0,
+        "player_name": "Chidera Ejuke",
+        "team_name": "Sevilla",
+        "n": 22,
+        "actual_rate": 0.6363636363636364,
+        "predicted_rate": 0.6310113505036994,
+        "quality": 0.005352285859936967
+      },
+      {
+        "player_id": 3647.0,
+        "player_name": "Alex Iwobi",
+        "team_name": "Fulham",
+        "n": 23,
+        "actual_rate": 0.7391304347826086,
+        "predicted_rate": 0.73673449111495,
+        "quality": 0.0023959436676586066
+      },
+      {
+        "player_id": 9286.0,
+        "player_name": "Antoine Semenyo",
+        "team_name": "AFC Bournemouth",
+        "n": 25,
+        "actual_rate": 0.68,
+        "predicted_rate": 0.6825668040942401,
+        "quality": -0.0025668040942400383
+      },
+      {
+        "player_id": 23230.0,
+        "player_name": "Ryan Gravenberch",
+        "team_name": "Liverpool",
+        "n": 21,
+        "actual_rate": 0.5238095238095238,
+        "predicted_rate": 0.5423628489869381,
+        "quality": -0.01855332517741426
+      },
+      {
+        "player_id": 4614.0,
+        "player_name": "Antonee Robinson",
+        "team_name": "Fulham",
+        "n": 25,
+        "actual_rate": 0.68,
+        "predicted_rate": 0.7071315886406228,
+        "quality": -0.027131588640622706
+      },
+      {
+        "player_id": 22418.0,
+        "player_name": "Bryan Gil Salvatierra",
+        "team_name": "Girona",
+        "n": 25,
+        "actual_rate": 0.52,
+        "predicted_rate": 0.5505382841825486,
+        "quality": -0.03053828418254856
+      },
+      {
+        "player_id": 27158.0,
+        "player_name": "Luis Fernando D\u00edaz Marulanda",
+        "team_name": "Liverpool",
+        "n": 40,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.5905495890634483,
+        "quality": -0.0405495890634483
+      },
+      {
+        "player_id": 39461.0,
+        "player_name": "Cole Palmer",
+        "team_name": "Chelsea",
+        "n": 30,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.6421256983623607,
+        "quality": -0.042125698362360686
+      },
+      {
+        "player_id": 28104.0,
+        "player_name": "Anthony Gordon",
+        "team_name": "Newcastle United",
+        "n": 20,
+        "actual_rate": 0.4,
+        "predicted_rate": 0.44530988788756076,
+        "quality": -0.04530988788756074
+      },
+      {
+        "player_id": 30714.0,
+        "player_name": "Jude Bellingham",
+        "team_name": "Real Madrid",
+        "n": 20,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.6035632013954455,
+        "quality": -0.05356320139544546
+      },
+      {
+        "player_id": 47368.0,
+        "player_name": "Jofre Carreras Pag\u00e8s",
+        "team_name": "Espanyol",
+        "n": 27,
+        "actual_rate": 0.3333333333333333,
+        "predicted_rate": 0.3896154945498522,
+        "quality": -0.05628216121651891
+      },
+      {
+        "player_id": 8063.0,
+        "player_name": "Justin Kluivert",
+        "team_name": "AFC Bournemouth",
+        "n": 21,
+        "actual_rate": 0.6190476190476191,
+        "predicted_rate": 0.678516550718736,
+        "quality": -0.05946893167111689
+      },
+      {
+        "player_id": 9000.0,
+        "player_name": "Eberechi Eze",
+        "team_name": "Crystal Palace",
+        "n": 26,
+        "actual_rate": 0.5769230769230769,
+        "predicted_rate": 0.6477852066298231,
+        "quality": -0.07086212970674621
+      }
+    ],
+    "bot20": [
+      {
+        "player_id": 22418.0,
+        "player_name": "Bryan Gil Salvatierra",
+        "team_name": "Girona",
+        "n": 25,
+        "actual_rate": 0.52,
+        "predicted_rate": 0.5505382841825486,
+        "quality": -0.03053828418254856
+      },
+      {
+        "player_id": 27158.0,
+        "player_name": "Luis Fernando D\u00edaz Marulanda",
+        "team_name": "Liverpool",
+        "n": 40,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.5905495890634483,
+        "quality": -0.0405495890634483
+      },
+      {
+        "player_id": 39461.0,
+        "player_name": "Cole Palmer",
+        "team_name": "Chelsea",
+        "n": 30,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.6421256983623607,
+        "quality": -0.042125698362360686
+      },
+      {
+        "player_id": 28104.0,
+        "player_name": "Anthony Gordon",
+        "team_name": "Newcastle United",
+        "n": 20,
+        "actual_rate": 0.4,
+        "predicted_rate": 0.44530988788756076,
+        "quality": -0.04530988788756074
+      },
+      {
+        "player_id": 30714.0,
+        "player_name": "Jude Bellingham",
+        "team_name": "Real Madrid",
+        "n": 20,
+        "actual_rate": 0.55,
+        "predicted_rate": 0.6035632013954455,
+        "quality": -0.05356320139544546
+      },
+      {
+        "player_id": 47368.0,
+        "player_name": "Jofre Carreras Pag\u00e8s",
+        "team_name": "Espanyol",
+        "n": 27,
+        "actual_rate": 0.3333333333333333,
+        "predicted_rate": 0.3896154945498522,
+        "quality": -0.05628216121651891
+      },
+      {
+        "player_id": 8063.0,
+        "player_name": "Justin Kluivert",
+        "team_name": "AFC Bournemouth",
+        "n": 21,
+        "actual_rate": 0.6190476190476191,
+        "predicted_rate": 0.678516550718736,
+        "quality": -0.05946893167111689
+      },
+      {
+        "player_id": 9000.0,
+        "player_name": "Eberechi Eze",
+        "team_name": "Crystal Palace",
+        "n": 26,
+        "actual_rate": 0.5769230769230769,
+        "predicted_rate": 0.6477852066298231,
+        "quality": -0.07086212970674621
+      },
+      {
+        "player_id": 4935.0,
+        "player_name": "Bryan Mbeumo",
+        "team_name": "Brentford",
+        "n": 22,
+        "actual_rate": 0.45454545454545453,
+        "predicted_rate": 0.5595699220337503,
+        "quality": -0.1050244674882958
+      },
+      {
+        "player_id": 68574.0,
+        "player_name": "Nicholas Williams Arthuer",
+        "team_name": "Athletic Club",
+        "n": 35,
+        "actual_rate": 0.3142857142857143,
+        "predicted_rate": 0.43472625671420245,
+        "quality": -0.12044054242848817
+      },
+      {
+        "player_id": 39354.0,
+        "player_name": "Morgan Rogers",
+        "team_name": "Aston Villa",
+        "n": 29,
+        "actual_rate": 0.41379310344827586,
+        "predicted_rate": 0.5417505075045107,
+        "quality": -0.12795740405623485
+      },
+      {
+        "player_id": 299064.0,
+        "player_name": "Carlos Romero Serrano",
+        "team_name": "Espanyol",
+        "n": 20,
+        "actual_rate": 0.6,
+        "predicted_rate": 0.7298223165766103,
+        "quality": -0.12982231657661036
+      },
+      {
+        "player_id": 42933.0,
+        "player_name": "Raul Moro Prescoli",
+        "team_name": "Real Valladolid",
+        "n": 23,
+        "actual_rate": 0.34782608695652173,
+        "predicted_rate": 0.47943778412477317,
+        "quality": -0.13161169716825144
+      },
+      {
+        "player_id": 56409.0,
+        "player_name": "Omari Giraud-Hutchinson",
+        "team_name": "Ipswich Town",
+        "n": 29,
+        "actual_rate": 0.3103448275862069,
+        "predicted_rate": 0.44855666576166126,
+        "quality": -0.13821183817545435
+      },
+      {
+        "player_id": 3009.0,
+        "player_name": "Kylian Mbapp\u00e9 Lottin",
+        "team_name": "Real Madrid",
+        "n": 27,
+        "actual_rate": 0.4444444444444444,
+        "predicted_rate": 0.5881951237401895,
+        "quality": -0.14375067929574503
+      },
+      {
+        "player_id": 5691.0,
+        "player_name": "Johan Andr\u00e9s Mojica Palacio",
+        "team_name": "Mallorca",
+        "n": 22,
+        "actual_rate": 0.36363636363636365,
+        "predicted_rate": 0.5410222403575475,
+        "quality": -0.1773858767211839
+      },
+      {
+        "player_id": 18395.0,
+        "player_name": "Vin\u00edcius Jos\u00e9 Paix\u00e3o de Oliveira J\u00fanior",
+        "team_name": "Real Madrid",
+        "n": 33,
+        "actual_rate": 0.30303030303030304,
+        "predicted_rate": 0.5404773670042314,
+        "quality": -0.2374470639739284
+      },
+      {
+        "player_id": 47653.0,
+        "player_name": "Alberto Moleiro Gonz\u00e1lez",
+        "team_name": "Las Palmas",
+        "n": 31,
+        "actual_rate": 0.16129032258064516,
+        "predicted_rate": 0.40742827881777266,
+        "quality": -0.2461379562371275
+      },
+      {
+        "player_id": 165149.0,
+        "player_name": "Bryan Zaragoza Mart\u00ednez",
+        "team_name": "Osasuna",
+        "n": 27,
+        "actual_rate": 0.4444444444444444,
+        "predicted_rate": 0.7183629464258653,
+        "quality": -0.27391850198142087
+      },
+      {
+        "player_id": 24861.0,
+        "player_name": "Andrei Florin Ratiu",
+        "team_name": "Rayo Vallecano",
+        "n": 26,
+        "actual_rate": 0.5384615384615384,
+        "predicted_rate": 0.8449500191670197,
+        "quality": -0.3064884807054813
+      }
+    ]
+  },
+  "comparison_M4_vs_G1": {
+    "n_joint_players": 32,
+    "spearman_rho": 0.9655425219941348,
+    "spearman_p": 4.3201392140200216e-19,
+    "rank_diff_max": 6,
+    "rank_diff_mean": 1.6875,
+    "rank_diff_zero_count": 10
+  }
+}

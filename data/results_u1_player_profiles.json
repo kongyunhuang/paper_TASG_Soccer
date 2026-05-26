@@ -1,0 +1,410 @@
+{
+  "min_n_per_task": 5,
+  "league_min_n": 20,
+  "league_avg": {
+    "pass": {
+      "mean": 0.020519359037280083,
+      "std": 0.04862628132104874,
+      "n_players": 503
+    },
+    "dribble": {
+      "mean": -0.420785516500473,
+      "std": 0.11122900247573853,
+      "n_players": 235
+    },
+    "ball_receipt": {
+      "mean": -0.06111772730946541,
+      "std": 0.09038706123828888,
+      "n_players": 498
+    },
+    "shot": {
+      "mean": -0.02879236452281475,
+      "std": 0.04771990701556206,
+      "n_players": 71
+    },
+    "duel": {
+      "mean": -0.24275027215480804,
+      "std": 0.14851342141628265,
+      "n_players": 678
+    },
+    "interception": {
+      "mean": 0.0810982882976532,
+      "std": 0.10634114593267441,
+      "n_players": 106
+    },
+    "ball_recovery": {
+      "mean": 0.009888642467558384,
+      "std": 0.04770129919052124,
+      "n_players": 506
+    },
+    "pressure": {
+      "mean": 0.058017466217279434,
+      "std": 0.05630477890372276,
+      "n_players": 550
+    },
+    "xg": {
+      "mean": 0.0017722476040944457,
+      "std": 0.014184429310262203,
+      "n_players": 71
+    }
+  },
+  "target_profiles": [
+    {
+      "player_name": "Adama Traor\u00e9 Diarra",
+      "role_label": "Winger",
+      "team_name": "Fulham",
+      "position_name": "Left Wing",
+      "per_task": {
+        "pass": {
+          "n": 25,
+          "quality": -0.012623179703950882,
+          "actual": 0.6399999856948853,
+          "predicted": 0.6526231169700623
+        },
+        "dribble": {
+          "n": 5,
+          "quality": -0.5821002125740051,
+          "actual": 0.4000000059604645,
+          "predicted": 0.9821001887321472
+        },
+        "ball_receipt": {
+          "n": 6,
+          "quality": 0.06505613774061203,
+          "actual": 1.0,
+          "predicted": 0.9349438548088074
+        },
+        "shot": {
+          "n": 13,
+          "quality": -0.03755590319633484,
+          "actual": 0.0,
+          "predicted": 0.03755590319633484
+        },
+        "duel": {
+          "n": 9,
+          "quality": -0.3516849875450134,
+          "actual": 0.2222222238779068,
+          "predicted": 0.573907196521759
+        },
+        "interception": null,
+        "ball_recovery": {
+          "n": 14,
+          "quality": 0.09865529090166092,
+          "actual": 1.0,
+          "predicted": 0.9013447165489197
+        },
+        "pressure": {
+          "n": 5,
+          "quality": 0.3442046642303467,
+          "actual": 0.4000000059604645,
+          "predicted": 0.055795323103666306
+        },
+        "xg": {
+          "n": 13,
+          "quality": -0.010473588481545448,
+          "actual": 0.05011580511927605,
+          "predicted": 0.060589391738176346
+        }
+      }
+    },
+    {
+      "player_name": "Kevin De Bruyne",
+      "role_label": "Midfielder",
+      "team_name": "Manchester City",
+      "position_name": "Center Attacking Midfield",
+      "per_task": {
+        "pass": {
+          "n": 14,
+          "quality": 0.013486785814166069,
+          "actual": 0.7142857313156128,
+          "predicted": 0.7007989287376404
+        },
+        "dribble": {
+          "n": 11,
+          "quality": -0.7074775099754333,
+          "actual": 0.27272728085517883,
+          "predicted": 0.9802048206329346
+        },
+        "ball_receipt": {
+          "n": 17,
+          "quality": -0.1954353004693985,
+          "actual": 0.7647058963775635,
+          "predicted": 0.960141122341156
+        },
+        "shot": {
+          "n": 8,
+          "quality": -0.04388737678527832,
+          "actual": 0.0,
+          "predicted": 0.04388737678527832
+        },
+        "duel": {
+          "n": 10,
+          "quality": -0.47369271516799927,
+          "actual": 0.10000000149011612,
+          "predicted": 0.5736926794052124
+        },
+        "interception": null,
+        "ball_recovery": {
+          "n": 13,
+          "quality": 0.08553610742092133,
+          "actual": 1.0,
+          "predicted": 0.9144639372825623
+        },
+        "pressure": {
+          "n": 21,
+          "quality": -0.04741265997290611,
+          "actual": 0.0,
+          "predicted": 0.04741265997290611
+        },
+        "xg": {
+          "n": 8,
+          "quality": 0.004178167320787907,
+          "actual": 0.05946945771574974,
+          "predicted": 0.05529128760099411
+        }
+      }
+    },
+    {
+      "player_name": "Virgil van Dijk",
+      "role_label": "Defender",
+      "team_name": "Liverpool",
+      "position_name": "Center Back",
+      "per_task": {
+        "pass": {
+          "n": 116,
+          "quality": 0.03271162882447243,
+          "actual": 0.9224137663841248,
+          "predicted": 0.8897022008895874
+        },
+        "dribble": {
+          "n": 6,
+          "quality": -0.18952710926532745,
+          "actual": 0.6666666865348816,
+          "predicted": 0.8561937808990479
+        },
+        "ball_receipt": {
+          "n": 5,
+          "quality": 0.01155632734298706,
+          "actual": 1.0,
+          "predicted": 0.9884436726570129
+        },
+        "shot": {
+          "n": 12,
+          "quality": 0.09951326996088028,
+          "actual": 0.1666666716337204,
+          "predicted": 0.06715339422225952
+        },
+        "duel": {
+          "n": 73,
+          "quality": -0.18686339259147644,
+          "actual": 0.3835616409778595,
+          "predicted": 0.5704250335693359
+        },
+        "interception": {
+          "n": 40,
+          "quality": -0.08211396634578705,
+          "actual": 0.44999998807907104,
+          "predicted": 0.5321139693260193
+        },
+        "ball_recovery": {
+          "n": 47,
+          "quality": 0.028931405395269394,
+          "actual": 0.978723406791687,
+          "predicted": 0.9497920274734497
+        },
+        "pressure": {
+          "n": 28,
+          "quality": 0.05172840878367424,
+          "actual": 0.1071428582072258,
+          "predicted": 0.05541444569826126
+        },
+        "xg": {
+          "n": 12,
+          "quality": 0.001505363266915083,
+          "actual": 0.0717659518122673,
+          "predicted": 0.07026058435440063
+        }
+      }
+    },
+    {
+      "player_name": "Lamine Yamal Nasraoui Ebana",
+      "role_label": "Winger",
+      "team_name": "Barcelona",
+      "position_name": "Right Wing",
+      "per_task": {
+        "pass": {
+          "n": 77,
+          "quality": 0.018729880452156067,
+          "actual": 0.7142857313156128,
+          "predicted": 0.6955558657646179
+        },
+        "dribble": {
+          "n": 244,
+          "quality": -0.3578301966190338,
+          "actual": 0.5573770403862,
+          "predicted": 0.9152072072029114
+        },
+        "ball_receipt": {
+          "n": 72,
+          "quality": -0.04779744893312454,
+          "actual": 0.9305555820465088,
+          "predicted": 0.978352963924408
+        },
+        "shot": {
+          "n": 92,
+          "quality": -0.025955485180020332,
+          "actual": 0.032608695328235626,
+          "predicted": 0.05856418237090111
+        },
+        "duel": {
+          "n": 59,
+          "quality": -0.00462864525616169,
+          "actual": 0.508474588394165,
+          "predicted": 0.5131032466888428
+        },
+        "interception": {
+          "n": 16,
+          "quality": 0.28643035888671875,
+          "actual": 0.8125,
+          "predicted": 0.5260696411132812
+        },
+        "ball_recovery": {
+          "n": 81,
+          "quality": 0.02368941344320774,
+          "actual": 0.9135802388191223,
+          "predicted": 0.8898907899856567
+        },
+        "pressure": {
+          "n": 61,
+          "quality": 0.09153000265359879,
+          "actual": 0.14754098653793335,
+          "predicted": 0.05601097643375397
+        },
+        "xg": {
+          "n": 92,
+          "quality": -0.003306072438135743,
+          "actual": 0.06820066273212433,
+          "predicted": 0.07150673121213913
+        }
+      }
+    },
+    {
+      "player_name": "Jude Bellingham",
+      "role_label": "Midfielder",
+      "team_name": "Real Madrid",
+      "position_name": "Center Attacking Midfield",
+      "per_task": {
+        "pass": {
+          "n": 34,
+          "quality": 0.05448877066373825,
+          "actual": 0.9411764740943909,
+          "predicted": 0.886687695980072
+        },
+        "dribble": {
+          "n": 28,
+          "quality": -0.36947017908096313,
+          "actual": 0.5714285969734192,
+          "predicted": 0.9408987760543823
+        },
+        "ball_receipt": {
+          "n": 42,
+          "quality": -0.024316858500242233,
+          "actual": 0.9523809552192688,
+          "predicted": 0.9766978025436401
+        },
+        "shot": {
+          "n": 19,
+          "quality": -0.06092612445354462,
+          "actual": 0.05263157933950424,
+          "predicted": 0.11355770379304886
+        },
+        "duel": {
+          "n": 35,
+          "quality": -0.29898178577423096,
+          "actual": 0.2857142984867096,
+          "predicted": 0.5846961140632629
+        },
+        "interception": {
+          "n": 13,
+          "quality": -0.1895221620798111,
+          "actual": 0.38461539149284363,
+          "predicted": 0.5741375684738159
+        },
+        "ball_recovery": {
+          "n": 28,
+          "quality": 0.07585352659225464,
+          "actual": 0.9642857313156128,
+          "predicted": 0.8884321451187134
+        },
+        "pressure": {
+          "n": 44,
+          "quality": 0.028616417199373245,
+          "actual": 0.09090909361839294,
+          "predicted": 0.0622926726937294
+        },
+        "xg": {
+          "n": 19,
+          "quality": 0.007374231703579426,
+          "actual": 0.13373737037181854,
+          "predicted": 0.1263631284236908
+        }
+      }
+    },
+    {
+      "player_name": "Antonio R\u00fcdiger",
+      "role_label": "Defender",
+      "team_name": "Real Madrid",
+      "position_name": "Left Center Back",
+      "per_task": {
+        "pass": {
+          "n": 78,
+          "quality": 0.019544443115592003,
+          "actual": 0.9615384340286255,
+          "predicted": 0.9419940114021301
+        },
+        "dribble": null,
+        "ball_receipt": {
+          "n": 68,
+          "quality": 0.003011459717527032,
+          "actual": 1.0,
+          "predicted": 0.9969885349273682
+        },
+        "shot": {
+          "n": 9,
+          "quality": -0.059411440044641495,
+          "actual": 0.0,
+          "predicted": 0.059411440044641495
+        },
+        "duel": {
+          "n": 44,
+          "quality": -0.29417023062705994,
+          "actual": 0.27272728085517883,
+          "predicted": 0.566897451877594
+        },
+        "interception": {
+          "n": 8,
+          "quality": -0.150170236825943,
+          "actual": 0.5,
+          "predicted": 0.6501702666282654
+        },
+        "ball_recovery": {
+          "n": 33,
+          "quality": 0.03990887105464935,
+          "actual": 1.0,
+          "predicted": 0.9600911736488342
+        },
+        "pressure": {
+          "n": 15,
+          "quality": 0.08219046890735626,
+          "actual": 0.13333334028720856,
+          "predicted": 0.051142867654561996
+        },
+        "xg": {
+          "n": 9,
+          "quality": -0.011577432975172997,
+          "actual": 0.08596313744783401,
+          "predicted": 0.09754057228565216
+        }
+      }
+    }
+  ]
+}

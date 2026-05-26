@@ -1,0 +1,24 @@
+name: tasg-soccer
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch>=2.1
+  - torchvision
+  - torchaudio
+  - torchmetrics
+  - pandas>=2.0
+  - numpy>=1.24
+  - scipy
+  - scikit-learn
+  - pyyaml
+  - matplotlib
+  - seaborn
+  - jupyter
+  - jupyterlab
+  - tqdm
+  - pip
+  - pip:
+    - statsbombpy  # StatsBomb official Python client
