@@ -1,0 +1,672 @@
+{
+ "name": "tab_tasks",
+ "items": [
+  {
+   "id": "pass/train_n",
+   "value": 100000.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 1,
+    "group": 2
+   },
+   "display": "100,000",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pass/train_pos",
+   "value": 0.805,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 1,
+    "group": 4
+   },
+   "display": "80.5",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "pass/test_n",
+   "value": 26482.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 574,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "26,482",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pass/test_pos",
+   "value": 0.8111925081187221,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/pass_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "81.1",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "pass/hold_n",
+   "value": 125130.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 237,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "125,130",
+   "cell": [
+    0,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pass/hold_pos",
+   "value": 0.807,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 237,
+    "col": "标签均值",
+    "part": "value"
+   },
+   "display": "80.7",
+   "cell": [
+    0,
+    7
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "dest/train_n",
+   "value": 100000.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 2,
+    "group": 2
+   },
+   "display": "100,000",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "dest/test_n",
+   "value": 26634.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "26,634",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "dest/hold_n",
+   "value": 125130.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 238,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "125,130",
+   "cell": [
+    1,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shot/train_n",
+   "value": 37498.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 3,
+    "group": 2
+   },
+   "display": "37,498",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shot/train_pos",
+   "value": 0.099,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 3,
+    "group": 4
+   },
+   "display": "9.9",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "shot/test_n",
+   "value": 4929.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 576,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "4,929",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shot/test_pos",
+   "value": 0.0967741935483871,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/shot_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "9.7",
+   "cell": [
+    2,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "shot/hold_n",
+   "value": 3382.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 239,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "3,382",
+   "cell": [
+    2,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shot/hold_pos",
+   "value": 0.099,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 239,
+    "col": "标签均值",
+    "part": "value"
+   },
+   "display": "9.9",
+   "cell": [
+    2,
+    7
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "interception/train_n",
+   "value": 27997.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 4,
+    "group": 2
+   },
+   "display": "27,997",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "interception/train_pos",
+   "value": 0.598,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 4,
+    "group": 4
+   },
+   "display": "59.8",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "interception/test_n",
+   "value": 2605.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 577,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "2,605",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "interception/test_pos",
+   "value": 0.619193857965451,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/interception_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "61.9",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "interception/hold_n",
+   "value": 1775.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 240,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "1,775",
+   "cell": [
+    3,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "interception/hold_pos",
+   "value": 0.596,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 240,
+    "col": "标签均值",
+    "part": "value"
+   },
+   "display": "59.6",
+   "cell": [
+    3,
+    7
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "ball_recovery/train_n",
+   "value": 100000.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 5,
+    "group": 2
+   },
+   "display": "100,000",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "ball_recovery/train_pos",
+   "value": 0.923,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 5,
+    "group": 4
+   },
+   "display": "92.3",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "ball_recovery/test_n",
+   "value": 16714.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 578,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "16,714",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "ball_recovery/test_pos",
+   "value": 0.9263491683618523,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/ball_recovery_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "92.6",
+   "cell": [
+    4,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "ball_recovery/hold_n",
+   "value": 11997.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 241,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "11,997",
+   "cell": [
+    4,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "ball_recovery/hold_pos",
+   "value": 0.919,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 241,
+    "col": "标签均值",
+    "part": "value"
+   },
+   "display": "91.9",
+   "cell": [
+    4,
+    7
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "pressure/train_n",
+   "value": 100000.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 6,
+    "group": 2
+   },
+   "display": "100,000",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pressure/train_pos",
+   "value": 0.235,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 6,
+    "group": 4
+   },
+   "display": "23.5",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "pressure/test_n",
+   "value": 26484.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 579,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "26,484",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pressure/test_pos",
+   "value": 0.22655188038060717,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/pressure_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "22.7",
+   "cell": [
+    5,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "pressure/hold_n",
+   "value": 47803.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 242,
+    "col": "条数",
+    "part": "value"
+   },
+   "display": "47,803",
+   "cell": [
+    5,
+    6
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pressure/hold_pos",
+   "value": 0.229,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 242,
+    "col": "标签均值",
+    "part": "value"
+   },
+   "display": "22.9",
+   "cell": [
+    5,
+    7
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "dribble/train_n",
+   "value": 38374.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 7,
+    "group": 2
+   },
+   "display": "38,374",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "dribble/train_pos",
+   "value": 0.533,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 7,
+    "group": 4
+   },
+   "display": "53.3",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "dribble/test_n",
+   "value": 5060.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 580,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "5,060",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "dribble/test_pos",
+   "value": 0.5300395256916997,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/dribble_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "53.0",
+   "cell": [
+    6,
+    5
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "tackle/train_n",
+   "value": 46841.0,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 8,
+    "group": 2
+   },
+   "display": "46,841",
+   "cell": [
+    7,
+    2
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "tackle/train_pos",
+   "value": 0.615,
+   "src": {
+    "kind": "log",
+    "file": "logs/u1_clean_u1_s0_2026-10-02.log",
+    "line": 8,
+    "group": 4
+   },
+   "display": "61.5",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "pct1"
+  },
+  {
+   "id": "tackle/test_n",
+   "value": 6110.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 581,
+    "col": "n_test",
+    "part": "value"
+   },
+   "display": "6,110",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "tackle/test_pos",
+   "value": 0.6166939443535189,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/tackle_test_meta.npz 的 y，限 clean_matches() 的 202 场，取均值"
+   },
+   "display": "61.7",
+   "cell": [
+    7,
+    5
+   ],
+   "fmt": "pct1"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/holdout_2526_summary.md": "a7297ac58e24d06b01758a613f3cefb3",
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "logs/u1_clean_u1_s0_2026-10-02.log": "75950375577b66cf05f46c2c7b286eb8"
+ }
+}

@@ -1,35 +1,34 @@
 #!/usr/bin/env python3
 """
-Phase 2: 统一训练脚本 — 全部模型 × 全部任务
-============================================
-按 TECHNICAL_SPEC.md 定义，跑 9 个模型配置 × 9 个任务（8 二分类 + 1 回归）。
+Phase 2: unified training script: all models x all tasks
+=========================================================
+Following TECHNICAL_SPEC.md, runs 9 model configurations x 9 tasks (8 binary + 1 regression).
 
-模型: L1(LR Event), L2(LR+360), B1(XGB Event), B2(XGB+360),
-      M1(MLP Event), M2(MLP+360), M3(CNN+MLP), M4(CNN+MLP Full), G1(Gating)
-任务: T1-T8 二分类 + T9 xG 回归
+Models: L1(LR Event), L2(LR+360), B1(XGB Event), B2(XGB+360),
+        M1(MLP Event), M2(MLP+360), M3(CNN+MLP), M4(CNN+MLP Full), G1(Gating)
+Tasks:  T1-T8 binary + T9 xG regression
 
-数据划分: 时间序列 holdout (TECHNICAL_SPEC 4.2)
+Data split: time-series holdout (TECHNICAL_SPEC 4.2)
   Train: 22/23 + 23/24 (EPL + La Liga), match-level 80%
   Val:   22/23 + 23/24, match-level 20%
   Test:  24/25 (EPL + La Liga)
 
-输入:
-  data/cache/L1_events_v3.parquet
-  data/cache/action_soccermaps_{task}.npy + _idx.parquet (7ch)
+Inputs:
+  data/L1_events_v3.parquet
+  data/action_soccermaps_{task}.npy + _idx.parquet (7ch)
 
-输出:
-  data/cache/results_all.json
+Outputs:
+  data/results_all.json
 
-注: 主实验默认 cnn_channels=7 (完整 A-G).
-    后续衍生实验 (ablation_*/eval_*/relaxed_*/save_pass_predictions/gradcam) 切到 cnn_channels=2,
-    从 7ch npy 取前 2 通道 (smap[:, :2]). 消融 A1 发现 2ch 在 Dribble/Duel 上更优.
-    论文中需明确每个数字来自哪个版本.
+Note: the main experiment defaults to cnn_channels=7 (full A-G channels).
+      Subsequent derivative experiments (ablation_*/eval_*/relaxed_*/save_pass_predictions/gradcam)
+      switch to cnn_channels=2 by taking the first 2 channels from the 7ch npy (smap[:, :2]).
+      Ablation A1 found 2ch to be superior on Dribble/Duel.
+      The paper must state explicitly which version each reported number comes from.
 
 Usage:
-  conda activate kronos
-  PYTHONUNBUFFERED=1 python scripts/train_all.py
+  PYTHONUNBUFFERED=1 python scripts/training/train_all.py
 
-Last modified: 2026-04-26
 """
 
 from __future__ import annotations
@@ -51,7 +50,7 @@ from sklearn.pipeline import Pipeline
 from torch.utils.data import DataLoader, Dataset
 from xgboost import XGBClassifier, XGBRegressor
 
-CACHE_DIR = Path("data/cache")
+CACHE_DIR = Path("data")
 
 FULL_SEASONS = [
     "2_235_2022_23", "2_281_2023_24", "2_317_2024_25",
@@ -60,7 +59,7 @@ FULL_SEASONS = [
 TRAIN_SEASONS = ["2_235_2022_23", "2_281_2023_24", "11_235_2022_23", "11_281_2023_24"]
 TEST_SEASONS = ["2_317_2024_25", "11_317_2024_25"]
 
-# T8 on-ball event types (对齐 exPress, Table 2, p.6)
+# T8 on-ball event types (aligned with exPress, Table 2, p.6)
 ON_BALL_TYPES = {
     "Pass", "Dribble", "Shot", "Ball Receipt*", "Carry",
     "Clearance", "Interception", "Ball Recovery", "Block",
@@ -68,7 +67,7 @@ ON_BALL_TYPES = {
     "Dispossessed", "Miscontrol", "Goal Keeper", "Pressure",
 }
 
-# ── 特征定义 (TECHNICAL_SPEC Section 2.3) ─────────────────────────────
+# ── Feature definitions (TECHNICAL_SPEC Section 2.3) ─────────────────────────────
 
 BASE_EVENT = ["location_x", "location_y", "dist_to_goal", "angle_to_goal", "angle_to_goal_center"]
 
@@ -156,7 +155,7 @@ TASK_CONFIG = {
     },
     "pressure": {
         "type_name": "Pressure",
-        "label_fn": None,  # 特殊处理: compute_pressure_labels
+        "label_fn": None,  # special handling: compute_pressure_labels
         "event_feats": BASE_EVENT + ["duration"],
         "event_onehot": {},
         "extra_360": [],
@@ -178,7 +177,7 @@ TASK_CONFIG = {
 }
 
 
-# ── 模型定义 ──────────────────────────────────────────────────────────
+# ── Model definitions ──────────────────────────────────────────────────────────
 
 class SoccerMapEncoder(nn.Module):
     def __init__(self, in_channels=7, output_dim=64):
@@ -267,7 +266,7 @@ class ActionDataset(Dataset):
         return self.X[idx], self.y[idx]
 
 
-# ── 训练函数 ──────────────────────────────────────────────────────────
+# ── Training functions ──────────────────────────────────────────────────────────
 
 def train_nn(model, train_loader, X_val, y_val, val_smaps,
              use_cnn, task_type, epochs=30, lr=1e-3, patience=7):
@@ -343,7 +342,7 @@ def evaluate_model(model, X_test, y_test, test_smaps, use_cnn, task_type):
         }
 
 
-# ── T8 Pressure 标签 ─────────────────────────────────────────────────
+# ── T8 Pressure labels ─────────────────────────────────────────────────
 
 def compute_pressure_labels(df):
     df = df.reset_index(drop=True)
@@ -376,7 +375,7 @@ def compute_pressure_labels(df):
     return labels
 
 
-# ── 主逻辑 ────────────────────────────────────────────────────────────
+# ── Main logic ────────────────────────────────────────────────────────────
 
 def main():
     t0_all = time.time()
@@ -394,7 +393,7 @@ def main():
         df[col] = df[col].fillna(False).astype(int)
     print(f"  Events: {len(df):,}")
 
-    # T8 标签预计算
+    # T8 label pre-computation
     print("Computing T8 Pressure labels ...")
     pressure_labels = compute_pressure_labels(df)
     print(f"  Pressure turnover rate: {pressure_labels.mean():.4f}")
@@ -414,31 +413,31 @@ def main():
         print(f"TASK: {task_name.upper()}")
         print(f"{'='*60}")
 
-        # 筛选事件
+        # Filter events
         df_task = df[df["type_name"] == cfg["type_name"]].copy()
         if "filter_fn" in cfg:
             df_task = cfg["filter_fn"](df_task)
 
-        # 标签
+        # Labels
         if task_name == "pressure":
             df_task = df_task.reset_index(drop=True)
             labels = pressure_labels
         else:
             labels = cfg["label_fn"](df_task)
 
-        # One-hot 编码
+        # One-hot encoding
         for col, vals in cfg.get("event_onehot", {}).items():
             for v in vals:
                 df_task[f"{col}_{v}"] = (df_task[col] == v).astype(int)
 
-        # 特征列
+        # Feature columns
         event_feats = list(cfg["event_feats"])
         for col, vals in cfg.get("event_onehot", {}).items():
             event_feats += [f"{col}_{v}" for v in vals]
 
         all_360 = SB_360_COMMON + cfg.get("extra_360", [])
 
-        # 过滤存在的列
+        # Keep only columns that actually exist
         event_feats = [f for f in event_feats if f in df_task.columns]
         all_360 = [f for f in all_360 if f in df_task.columns]
 
@@ -454,13 +453,13 @@ def main():
                 smaps_all = np.load(npy_path, mmap_mode="r")
                 smap_lookup = {eid: i for i, eid in enumerate(df_idx["event_id"].values)}
 
-        # 筛选有 SoccerMap 的事件（仅对有 CNN 的任务）
+        # Keep only events that have a SoccerMap (for tasks that use the CNN)
         if smap_lookup:
             has_smap = df_task["event_id"].isin(smap_lookup).values
             df_task = df_task[has_smap].reset_index(drop=True)
             labels = labels[has_smap]
 
-        # 子采样
+        # Sub-sampling
         max_s = cfg.get("max_samples")
         if max_s and len(df_task) > max_s:
             idx_sub = np.random.choice(len(df_task), max_s, replace=False)
@@ -471,7 +470,7 @@ def main():
         print(f"  Samples: {len(df_task):,}, Label mean: {labels.mean():.4f}")
         print(f"  Event feats: {len(event_feats)}, 360 feats: {len(all_360)}")
 
-        # 时间序列划分
+        # Time-series split
         is_train_season = df_task["season_dir"].isin(TRAIN_SEASONS).values
         is_test_season = df_task["season_dir"].isin(TEST_SEASONS).values
 
@@ -485,7 +484,7 @@ def main():
         y_train, y_val, y_test = labels[train_mask], labels[val_mask], labels[test_mask]
         print(f"  Train: {train_mask.sum():,}, Val: {val_mask.sum():,}, Test: {test_mask.sum():,}")
 
-        # 特征矩阵
+        # Feature matrices
         X_event = df_task[event_feats].fillna(0).values.astype(np.float32)
         X_360 = df_task[all_360].fillna(0).values.astype(np.float32) if all_360 else np.empty((len(df_task), 0), dtype=np.float32)
         X_event_360 = np.hstack([X_event, X_360])
@@ -497,7 +496,7 @@ def main():
         Xe_tr, Xe_va, Xe_te = scaler_e.transform(X_event[train_mask]), scaler_e.transform(X_event[val_mask]), scaler_e.transform(X_event[test_mask])
         Xe360_tr, Xe360_va, Xe360_te = scaler_e360.transform(X_event_360[train_mask]), scaler_e360.transform(X_event_360[val_mask]), scaler_e360.transform(X_event_360[test_mask])
 
-        # SoccerMap 张量
+        # SoccerMap tensors
         sm_train = sm_val = sm_test = None
         if smap_lookup and smaps_all is not None:
             eids = df_task["event_id"].values
@@ -508,7 +507,7 @@ def main():
 
         task_type = cfg["task_type"]
 
-        # ── 跑模型 ──
+        # ── Run models ──
         model_configs = [
             ("L1_LR_Event", "lr", Xe_tr, Xe_va, Xe_te, False),
             ("L2_LR_360", "lr", Xe360_tr, Xe360_va, Xe360_te, False),
@@ -591,7 +590,7 @@ def main():
                 train_nn(model, dl, X_va_t, y_val, sm_val, True, task_type)
                 metrics = evaluate_model(model, X_te_t, y_test, sm_test, True, task_type)
                 result.update(metrics)
-                # Gate 值
+                # Gate values
                 g = model.get_gate_values(X_te_t, sm_test).numpy()
                 result["gate_mean"] = float(g.mean())
                 result["gate_std"] = float(g.std())
@@ -606,7 +605,7 @@ def main():
 
             all_results.append(result)
 
-    # ── 保存 ──
+    # ── Save ──
     output_path = CACHE_DIR / "results_all.json"
     if merge_results and output_path.exists():
         with open(output_path) as f:
@@ -621,14 +620,14 @@ def main():
         with open(output_path, "w") as f:
             json.dump(all_results, f, indent=2, default=str)
 
-    # ── 汇总 ──
+    # ── Summary ──
     total_time = time.time() - t0_all
     print(f"\n{'='*60}")
-    print(f"ALL DONE — {total_time:.0f}s ({total_time/60:.1f} min)")
+    print(f"ALL DONE: {total_time:.0f}s ({total_time/60:.1f} min)")
     print(f"{'='*60}")
     print(f"Results saved to {output_path}")
 
-    # 打印结果表
+    # Print results table
     print(f"\n{'Task':<15} {'Model':<15} {'Test AUC/MAE':>12} {'Time':>6}")
     print("-" * 52)
     for r in all_results:

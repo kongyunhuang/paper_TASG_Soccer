@@ -1,28 +1,27 @@
 #!/usr/bin/env python3
 """
-Step 0: 从 StatsBomb JSON 生成 L1 事件缓存 (v3 — 全面修复版)
+Step 0: Generate L1 event cache from StatsBomb JSON (v3)
 =============================================================
-直接从 StatsBomb 原始 JSON 解析事件数据，不经过 SPADL。
+Parses event data directly from StatsBomb raw JSON, without going through SPADL.
 
-v3 相比 v2 的修复:
-  - 360 标量特征: 全部改用 StatsBomb 预计算字段 (不自己算距离!)
-    来源: StatsBomb API 360 Frames v2.0.0 官方文档
-  - T8 Pressure 标签: 改为"后续2个on-ball事件内球权变化"
-    来源: exPress (Lee et al. 2025, Table 2, p.6)
-  - un-xPass 风格特征: Pass 任务的 dist_defender_end + nb_opp_in_path
-    来源: un-xPass GitHub (ML-KULeuven/un-xPass, features.py)
+Fixes in v3 relative to v2:
+  - 360 scalar features: all switched to StatsBomb pre-computed fields (do not
+    compute distances ourselves!)
+    Source: StatsBomb API 360 Frames v2.0.0 official documentation
+  - T8 Pressure label: changed to "possession change within the next 2 on-ball
+    events"
+    Source: exPress (Lee et al. 2025, Table 2, p.6)
+  - un-xPass style features: dist_defender_end + nb_opp_in_path for the Pass task
+    Source: un-xPass GitHub (ML-KULeuven/un-xPass, features.py)
 
-输入:
-  StatsBomb JSON: datos/ 目录下 *_events.json + *_360.json
-输出:
-  data/cache/L1_events_v3.parquet
+Input:
+  StatsBomb JSON: *_events.json + *_360.json under the datos/ directory
+Output:
+  data/L1_events_v3.parquet
 
 Usage:
-  conda activate kronos
-  export STATSBOMB_DATA_DIR=/path/to/statsbomb
-  PYTHONPATH=. PYTHONUNBUFFERED=1 python scripts/cache/prepare_l1_events.py
+  PYTHONUNBUFFERED=1 python scripts/cache/prepare_l1_events.py
 
-Last modified: 2026-10-06 (public release: data directory from STATSBOMB_DATA_DIR; logic unchanged since 2026-04-13)
 """
 
 from __future__ import annotations
@@ -37,15 +36,23 @@ import numpy as np
 import pandas as pd
 
 
-# ── 常量 ──────────────────────────────────────────────────────────────
-# Directory with the raw StatsBomb files, one sub-directory per season. Set the
-# STATSBOMB_DATA_DIR environment variable; the default is data/statsbomb under the
-# repository root. The data are not distributed with this repository (see README).
-DATA_DIR = Path(os.environ.get("STATSBOMB_DATA_DIR", "data/statsbomb"))
-OUTPUT_PATH = Path("data/cache/L1_events_v3.parquet")
+# ── Constants ────────────────────────────────────────────────────────
+# Path to the local directory containing the StatsBomb raw event JSON files
+# (one folder per season). Set the STATSBOMB_DATA_DIR environment variable
+# before running this script.
+_data_dir_env = os.environ.get("STATSBOMB_DATA_DIR", "")
+if not _data_dir_env:
+    raise RuntimeError(
+        "STATSBOMB_DATA_DIR is not set. Export it to the local directory "
+        "containing the StatsBomb match-level JSON files, e.g.\n"
+        "    export STATSBOMB_DATA_DIR=/path/to/statsbomb/datos"
+    )
+DATA_DIR = Path(_data_dir_env)
+OUTPUT_PATH = Path("data/L1_events_v3.parquet")
 
-# T8 Pressure 标签用的 on-ball 事件类型
-# 对齐 exPress (Lee et al. 2025): SPADL 的 "action" ≈ 有实际足球意义的 on-ball 事件
+# On-ball event types used for the T8 Pressure label
+# Aligned with exPress (Lee et al. 2025): SPADL "action" ≈ on-ball events with
+# genuine football meaning
 ON_BALL_TYPES = {
     "Pass", "Dribble", "Shot", "Ball Receipt*", "Carry",
     "Clearance", "Interception", "Ball Recovery", "Block",
@@ -54,24 +61,24 @@ ON_BALL_TYPES = {
 }
 
 
-# ── un-xPass 风格特征计算 ─────────────────────────────────────────────
-# 以下代码参照 un-xPass GitHub (ML-KULeuven/un-xPass, features.py)
-# 不是自创的，是从开源代码移植的
+# ── un-xPass style feature computation ──────────────────────────────
+# The code below follows un-xPass GitHub (ML-KULeuven/un-xPass, features.py).
+# It is not original: it is ported from the open-source code.
 
 def compute_dist_defender_end(
     freeze_frame: list[dict],
     end_x: float, end_y: float,
 ) -> float:
-    """计算传球/射门终点处最近对手的距离。
+    """Compute the distance to the nearest opponent at the pass/shot end point.
 
-    参照 un-xPass features.py dist_defender() 的 dist[i,1] 部分:
+    Follows the dist[i,1] portion of un-xPass features.py dist_defender():
       opponents_coo = [(o["x"], o["y"]) for o in ff if not o["teammate"]]
       dist[i,1] = np.amin(sqrt((opp_x - end_x)^2 + (opp_y - end_y)^2))
     """
     opponents = []
     for p in freeze_frame:
         if p.get("teammate", False):
-            continue  # actor 也是 teammate=True，自然被排除
+            continue  # the actor is also teammate=True, so naturally excluded
         loc = p.get("location")
         if loc is None or len(loc) < 2:
             continue
@@ -85,10 +92,10 @@ def compute_dist_defender_end(
 
 
 def _get_passing_cone(start, end, dist=1):
-    """计算传球路径三角形的三个顶点。
+    """Compute the three vertices of the pass-path triangle.
 
-    直接从 un-xPass features.py _get_passing_cone() 移植。
-    cone 起点在 start，终点处宽度为 2*dist。
+    Ported directly from un-xPass features.py _get_passing_cone().
+    The cone starts at ``start`` and has width 2*dist at the end point.
     """
     if (start[0] == end[0]) or (start[1] == end[1]):
         slope = 0
@@ -107,9 +114,9 @@ def _get_passing_cone(start, end, dist=1):
 
 
 def _is_inside_triangle(pnt, triangle):
-    """判断点是否在三角形内。
+    """Test whether a point lies inside a triangle.
 
-    直接从 un-xPass features.py _is_inside_triangle() 移植。
+    Ported directly from un-xPass features.py _is_inside_triangle().
     """
     def _is_right_of(line):
         return (
@@ -130,10 +137,10 @@ def compute_nb_opp_in_path(
     end_x: float, end_y: float,
     path_width: int = 1,
 ) -> int:
-    """计算传球路径三角形内的对手数量。
+    """Count opponents inside the pass-path triangle.
 
-    参照 un-xPass features.py nb_opp_in_path():
-      path_width=1 (单位: yards, StatsBomb 坐标系)
+    Follows un-xPass features.py nb_opp_in_path():
+      path_width=1 (units: yards, StatsBomb coordinate system)
     """
     if start_x == end_x and start_y == end_y:
         return 0
@@ -154,17 +161,17 @@ def compute_nb_opp_in_path(
     return sum(_is_inside_triangle(o, triangle) for o in opponents)
 
 
-# ── 单场比赛加载 ──────────────────────────────────────────────────────
+# ── Single-match loading ────────────────────────────────────────────
 
 def load_match(
     events_path: Path,
     path_360: Path | None,
 ) -> pd.DataFrame:
-    """从单个 events JSON + 可选 360 JSON 解析事件。"""
+    """Parse events from a single events JSON plus an optional 360 JSON."""
     with open(events_path, "r", encoding="utf-8") as f:
         events = json.load(f)
 
-    # 加载 360 索引
+    # Load the 360 index
     frame_index: dict[str, dict] = {}
     match_has_360 = path_360 is not None and path_360.exists()
     if match_has_360:
@@ -193,7 +200,7 @@ def load_match(
         pass_end_y = float(pass_end[1]) if len(pass_end) >= 2 and pass_end[1] is not None else None
 
         row = {
-            # ── 基础字段 ──
+            # ── Basic fields ──
             "event_id": ev.get("id"),
             "match_id": None,
             "index": ev.get("index"),
@@ -216,7 +223,7 @@ def load_match(
             "possession_team_id": ev.get("possession_team", {}).get("id"),
             "play_pattern_name": ev.get("play_pattern", {}).get("name"),
 
-            # ── Pass 字段 ──
+            # ── Pass fields ──
             "pass_length": pass_data.get("length"),
             "pass_angle": pass_data.get("angle"),
             "pass_end_location_x": pass_end_x,
@@ -231,7 +238,7 @@ def load_match(
             "pass_success_probability": pass_data.get("pass_success_probability"),
             "pass_recipient_id": (pass_data.get("recipient", {}) or {}).get("id"),
 
-            # ── Ball Receipt (C1 修复) ──
+            # ── Ball Receipt (C1 fix) ──
             "ball_receipt_outcome_name": ball_receipt_data.get("outcome", {}).get("name") if ball_receipt_data.get("outcome") else None,
 
             # ── Dribble ──
@@ -252,7 +259,7 @@ def load_match(
             "gk_outcome_name": gk_data.get("outcome", {}).get("name") if gk_data.get("outcome") else None,
             "ball_recovery_failure": bool(ev.get("ball_recovery", {}).get("recovery_failure", False)) if ev.get("ball_recovery") else None,
 
-            # ── 360 特征: StatsBomb 预计算 (不自己算!) ──
+            # ── 360 features: StatsBomb pre-computed (do not recompute!) ──
             "has_360": False,
             "sb_distance_to_nearest_defender": None,
             "sb_num_defenders_on_goal_side": None,
@@ -262,12 +269,12 @@ def load_match(
             "sb_ball_receipt_in_space": None,
             "sb_ball_receipt_exceeds_distance": None,
 
-            # ── un-xPass 风格特征 (仅 Pass/Shot) ──
+            # ── un-xPass style features (Pass/Shot only) ──
             "ux_dist_defender_end": None,
             "ux_nb_opp_in_path": None,
         }
 
-        # ── 360 特征提取 ──
+        # ── 360 feature extraction ──
         event_id = ev.get("id")
         if match_has_360 and event_id in frame_index:
             frame_data = frame_index[event_id]
@@ -275,14 +282,14 @@ def load_match(
             if ff:
                 row["has_360"] = True
 
-                # A. StatsBomb 预计算字段 (直接读, 不自己算)
+                # A. StatsBomb pre-computed fields (read directly, do not recompute)
                 row["sb_distance_to_nearest_defender"] = frame_data.get("distance_to_nearest_defender")
                 row["sb_num_defenders_on_goal_side"] = frame_data.get("num_defenders_on_goal_side_of_actor")
                 row["sb_line_breaking_pass"] = frame_data.get("line_breaking_pass")
                 row["sb_ball_receipt_in_space"] = frame_data.get("ball_receipt_in_space")
                 row["sb_ball_receipt_exceeds_distance"] = frame_data.get("ball_receipt_exceeds_distance")
 
-                # visible_player_counts → 拆分为队友/对手
+                # visible_player_counts → split into teammates / opponents
                 vpc = frame_data.get("visible_player_counts", [])
                 actor_team_id = ev.get("team", {}).get("id")
                 for entry in vpc:
@@ -291,14 +298,14 @@ def load_match(
                     else:
                         row["sb_visible_opponents"] = entry.get("count")
 
-                # B. un-xPass 风格特征 (仅 Pass 和 Shot)
+                # B. un-xPass style features (Pass and Shot only)
                 if type_name == "Pass" and pass_end_x is not None and loc_x is not None:
                     row["ux_dist_defender_end"] = compute_dist_defender_end(ff, pass_end_x, pass_end_y)
                     row["ux_nb_opp_in_path"] = compute_nb_opp_in_path(
                         ff, loc_x, loc_y, pass_end_x, pass_end_y, path_width=1
                     )
                 elif type_name == "Shot" and loc_x is not None:
-                    # Shot: 终点是球门中心 (120, 40)
+                    # Shot: end point is the goal centre (120, 40)
                     row["ux_dist_defender_end"] = compute_dist_defender_end(ff, 120.0, 40.0)
                     row["ux_nb_opp_in_path"] = compute_nb_opp_in_path(
                         ff, loc_x, loc_y, 120.0, 40.0, path_width=1
@@ -309,10 +316,10 @@ def load_match(
     return pd.DataFrame(rows)
 
 
-# ── 衍生特征 ──────────────────────────────────────────────────────────
+# ── Derived features ────────────────────────────────────────────────
 
 def compute_derived_features(df: pd.DataFrame) -> pd.DataFrame:
-    """计算衍生事件特征。"""
+    """Compute derived event features."""
     goal_x, goal_y = 120.0, 40.0
     dx = goal_x - df["location_x"]
     dy = goal_y - df["location_y"]
@@ -322,7 +329,7 @@ def compute_derived_features(df: pd.DataFrame) -> pd.DataFrame:
         np.arctan2(df["location_y"] - 40.0, 120.0 - df["location_x"])
     )
 
-    # Pass 终点衍生
+    # Pass end-point derivations
     mask_pass = df["pass_end_location_x"].notna()
     dx_end = goal_x - df["pass_end_location_x"]
     dy_end = goal_y - df["pass_end_location_y"]
@@ -338,17 +345,18 @@ def compute_derived_features(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-# ── T8 Pressure 标签 ─────────────────────────────────────────────────
+# ── T8 Pressure label ───────────────────────────────────────────────
 
 def compute_pressure_labels(df: pd.DataFrame) -> pd.Series:
-    """计算 T8 Pressure → Turnover 标签。
+    """Compute the T8 Pressure → Turnover label.
 
-    对齐 exPress (Lee et al. 2025, Table 2, p.6): "2 actions" 定义。
-    "后续 2 个 on-ball 事件内 possession_team_id 变化"
+    Aligned with exPress (Lee et al. 2025, Table 2, p.6): the "2 actions"
+    definition. "possession_team_id changes within the next 2 on-ball events".
 
-    on-ball 事件 = ON_BALL_TYPES (排除 meta 事件)。
+    on-ball events = ON_BALL_TYPES (excludes meta events).
 
-    注意: 调用前需要确保 df.index 是 0-based 连续的 (reset_index)。
+    Note: before calling, ensure df.index is 0-based and contiguous
+    (reset_index).
     """
     df = df.reset_index(drop=True)
     pressure_mask = df["type_name"] == "Pressure"
@@ -365,9 +373,9 @@ def compute_pressure_labels(df: pd.DataFrame) -> pd.Series:
         mid = all_match[pidx]
         team = all_poss[pidx]
 
-        # 找后续 2 个 on-ball 事件
+        # Look at the next 2 on-ball events
         onball_count = 0
-        for offset in range(1, 20):  # 最多看后面 20 个事件
+        for offset in range(1, 20):  # examine at most the next 20 events
             ni = pidx + offset
             if ni >= len(df):
                 break
@@ -385,7 +393,7 @@ def compute_pressure_labels(df: pd.DataFrame) -> pd.Series:
     return pd.Series(labels, index=pressure_indices)
 
 
-# ── 主逻辑 ────────────────────────────────────────────────────────────
+# ── Main logic ──────────────────────────────────────────────────────
 
 def main():
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -422,7 +430,7 @@ def main():
                     elapsed = time.time() - t0
                     print(f"  [{i+1}/{len(event_files)}] match={match_id}, events={len(df_match)}, elapsed={elapsed:.0f}s")
             except Exception as e:
-                print(f"  ⚠️ Failed match {match_id}: {e}")
+                print(f"  WARNING: failed match {match_id}: {e}")
 
     print(f"\nConcatenating {total_matches} matches...")
     df = pd.concat(all_dfs, ignore_index=True)
@@ -430,13 +438,13 @@ def main():
     print("Computing derived features...")
     df = compute_derived_features(df)
 
-    # 保存
+    # Save
     df.to_parquet(OUTPUT_PATH, index=False)
     elapsed = time.time() - t0
     size_mb = OUTPUT_PATH.stat().st_size / (1024**2)
 
     print(f"\n{'='*60}")
-    print(f"DONE — v3 (StatsBomb 预计算 + un-xPass 特征 + T8 标签修复)")
+    print(f"DONE: v3 (StatsBomb pre-computed + un-xPass features + T8 label fix)")
     print(f"{'='*60}")
     print(f"  Total matches: {total_matches}")
     print(f"  Total events:  {len(df):,}")
@@ -444,39 +452,39 @@ def main():
     print(f"  Output:        {OUTPUT_PATH} ({size_mb:.1f} MB)")
     print(f"  Elapsed:       {elapsed:.0f}s ({elapsed/60:.1f} min)")
 
-    # ── 验证 ──
-    print(f"\n── 关键字段验证 ──")
+    # ── Verification ──
+    print(f"\n── Key-field verification ──")
 
-    # 360 预计算特征跨赛季一致性
-    print(f"\n  sb_distance_to_nearest_defender 按赛季:")
+    # Cross-season consistency of 360 pre-computed features
+    print(f"\n  sb_distance_to_nearest_defender by season:")
     for s in sorted(df["season_dir"].unique()):
         sub = df[(df["season_dir"] == s) & (df["has_360"] == True)]
         vals = sub["sb_distance_to_nearest_defender"].dropna()
         print(f"    {s}: n={len(vals):>8,}, mean={vals.mean():.2f}, std={vals.std():.2f}")
 
-    # visible_player_counts 验证
-    print(f"\n  sb_visible_teammates 按赛季:")
+    # visible_player_counts verification
+    print(f"\n  sb_visible_teammates by season:")
     for s in sorted(df["season_dir"].unique()):
         sub = df[(df["season_dir"] == s) & (df["has_360"] == True)]
         vals = sub["sb_visible_teammates"].dropna()
         print(f"    {s}: n={len(vals):>8,}, mean={vals.mean():.2f}")
 
-    # un-xPass 特征验证 (仅 Pass)
+    # un-xPass feature verification (Pass only)
     passes = df[df["type_name"] == "Pass"]
     ux_end = passes["ux_dist_defender_end"].dropna()
     ux_path = passes["ux_nb_opp_in_path"].dropna()
-    print(f"\n  un-xPass Pass 特征:")
+    print(f"\n  un-xPass Pass features:")
     print(f"    dist_defender_end: n={len(ux_end):,}, mean={ux_end.mean():.2f}")
     print(f"    nb_opp_in_path:   n={len(ux_path):,}, mean={ux_path.mean():.2f}")
 
-    # T8 标签验证
-    print(f"\n  T8 Pressure 标签 (2 on-ball actions):")
+    # T8 label verification
+    print(f"\n  T8 Pressure label (2 on-ball actions):")
     pressure_labels = compute_pressure_labels(df)
     print(f"    Total pressures: {len(pressure_labels):,}")
     print(f"    Positive (turnover): {pressure_labels.sum():,} ({pressure_labels.mean():.3f})")
 
-    # 任务样本量
-    print(f"\n  任务样本量:")
+    # Task sample sizes
+    print(f"\n  Task sample sizes:")
     print(f"    T1 Pass: {(df['type_name']=='Pass').sum():,}")
     print(f"    T2 Dribble: {(df['type_name']=='Dribble').sum():,}")
     print(f"    T3 Ball Receipt: {(df['type_name']=='Ball Receipt*').sum():,}")

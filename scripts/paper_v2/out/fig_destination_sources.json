@@ -1,0 +1,1189 @@
+{
+ "name": "fig_destination",
+ "items": [
+  {
+   "id": "rule/2425/top1",
+   "value": 0.1578,
+   "src": {
+    "kind": "md",
+    "file": "audit/dest_rule_baselines.md",
+    "line": 11,
+    "col": "top1",
+    "part": "value"
+   },
+   "display": "0.1578",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2526/top1",
+   "value": 0.15809,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/dest_rules_holdout.json",
+    "path": [
+     "条件表乘队友再除对手（a=2，b=0.5）",
+     "top1"
+    ]
+   },
+   "display": "0.1581",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2425/skill",
+   "value": 0.2888,
+   "src": {
+    "kind": "md",
+    "file": "audit/dest_rule_baselines.md",
+    "line": 11,
+    "col": "skill",
+    "part": "value"
+   },
+   "display": "0.2888",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2526/skill",
+   "value": 0.27994,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/dest_rules_holdout.json",
+    "path": [
+     "条件表乘队友再除对手（a=2，b=0.5）",
+     "skill"
+    ]
+   },
+   "display": "0.2799",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/mean",
+   "value": 0.0947,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M2_MLP_360",
+    "part": "paren"
+   },
+   "display": "0.0947",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/s0",
+   "value": 0.09333934069234813,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 0 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0933",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/s1",
+   "value": 0.09653075016895697,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 1 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0965",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/s2",
+   "value": 0.09540437035368327,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 2 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0954",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/s3",
+   "value": 0.09551700833521064,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 3 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0955",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1/s4",
+   "value": 0.09247578283397162,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 4 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0925",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/s0",
+   "value": 0.0955646128026852,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.0956",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/s1",
+   "value": 0.09651562375129864,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.0965",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/s2",
+   "value": 0.09599616398945097,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.0960",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/s3",
+   "value": 0.09468552705186606,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "3"
+    ]
+   },
+   "display": "0.0947",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/s4",
+   "value": 0.09275953008870774,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "4"
+    ]
+   },
+   "display": "0.0928",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1/mean",
+   "value": 0.09510429153680172,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.0951",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/mean",
+   "value": 0.271,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M2_MLP_360",
+    "part": "mean"
+   },
+   "display": "0.2710",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/s0",
+   "value": 0.2709267857059705,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 0 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2709",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/s1",
+   "value": 0.2710147493911156,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 1 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2710",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/s2",
+   "value": 0.2714708128917107,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 2 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2715",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/s3",
+   "value": 0.2709575521017843,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 3 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2710",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill/s4",
+   "value": 0.2704839376521341,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/M2_MLP_360 种子 4 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2705",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/s0",
+   "value": 0.2643532400564118,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.2644",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/s1",
+   "value": 0.26417289242775865,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.2642",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/s2",
+   "value": 0.2644399990834222,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.2644",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/s3",
+   "value": 0.2642011907963975,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "3"
+    ]
+   },
+   "display": "0.2642",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/s4",
+   "value": 0.2633952275816255,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "4"
+    ]
+   },
+   "display": "0.2634",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill/mean",
+   "value": 0.2641125099891231,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.2641",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1/mean",
+   "value": 0.1004,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M2_MLP_360",
+    "part": "paren"
+   },
+   "display": "0.1004",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1/s0",
+   "value": 0.10216264924532552,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 0 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1022",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1/s1",
+   "value": 0.09739430802733348,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 1 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.0974",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1/s2",
+   "value": 0.10152436735000375,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 2 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1/s0",
+   "value": 0.10396387756732997,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.1040",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1/s1",
+   "value": 0.0986973547510589,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.0987",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1/s2",
+   "value": 0.1014544873331735,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.1015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1/mean",
+   "value": 0.1013719065505208,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1014",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill/mean",
+   "value": 0.2769,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M2_MLP_360",
+    "part": "mean"
+   },
+   "display": "0.2769",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill/s0",
+   "value": 0.27692978486745157,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 0 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2769",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill/s1",
+   "value": 0.27667921372870974,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 1 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2767",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill/s2",
+   "value": 0.27713339677047744,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/M2_MLP_360 种子 2 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.2771",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill/s0",
+   "value": 0.27010271191144664,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.2701",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill/s1",
+   "value": 0.2693368580585265,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.2693",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill/s2",
+   "value": 0.2697261448037067,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.2697",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill/mean",
+   "value": 0.26972190492455994,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.2697",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1/mean",
+   "value": 0.1509,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "test_mean",
+    "part": "value"
+   },
+   "display": "0.1509",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1/s0",
+   "value": 0.14954569347450627,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 0 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1495",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1/s1",
+   "value": 0.15296237891416986,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 1 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1530",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1/s2",
+   "value": 0.1513479011789442,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 2 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1513",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1/s3",
+   "value": 0.14984606142524592,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 3 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.1498",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1/s0",
+   "value": 0.14842963318149124,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.1484",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1/s1",
+   "value": 0.15073123951090867,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.1507",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1/s2",
+   "value": 0.14711100455526252,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.1471",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1/s3",
+   "value": 0.15001997922160953,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "by_seed",
+     "3"
+    ]
+   },
+   "display": "0.1500",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1/mean",
+   "value": 0.14907296411731796,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1491",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill/mean",
+   "value": 0.3211,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "dest_skill_mean",
+    "part": "value"
+   },
+   "display": "0.3211",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill/s0",
+   "value": 0.321383413665808,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 0 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3214",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill/s1",
+   "value": 0.32107444383348405,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 1 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3211",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill/s2",
+   "value": 0.319137257831529,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 2 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3191",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill/s3",
+   "value": 0.3226062342532472,
+   "src": {
+    "kind": "perevent",
+    "how": "u1 种子 3 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3226",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill/s0",
+   "value": 0.3133614291859361,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.3134",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill/s1",
+   "value": 0.31376226454735345,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.3138",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill/s2",
+   "value": 0.3118712805411691,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.3119",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill/s3",
+   "value": 0.3143502189276546,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "by_seed",
+     "3"
+    ]
+   },
+   "display": "0.3144",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill/mean",
+   "value": 0.31333629830052834,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3133",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1/mean",
+   "value": 0.2177,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 150,
+    "col": "test_mean",
+    "part": "value"
+   },
+   "display": "0.2177",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1/s0",
+   "value": 0.21510099872343622,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 0 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.2151",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1/s1",
+   "value": 0.21735375835398363,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 1 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.2174",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1/s2",
+   "value": 0.22073289779980476,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 2 在 202 场上的 top1，从逐事件文件重算"
+   },
+   "display": "0.2207",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1/s0",
+   "value": 0.21316231119635579,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.2132",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1/s1",
+   "value": 0.21710221369775434,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.2171",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1/s2",
+   "value": 0.2138416047310797,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.2138",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1/mean",
+   "value": 0.21470204320839661,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.2147",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill/mean",
+   "value": 0.3661,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 150,
+    "col": "dest_skill_mean",
+    "part": "value"
+   },
+   "display": "0.3661",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill/s0",
+   "value": 0.36549244838405615,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 0 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3655",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill/s1",
+   "value": 0.3673518565195142,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 1 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3674",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill/s2",
+   "value": 0.36551109626742717,
+   "src": {
+    "kind": "perevent",
+    "how": "u1fcn 种子 2 在 202 场上的 skill，从逐事件文件重算"
+   },
+   "display": "0.3655",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill/s0",
+   "value": 0.35648420579026907,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "by_seed",
+     "0"
+    ]
+   },
+   "display": "0.3565",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill/s1",
+   "value": 0.3582393266992987,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "by_seed",
+     "1"
+    ]
+   },
+   "display": "0.3582",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill/s2",
+   "value": 0.35529702286791587,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "by_seed",
+     "2"
+    ]
+   },
+   "display": "0.3553",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill/mean",
+   "value": 0.3566735184524945,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3567",
+   "cell": null,
+   "fmt": "f4"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/dest_rule_baselines.md": "5c5d521cc3e6d954908c2b0f117b629f",
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "data/cache/holdout_2526/dest_rules_holdout.json": "da41736a34df69db51a87253b9bf233a",
+  "data/cache/holdout_2526/summary.json": "96d5671a9606a4e64de5c6e46c24b263"
+ },
+ "data_csv": "scripts/paper_v2/out/fig_destination_data.csv"
+}

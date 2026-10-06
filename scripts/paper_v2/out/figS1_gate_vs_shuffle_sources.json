@@ -1,0 +1,1794 @@
+{
+ "name": "figS1_gate_vs_shuffle",
+ "items": [
+  {
+   "id": "u1/s3/pass/gate",
+   "value": 0.22975467145442963,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2298",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/pass/drop",
+   "value": 0.012438003910250517,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/dest/gate",
+   "value": 0.8002403378486633,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.8002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/dest/drop",
+   "value": 0.12571546315281745,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/shot/gate",
+   "value": 0.4376944601535797,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4377",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/shot/drop",
+   "value": 0.011601974756122013,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/interception/gate",
+   "value": 0.4133477807044983,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4133",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/interception/drop",
+   "value": 0.03677279363238195,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/ball_recovery/gate",
+   "value": 0.2157781571149826,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.2158",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/ball_recovery/drop",
+   "value": 0.027003123312363764,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/pressure/gate",
+   "value": 0.2566106617450714,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2566",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/pressure/drop",
+   "value": 0.09086593601510118,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/dribble/gate",
+   "value": 0.2876684367656708,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2877",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/dribble/drop",
+   "value": 0.05374176282841281,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/tackle/gate",
+   "value": 0.3710355758666992,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.3710",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/tackle/drop",
+   "value": 0.04440835994060277,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_s3_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/s3/spearman",
+   "value": 0.238,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 361,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.238",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1rich/s0/pass/gate",
+   "value": 0.24713371694087982,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2471",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/pass/drop",
+   "value": 0.005322106880178756,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/dest/gate",
+   "value": 0.8014754056930542,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.8015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/dest/drop",
+   "value": 0.06290526539676622,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/shot/gate",
+   "value": 0.3991464376449585,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3991",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/shot/drop",
+   "value": 0.007318690301958308,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/interception/gate",
+   "value": 0.41420355439186096,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4142",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/interception/drop",
+   "value": 0.011696798192108449,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/ball_recovery/gate",
+   "value": 0.13550332188606262,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1355",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/ball_recovery/drop",
+   "value": 0.009325969684630286,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/pressure/gate",
+   "value": 0.2877518832683563,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2878",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/pressure/drop",
+   "value": 0.040908192573065216,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/dribble/gate",
+   "value": 0.23726743459701538,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2373",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/dribble/drop",
+   "value": 0.014797274795242732,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/tackle/gate",
+   "value": 0.40942054986953735,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s0.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4094",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/tackle/drop",
+   "value": 0.017927384364897714,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s0_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s0/spearman",
+   "value": 0.476,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 369,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.476",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1rich/s1/pass/gate",
+   "value": 0.20659345388412476,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2066",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/pass/drop",
+   "value": 0.005408709617353957,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/dest/gate",
+   "value": 0.7224331498146057,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7224",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/dest/drop",
+   "value": 0.0951037873125068,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/shot/gate",
+   "value": 0.45637792348861694,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4564",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/shot/drop",
+   "value": 0.013506755496787592,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/interception/gate",
+   "value": 0.2921642065048218,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.2922",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/interception/drop",
+   "value": 0.01914947603143813,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/ball_recovery/gate",
+   "value": 0.15687903761863708,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1569",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/ball_recovery/drop",
+   "value": 0.009395331154585684,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/pressure/gate",
+   "value": 0.2978716790676117,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2979",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/pressure/drop",
+   "value": 0.04997977283082744,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/dribble/gate",
+   "value": 0.23148569464683533,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2315",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/dribble/drop",
+   "value": 0.013157209794731561,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/tackle/gate",
+   "value": 0.26835179328918457,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s1.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.2684",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/tackle/drop",
+   "value": 0.019977719244806846,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s1_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s1/spearman",
+   "value": 0.81,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 370,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.810",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1rich/s2/pass/gate",
+   "value": 0.25138184428215027,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2514",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/pass/drop",
+   "value": 0.0032162042640350164,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/dest/gate",
+   "value": 0.7381060123443604,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7381",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/dest/drop",
+   "value": 0.059287001438144915,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/shot/gate",
+   "value": 0.33011701703071594,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3301",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/shot/drop",
+   "value": 0.007171299357130567,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/interception/gate",
+   "value": 0.4597932696342468,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4598",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/interception/drop",
+   "value": 0.01913635181889084,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/ball_recovery/gate",
+   "value": 0.19175027310848236,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1918",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/ball_recovery/drop",
+   "value": 0.005054520371468918,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/pressure/gate",
+   "value": 0.30708619952201843,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3071",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/pressure/drop",
+   "value": 0.018325843747965975,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/dribble/gate",
+   "value": 0.23815283179283142,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2382",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/dribble/drop",
+   "value": 0.014231248537896035,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/tackle/gate",
+   "value": 0.4253241717815399,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s2.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4253",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/tackle/drop",
+   "value": 0.018779938844075028,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s2_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s2/spearman",
+   "value": 0.833,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 371,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.833",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1rich/s3/pass/gate",
+   "value": 0.202652707695961,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2027",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/pass/drop",
+   "value": 0.0015815613071408219,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/dest/gate",
+   "value": 0.747439980506897,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7474",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/dest/drop",
+   "value": 0.05901600642713967,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/shot/gate",
+   "value": 0.4758828282356262,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4759",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/shot/drop",
+   "value": 0.011015707259922292,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/interception/gate",
+   "value": 0.3846089243888855,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.3846",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/interception/drop",
+   "value": 0.021193728376297294,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/ball_recovery/gate",
+   "value": 0.19062083959579468,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1906",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/ball_recovery/drop",
+   "value": 0.008860639217888155,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/pressure/gate",
+   "value": 0.2647678256034851,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2648",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/pressure/drop",
+   "value": 0.01392875740415278,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/dribble/gate",
+   "value": 0.40154820680618286,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.4015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/dribble/drop",
+   "value": 0.01703848790397189,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/tackle/gate",
+   "value": 0.3824695348739624,
+   "src": {
+    "kind": "perevent",
+    "how": "u1rich_s3.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.3825",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/tackle/drop",
+   "value": 0.013986834161014317,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1rich_s3_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1rich/s3/spearman",
+   "value": 0.714,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 372,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.714",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1_2ch/s0/pass/gate",
+   "value": 0.3262815475463867,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3263",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/pass/drop",
+   "value": 0.03929564286379306,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/dest/gate",
+   "value": 0.6449446678161621,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.6449",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/dest/drop",
+   "value": 0.3618010096679556,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/shot/gate",
+   "value": 0.4730008542537689,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4730",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/shot/drop",
+   "value": 0.03890697135624155,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/interception/gate",
+   "value": 0.4230952262878418,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4231",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/interception/drop",
+   "value": 0.029027633341999426,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/ball_recovery/gate",
+   "value": 0.2822657525539398,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.2823",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/ball_recovery/drop",
+   "value": 0.023618761028906587,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/pressure/gate",
+   "value": 0.34137865900993347,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3414",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/pressure/drop",
+   "value": 0.07649847441905888,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/dribble/gate",
+   "value": 0.27940353751182556,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2794",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/dribble/drop",
+   "value": 0.02293582297081942,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/tackle/gate",
+   "value": 0.39716386795043945,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s0.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.3972",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/tackle/drop",
+   "value": 0.028729051874656575,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s0_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s0/spearman",
+   "value": 0.643,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 358,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.643",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1_2ch/s1/pass/gate",
+   "value": 0.33251771330833435,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3325",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/pass/drop",
+   "value": 0.03966157713434515,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/dest/gate",
+   "value": 0.6118764877319336,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.6119",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/dest/drop",
+   "value": 0.32580725172395486,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/shot/gate",
+   "value": 0.47685274481773376,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4769",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/shot/drop",
+   "value": 0.056979549859578205,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/interception/gate",
+   "value": 0.44532182812690735,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4453",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/interception/drop",
+   "value": 0.03110000899945997,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/ball_recovery/gate",
+   "value": 0.30755361914634705,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.3076",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/ball_recovery/drop",
+   "value": 0.02646706723177905,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/pressure/gate",
+   "value": 0.4135196805000305,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.4135",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/pressure/drop",
+   "value": 0.08052183818264669,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/dribble/gate",
+   "value": 0.31672921776771545,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3167",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/dribble/drop",
+   "value": 0.03939119407394032,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/tackle/gate",
+   "value": 0.43556082248687744,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s1.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4356",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/tackle/drop",
+   "value": 0.023084129285039445,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s1_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s1/spearman",
+   "value": 0.476,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 359,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.476",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "u1_2ch/s2/pass/gate",
+   "value": 0.34186890721321106,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3419",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/pass/drop",
+   "value": 0.03685528349315703,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "pass",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/dest/gate",
+   "value": 0.6308667063713074,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.6309",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/dest/drop",
+   "value": 0.3316274284994455,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "dest",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/shot/gate",
+   "value": 0.41986510157585144,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4199",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/shot/drop",
+   "value": 0.04147618859260005,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "shot",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/interception/gate",
+   "value": 0.42265358567237854,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4227",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/interception/drop",
+   "value": 0.033792347459152494,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "interception",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/ball_recovery/gate",
+   "value": 0.3682641386985779,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.3683",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/ball_recovery/drop",
+   "value": 0.02155814298672909,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "ball_recovery",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/pressure/gate",
+   "value": 0.391757607460022,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3918",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/pressure/drop",
+   "value": 0.07895276394584394,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "pressure",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/dribble/gate",
+   "value": 0.3683615028858185,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3684",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/dribble/drop",
+   "value": 0.04092942138632205,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "dribble",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/tackle/gate",
+   "value": 0.44229641556739807,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_2ch_s2.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4423",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/tackle/drop",
+   "value": 0.023136425941135852,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/u1_clean/u1_2ch_s2_ablation.json",
+    "path": [
+     "tackle",
+     "drop_players"
+    ]
+   },
+   "display": null,
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1_2ch/s2/spearman",
+   "value": 0.31,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 360,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.310",
+   "cell": null,
+   "fmt": "f3"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "data/cache/u1_clean/u1_2ch_s0_ablation.json": "5355b965ecb10bdc3d687a6b9dd2dddd",
+  "data/cache/u1_clean/u1_2ch_s1_ablation.json": "82c611476e1cb25dab1954b03c7beb1e",
+  "data/cache/u1_clean/u1_2ch_s2_ablation.json": "60ec595012e9cf96debab769b7d5629b",
+  "data/cache/u1_clean/u1_s3_ablation.json": "18735db4cfd02a378bf9d9f2d07fb554",
+  "data/cache/u1_clean/u1rich_s0_ablation.json": "e140b5ef5e150bf9cd3bc07d10e519a6",
+  "data/cache/u1_clean/u1rich_s1_ablation.json": "bac1f19adcb20ca16b968691157610f5",
+  "data/cache/u1_clean/u1rich_s2_ablation.json": "bc6d8a976367cdbb4cf69fc09473f015",
+  "data/cache/u1_clean/u1rich_s3_ablation.json": "bbaa7e805f922052792fe22f5230dfcf"
+ },
+ "data_csv": "scripts/paper_v2/out/figS1_gate_vs_shuffle_data.csv"
+}

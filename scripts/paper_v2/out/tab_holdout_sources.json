@@ -1,0 +1,1651 @@
+{
+ "name": "tab_holdout",
+ "items": [
+  {
+   "id": "C1/fcn_minus_rule/2425",
+   "value": 0.0599,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 75,
+    "col": "24/25",
+    "part": "value"
+   },
+   "display": "0.0599",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_rule/2526",
+   "value": 0.0566,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 75,
+    "col": "留出集",
+    "part": "value"
+   },
+   "display": "0.0566",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_rule/2526_lo",
+   "value": 0.0546,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 75,
+    "col": "95% 区间",
+    "part": "lo"
+   },
+   "display": "0.0546",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_rule/2526_hi",
+   "value": 0.0587,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 75,
+    "col": "95% 区间",
+    "part": "hi"
+   },
+   "display": "0.0587",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_rule/thr",
+   "value": 0.03,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 8,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.030",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C1/verdict",
+   "value": "Confirmed",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md",
+    "line": 228,
+    "must_contain": "**确认**"
+   },
+   "display": "Confirmed",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C1/fcn_minus_m2rich/2425",
+   "value": 0.1173,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 76,
+    "col": "24/25",
+    "part": "value"
+   },
+   "display": "0.1173",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_m2rich/2526",
+   "value": 0.1133,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 76,
+    "col": "留出集",
+    "part": "value"
+   },
+   "display": "0.1133",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_m2rich/2526_lo",
+   "value": 0.1107,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 76,
+    "col": "95% 区间",
+    "part": "lo"
+   },
+   "display": "0.1107",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_m2rich/2526_hi",
+   "value": 0.1161,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 76,
+    "col": "95% 区间",
+    "part": "hi"
+   },
+   "display": "0.1161",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C1/fcn_minus_m2rich/thr",
+   "value": 0.06,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 9,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.060",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C1/seeds_above/2425",
+   "value": 3.0,
+   "src": {
+    "kind": "derived",
+    "formula": "L71 列 24/25 的三个种子值 [0.215, 0.217, 0.221] 里大于 L72 规则 0.1578 的个数",
+    "inputs": []
+   },
+   "display": "3 of 3",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C1/seeds_above/2526",
+   "value": 3.0,
+   "src": {
+    "kind": "derived",
+    "formula": "L71 列 留出集 的三个种子值 [0.2132, 0.2171, 0.2138] 里大于 L72 规则 0.1581 的个数",
+    "inputs": []
+   },
+   "display": "3 of 3",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C2/a_xgbrich_minus_m4thin_mean3/2526",
+   "value": -0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 88,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "-0.0002",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/a_xgbrich_minus_m4thin_mean3/2526_lo",
+   "value": -0.0029,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 89,
+    "col": "三任务平均",
+    "part": "lo"
+   },
+   "display": "-0.0029",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/a_xgbrich_minus_m4thin_mean3/2526_hi",
+   "value": 0.0025,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 89,
+    "col": "三任务平均",
+    "part": "hi"
+   },
+   "display": "0.0025",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/a_xgbrich_minus_m4thin_mean3/2425",
+   "value": 0.0025,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 90,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "0.0025",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/a_xgbrich_minus_m4thin_mean3/thr",
+   "value": -0.003,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 19,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "-0.003",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C2/verdict",
+   "value": "Confirmed, Pressure near the bound",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md",
+    "line": 229,
+    "must_contain": "**确认**"
+   },
+   "display": "Confirmed, Pressure near the bound",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C2/verdict_nearline",
+   "value": "near the bound",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md",
+    "line": 229,
+    "must_contain": "贴着 0.010 的线"
+   },
+   "display": "near the bound",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C2/b_rich_gain_mean3/2526",
+   "value": 0.0037,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 85,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "0.0037",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/b_rich_gain_mean3/2526_lo",
+   "value": 0.0023,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 86,
+    "col": "三任务平均",
+    "part": "lo"
+   },
+   "display": "0.0023",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/b_rich_gain_mean3/2526_hi",
+   "value": 0.0051,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 86,
+    "col": "三任务平均",
+    "part": "hi"
+   },
+   "display": "0.0051",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/b_rich_gain_mean3/2425",
+   "value": 0.0029,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 87,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "0.0029",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/b_rich_gain_mean3/thr",
+   "value": 0.01,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 21,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.010",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C2/thin_gain_mean3/2526",
+   "value": 0.0103,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 82,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "0.0103",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/thin_gain_mean3/2526_lo",
+   "value": 0.0084,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 83,
+    "col": "三任务平均",
+    "part": "lo"
+   },
+   "display": "0.0084",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/thin_gain_mean3/2526_hi",
+   "value": 0.0122,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 83,
+    "col": "三任务平均",
+    "part": "hi"
+   },
+   "display": "0.0122",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/thin_gain_mean3/2425",
+   "value": 0.0115,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 84,
+    "col": "三任务平均",
+    "part": "value"
+   },
+   "display": "0.0115",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/b_ratio/2526",
+   "value": 0.36,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 100,
+    "col": "三任务平均",
+    "regex": "^([0-9.]+)（",
+    "group": 1
+   },
+   "display": "0.36",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C2/b_ratio/2425",
+   "value": 0.25,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 100,
+    "col": "三任务平均",
+    "regex": "24/25 是 ([0-9.]+)）",
+    "group": 1
+   },
+   "display": "0.25",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C2/b_ratio/thr",
+   "value": 0.5,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 20,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.500",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C2/c_pressure_thin_gain/2526",
+   "value": 0.0272,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 82,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0272",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_thin_gain/2526_lo",
+   "value": 0.0226,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 83,
+    "col": "pressure",
+    "part": "lo"
+   },
+   "display": "0.0226",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_thin_gain/2526_hi",
+   "value": 0.0319,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 83,
+    "col": "pressure",
+    "part": "hi"
+   },
+   "display": "0.0319",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_thin_gain/2425",
+   "value": 0.0255,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 84,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0255",
+   "cell": [
+    7,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_thin_gain/thr",
+   "value": 0.01,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 22,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.010",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C2/c_pressure_rich_gain/2526",
+   "value": 0.0091,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 85,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0091",
+   "cell": [
+    8,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_rich_gain/2526_lo",
+   "value": 0.0064,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 86,
+    "col": "pressure",
+    "part": "lo"
+   },
+   "display": "0.0064",
+   "cell": [
+    8,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_rich_gain/2526_hi",
+   "value": 0.0118,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 86,
+    "col": "pressure",
+    "part": "hi"
+   },
+   "display": "0.0118",
+   "cell": [
+    8,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_rich_gain/2425",
+   "value": 0.0024,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 87,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0024",
+   "cell": [
+    8,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/c_pressure_rich_gain/thr",
+   "value": 0.01,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 23,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.010",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C2/report_pressure_xgbrich_minus_m4thin/2526",
+   "value": -0.0073,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 88,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "-0.0073",
+   "cell": [
+    9,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/report_pressure_xgbrich_minus_m4thin/2526_lo",
+   "value": -0.011,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 89,
+    "col": "pressure",
+    "part": "lo"
+   },
+   "display": "-0.0110",
+   "cell": [
+    9,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/report_pressure_xgbrich_minus_m4thin/2526_hi",
+   "value": -0.0036,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 89,
+    "col": "pressure",
+    "part": "hi"
+   },
+   "display": "-0.0036",
+   "cell": [
+    9,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C2/report_pressure_xgbrich_minus_m4thin/2425",
+   "value": -0.0034,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 90,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "-0.0034",
+   "cell": [
+    9,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pass/2526",
+   "value": -0.0048,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 106,
+    "col": "pass",
+    "part": "value"
+   },
+   "display": "-0.0048",
+   "cell": [
+    10,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pass/2526_lo",
+   "value": -0.0053,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "pass",
+    "part": "lo"
+   },
+   "display": "-0.0053",
+   "cell": [
+    10,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pass/2526_hi",
+   "value": -0.0042,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "pass",
+    "part": "hi"
+   },
+   "display": "-0.0042",
+   "cell": [
+    10,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pass/2425",
+   "value": -0.0039,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 108,
+    "col": "pass",
+    "part": "value"
+   },
+   "display": "-0.0039",
+   "cell": [
+    10,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pass/thr",
+   "value": 0.006,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 33,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.006",
+   "cell": [
+    10,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C3/verdict",
+   "value": "Inconclusive",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md",
+    "line": 230,
+    "must_contain": "**不确定**"
+   },
+   "display": "Inconclusive",
+   "cell": [
+    10,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C3/pressure/2526",
+   "value": 0.0083,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 106,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0083",
+   "cell": [
+    11,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pressure/2526_lo",
+   "value": 0.0047,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "pressure",
+    "part": "lo"
+   },
+   "display": "0.0047",
+   "cell": [
+    11,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pressure/2526_hi",
+   "value": 0.0118,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "pressure",
+    "part": "hi"
+   },
+   "display": "0.0118",
+   "cell": [
+    11,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pressure/2425",
+   "value": 0.0052,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 108,
+    "col": "pressure",
+    "part": "value"
+   },
+   "display": "0.0052",
+   "cell": [
+    11,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/pressure/thr",
+   "value": 0.006,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 34,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.006",
+   "cell": [
+    11,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C3/br/2526",
+   "value": 0.0031,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 106,
+    "col": "ball_recovery",
+    "part": "value"
+   },
+   "display": "0.0031",
+   "cell": [
+    12,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/br/2526_lo",
+   "value": -0.0031,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "ball_recovery",
+    "part": "lo"
+   },
+   "display": "-0.0031",
+   "cell": [
+    12,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/br/2526_hi",
+   "value": 0.0091,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "ball_recovery",
+    "part": "hi"
+   },
+   "display": "0.0091",
+   "cell": [
+    12,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/br/2425",
+   "value": -0.0004,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 108,
+    "col": "ball_recovery",
+    "part": "value"
+   },
+   "display": "-0.0004",
+   "cell": [
+    12,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/br/thr",
+   "value": 0.015,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 35,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.015",
+   "cell": [
+    12,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C3/mean3/2526",
+   "value": 0.0022,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 106,
+    "col": "三任务平均（Pass BR Pressure）",
+    "part": "value"
+   },
+   "display": "0.0022",
+   "cell": [
+    13,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/mean3/2526_lo",
+   "value": -0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "三任务平均（Pass BR Pressure）",
+    "part": "lo"
+   },
+   "display": "-0.0002",
+   "cell": [
+    13,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/mean3/2526_hi",
+   "value": 0.0045,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 107,
+    "col": "三任务平均（Pass BR Pressure）",
+    "part": "hi"
+   },
+   "display": "0.0045",
+   "cell": [
+    13,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/mean3/2425",
+   "value": 0.0003,
+   "src": {
+    "kind": "md",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 108,
+    "col": "三任务平均（Pass BR Pressure）",
+    "part": "value"
+   },
+   "display": "0.0003",
+   "cell": [
+    13,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "C3/mean3/thr",
+   "value": 0.006,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 36,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.006",
+   "cell": [
+    13,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2425/s0",
+   "value": 0.8255824446678162,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.8256",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/u1/2425/s1",
+   "value": 0.7816739082336426,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.7817",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/u1/2425/s2",
+   "value": 0.8114817142486572,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.8115",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/u1/2425/s3",
+   "value": 0.8002403378486633,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.8002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/u1/2425_min",
+   "value": 0.7816739082336426,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最小值",
+    "inputs": [
+     "C4/u1/2425/s0",
+     "C4/u1/2425/s1",
+     "C4/u1/2425/s2",
+     "C4/u1/2425/s3"
+    ]
+   },
+   "display": "0.782",
+   "cell": [
+    14,
+    2
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2425_max",
+   "value": 0.8255824446678162,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最大值",
+    "inputs": [
+     "C4/u1/2425/s0",
+     "C4/u1/2425/s1",
+     "C4/u1/2425/s2",
+     "C4/u1/2425/s3"
+    ]
+   },
+   "display": "0.826",
+   "cell": [
+    14,
+    2
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2425_rank",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "gate_rank_by_seed",
+    "part": "text"
+   },
+   "display": "rank 1 of 8",
+   "cell": [
+    14,
+    2
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C4/u1/2526_s0",
+   "value": 0.8251998181924406,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "u1",
+     "0",
+     "dest_gate"
+    ]
+   },
+   "display": "0.825",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2526_s1",
+   "value": 0.7811746036278528,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "u1",
+     "1",
+     "dest_gate"
+    ]
+   },
+   "display": "0.781",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2526_s2",
+   "value": 0.8118348338745351,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "u1",
+     "2",
+     "dest_gate"
+    ]
+   },
+   "display": "0.812",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2526_s3",
+   "value": 0.8004137525662885,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "u1",
+     "3",
+     "dest_gate"
+    ]
+   },
+   "display": "0.800",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2526_rank",
+   "value": 1.0,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "u1",
+     "*",
+     "dest_rank"
+    ]
+   },
+   "display": "rank 1 of 6",
+   "cell": [
+    14,
+    3
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C4/u1/2526_min",
+   "value": 0.7811746036278528,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最小值",
+    "inputs": [
+     "C4/u1/2526_s0",
+     "C4/u1/2526_s1",
+     "C4/u1/2526_s2",
+     "C4/u1/2526_s3"
+    ]
+   },
+   "display": "0.781",
+   "cell": [
+    14,
+    3
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/2526_max",
+   "value": 0.8251998181924406,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最大值",
+    "inputs": [
+     "C4/u1/2526_s0",
+     "C4/u1/2526_s1",
+     "C4/u1/2526_s2",
+     "C4/u1/2526_s3"
+    ]
+   },
+   "display": "0.825",
+   "cell": [
+    14,
+    3
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/u1/thr",
+   "value": 0.6,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 48,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.600",
+   "cell": [
+    14,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/verdict",
+   "value": "Holds",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md",
+    "line": 231,
+    "must_contain": "**保持**"
+   },
+   "display": "Holds",
+   "cell": [
+    14,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C4/shuf_dest/2425/s0",
+   "value": 0.2715538442134857,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.2716",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/shuf_dest/2425/s1",
+   "value": 0.24122823774814606,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.2412",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/shuf_dest/2425/s2",
+   "value": 0.27846959233283997,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 落点事件的 gate_mean 平均，202 场"
+   },
+   "display": "0.2785",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "C4/shuf_dest/2425_min",
+   "value": 0.24122823774814606,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最小值",
+    "inputs": [
+     "C4/shuf_dest/2425/s0",
+     "C4/shuf_dest/2425/s1",
+     "C4/shuf_dest/2425/s2"
+    ]
+   },
+   "display": "0.241",
+   "cell": [
+    15,
+    2
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2425_max",
+   "value": 0.27846959233283997,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最大值",
+    "inputs": [
+     "C4/shuf_dest/2425/s0",
+     "C4/shuf_dest/2425/s1",
+     "C4/shuf_dest/2425/s2"
+    ]
+   },
+   "display": "0.278",
+   "cell": [
+    15,
+    2
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2425_rank",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 10,
+    "col": "gate_rank_by_seed",
+    "part": "text"
+   },
+   "display": "rank 8 of 8",
+   "cell": [
+    15,
+    2
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C4/shuf_dest/2526_s0",
+   "value": 0.27168442878309773,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "shuf_dest",
+     "0",
+     "dest_gate"
+    ]
+   },
+   "display": "0.272",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2526_s1",
+   "value": 0.24144933374843788,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "shuf_dest",
+     "1",
+     "dest_gate"
+    ]
+   },
+   "display": "0.241",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2526_s2",
+   "value": 0.27923918405730386,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "shuf_dest",
+     "2",
+     "dest_gate"
+    ]
+   },
+   "display": "0.279",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2526_rank",
+   "value": 6.0,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "derived",
+     "C4",
+     "shuf_dest",
+     "*",
+     "dest_rank"
+    ]
+   },
+   "display": "rank 6 of 6",
+   "cell": [
+    15,
+    3
+   ],
+   "fmt": null
+  },
+  {
+   "id": "C4/shuf_dest/2526_min",
+   "value": 0.24144933374843788,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最小值",
+    "inputs": [
+     "C4/shuf_dest/2526_s0",
+     "C4/shuf_dest/2526_s1",
+     "C4/shuf_dest/2526_s2"
+    ]
+   },
+   "display": "0.241",
+   "cell": [
+    15,
+    3
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/2526_max",
+   "value": 0.27923918405730386,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子里的最大值",
+    "inputs": [
+     "C4/shuf_dest/2526_s0",
+     "C4/shuf_dest/2526_s1",
+     "C4/shuf_dest/2526_s2"
+    ]
+   },
+   "display": "0.279",
+   "cell": [
+    15,
+    3
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "C4/shuf_dest/thr",
+   "value": 0.35,
+   "src": {
+    "kind": "mdline",
+    "file": "audit/holdout_2526_summary.md",
+    "line": 50,
+    "regex": ":\\s*([-0-9.]+)"
+   },
+   "display": "0.350",
+   "cell": [
+    15,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "note/pressure_rich_gain",
+   "value": 0.0091,
+   "src": {
+    "kind": "derived",
+    "formula": "同 C2/c_pressure_rich_gain/2526",
+    "inputs": [
+     "C2/c_pressure_rich_gain/2526"
+    ]
+   },
+   "display": "0.0091",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "note/pressure_bound",
+   "value": 0.01,
+   "src": {
+    "kind": "derived",
+    "formula": "同 C2/c_pressure_rich_gain/thr",
+    "inputs": [
+     "C2/c_pressure_rich_gain/thr"
+    ]
+   },
+   "display": "0.010",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f3"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/holdout_2526_summary.md": "a7297ac58e24d06b01758a613f3cefb3",
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "data/cache/holdout_2526/summary.json": "96d5671a9606a4e64de5c6e46c24b263",
+  "memory_logs/2026-10-02_留出数据确认_冻结方案和判定标准.md": "e3d0b9d4f53d8a7e403a4a5796467fee"
+ }
+}

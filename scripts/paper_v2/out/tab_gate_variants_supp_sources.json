@@ -1,0 +1,1109 @@
+{
+ "name": "tab_gate_variants_supp",
+ "items": [
+  {
+   "id": "2ch/s0/spearman",
+   "value": 0.643,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 358,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.643",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "2ch/s0/pressure_rank",
+   "value": 5.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 358,
+    "col": "pressure_gate_rank",
+    "part": "value"
+   },
+   "display": "5",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "2ch/s1/spearman",
+   "value": 0.476,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 359,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.476",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "2ch/s1/pressure_rank",
+   "value": 5.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 359,
+    "col": "pressure_gate_rank",
+    "part": "value"
+   },
+   "display": "5",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "2ch/s2/spearman",
+   "value": 0.31,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 360,
+    "col": "spearman_gate_vs_player_drop",
+    "part": "value"
+   },
+   "display": "0.310",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "2ch/s2/pressure_rank",
+   "value": 5.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 360,
+    "col": "pressure_gate_rank",
+    "part": "value"
+   },
+   "display": "5",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "2ch/verdict",
+   "value": "Inconclusive",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_两通道统一模型_预先写下的判定标准.md",
+    "line": 31,
+    "must_contain": "**判定，不确定。**"
+   },
+   "display": "Inconclusive",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "rich_gate/s0/drop",
+   "value": 0.0184,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 469,
+    "col": "outcome_gate_avg_drop",
+    "part": "value"
+   },
+   "display": "0.018",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/s0/tasks_down",
+   "value": 5.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 469,
+    "col": "tasks_down",
+    "regex": "^(\\d+)/7",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "5",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "rich_gate/s0/dest_change",
+   "value": -0.0241,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 469,
+    "col": "dest_gate_change",
+    "part": "value"
+   },
+   "display": "-0.024",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/s1/drop",
+   "value": 0.0622,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 470,
+    "col": "outcome_gate_avg_drop",
+    "part": "value"
+   },
+   "display": "0.062",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/s1/tasks_down",
+   "value": 7.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 470,
+    "col": "tasks_down",
+    "regex": "^(\\d+)/7",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "7",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "rich_gate/s1/dest_change",
+   "value": -0.0592,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 470,
+    "col": "dest_gate_change",
+    "part": "value"
+   },
+   "display": "-0.059",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/s2/drop",
+   "value": 0.0147,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 471,
+    "col": "outcome_gate_avg_drop",
+    "part": "value"
+   },
+   "display": "0.015",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/s2/tasks_down",
+   "value": 3.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 471,
+    "col": "tasks_down",
+    "regex": "^(\\d+)/7",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "3",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "rich_gate/s2/dest_change",
+   "value": -0.0734,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 471,
+    "col": "dest_gate_change",
+    "part": "value"
+   },
+   "display": "-0.073",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "rich_gate/verdict",
+   "value": "Inconclusive; the expected effect was not seen",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_加厚标量统一模型_预先写下的判定标准.md",
+    "line": 50,
+    "must_contain": "**判定，不确定，实质上没有看到预想的效应。**"
+   },
+   "display": "Inconclusive; the expected effect was not seen",
+   "cell": [
+    1,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "rich_perf/3seeds/pass",
+   "value": -0.0042,
+   "src": {
+    "kind": "mdre",
+    "file": "memory_logs/2026-10-02_加厚标量统一模型_预先写下的判定标准.md",
+    "line": 55,
+    "col": "u1rich 减加厚 XGBoost",
+    "regex": "负 ([0-9.]+)",
+    "group": 1,
+    "sign": -1
+   },
+   "display": "-0.0042",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rich_perf/3seeds/shot",
+   "value": -0.0039,
+   "src": {
+    "kind": "mdre",
+    "file": "memory_logs/2026-10-02_加厚标量统一模型_预先写下的判定标准.md",
+    "line": 56,
+    "col": "u1rich 减加厚 XGBoost",
+    "regex": "负 ([0-9.]+)",
+    "group": 1,
+    "sign": -1
+   },
+   "display": "-0.0039",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rich_perf/4seeds/pass",
+   "value": -0.0046,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 476,
+    "col": "rich_minus_rich_xgb",
+    "part": "value"
+   },
+   "display": "-0.0046",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rich_perf/4seeds/shot",
+   "value": -0.0057,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 478,
+    "col": "rich_minus_rich_xgb",
+    "part": "value"
+   },
+   "display": "-0.0057",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rich_perf/n_ok",
+   "value": 5.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 487,
+    "col": null,
+    "regex": "只有 (\\d)/7 个任务的差不低于负 0.003",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "5",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "rich_perf/verdict",
+   "value": "Not matched",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_加厚标量统一模型_预先写下的判定标准.md",
+    "line": 63,
+    "must_contain": "**判定，没追平。**"
+   },
+   "display": "Not matched",
+   "cell": [
+    2,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "pen_rich/s1/outcome_gate",
+   "value": 0.093,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.093",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/s1/within",
+   "value": 8.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "8",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_rich/s1/drop_all",
+   "value": 0.0643,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.064",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/s2/outcome_gate",
+   "value": 0.08,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.080",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/s2/within",
+   "value": 6.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "6",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_rich/s2/drop_all",
+   "value": 0.0448,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.045",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/s3/outcome_gate",
+   "value": 0.112,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.112",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/s3/within",
+   "value": 6.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "6",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_rich/s3/drop_all",
+   "value": 0.0542,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.054",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "pen_rich/verdict",
+   "value": "Inconclusive",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_门控代价实验_预先写下的判定标准.md",
+    "line": 110,
+    "must_contain": "判定 **不确定**"
+   },
+   "display": "Inconclusive",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "pen_thin/s1/spearman8",
+   "value": 0.33,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "spearman_8",
+    "part": "value"
+   },
+   "display": "0.33",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s1/spearman7",
+   "value": 0.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "spearman_7",
+    "part": "value"
+   },
+   "display": "0.00",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s1/within",
+   "value": 7.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "7",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_thin/s2/spearman8",
+   "value": 0.1,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "spearman_8",
+    "part": "value"
+   },
+   "display": "0.10",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s2/spearman7",
+   "value": -0.36,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "spearman_7",
+    "part": "value"
+   },
+   "display": "-0.36",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s2/within",
+   "value": 6.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "6",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_thin/s3/spearman8",
+   "value": 0.1,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "spearman_8",
+    "part": "value"
+   },
+   "display": "0.10",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s3/spearman7",
+   "value": -0.36,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "spearman_7",
+    "part": "value"
+   },
+   "display": "-0.36",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "pen_thin/s3/within",
+   "value": 7.0,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "tasks_within_tolerance",
+    "regex": "^(\\d)/8",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "7",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "pen_thin/verdict",
+   "value": "Not supported",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_门控代价实验_预先写下的判定标准.md",
+    "line": 118,
+    "must_contain": "判定 **不成立**"
+   },
+   "display": "Not supported",
+   "cell": [
+    4,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "hard_rich/val_base",
+   "value": 0.6458,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 552,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6458",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_rich/val_001",
+   "value": 0.6421,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 553,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6421",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_rich/val_003",
+   "value": 0.6411,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 554,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6411",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_rich/verdict",
+   "value": "Not established; stopped at the $\\lambda$ selection step",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_硬门控实验_预先写下的判定标准.md",
+    "line": 81,
+    "must_contain": "甲二记为没有成立"
+   },
+   "display": "Not established; stopped at the $\\lambda$ selection step",
+   "cell": [
+    5,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "hard_thin/val_base",
+   "value": 0.6456,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 562,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6456",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_thin/val_001",
+   "value": 0.6425,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 563,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6425",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_thin/val_003",
+   "value": 0.6419,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 564,
+    "col": "val_score",
+    "part": "value"
+   },
+   "display": "0.6419",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "hard_thin/verdict",
+   "value": "Not established; stopped at the $\\lambda$ selection step",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_硬门控实验_预先写下的判定标准.md",
+    "line": 90,
+    "must_contain": "乙二记为没有成立"
+   },
+   "display": "Not established; stopped at the $\\lambda$ selection step",
+   "cell": [
+    6,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "concat/s0/extra_loss",
+   "value": 0.0016,
+   "src": {
+    "kind": "derived",
+    "formula": "L493 门控 other7_avg_change 减 L494 拼接 other7_avg_change",
+    "inputs": [
+     "md:493",
+     "md:494"
+    ]
+   },
+   "display": "0.0016",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "concat/s1/extra_loss",
+   "value": 0.0013,
+   "src": {
+    "kind": "derived",
+    "formula": "L495 门控 other7_avg_change 减 L496 拼接 other7_avg_change",
+    "inputs": [
+     "md:495",
+     "md:496"
+    ]
+   },
+   "display": "0.0013",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "concat/s2/extra_loss",
+   "value": -0.0003,
+   "src": {
+    "kind": "derived",
+    "formula": "L497 门控 other7_avg_change 减 L498 拼接 other7_avg_change",
+    "inputs": [
+     "md:497",
+     "md:498"
+    ]
+   },
+   "display": "-0.0003",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "concat/summary_line",
+   "value": 0.0016,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/u1_clean_summary.md",
+    "line": 502,
+    "col": null,
+    "regex": "逐种子） \\[([-0-9.]+),",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "0.0016",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "concat/verdict",
+   "value": "Not supported",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_拼接版落点干预对照_预先写下的判定标准.md",
+    "line": 39,
+    "must_contain": "**判定，不成立。**"
+   },
+   "display": "Not supported",
+   "cell": [
+    7,
+    5
+   ],
+   "fmt": null
+  },
+  {
+   "id": "fcn/gate_change",
+   "value": -0.0926,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 444,
+    "col": "gate_change",
+    "part": "value"
+   },
+   "display": "-0.093",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f3"
+  },
+  {
+   "id": "fcn/rank_base",
+   "value": 4.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 444,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "4",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "fcn/rank_after",
+   "value": 5.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 444,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "5",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "fcn/top1_s0",
+   "value": 21.5,
+   "src": {
+    "kind": "mdre",
+    "file": "memory_logs/2026-10-02_主模型编码器_预先写下的选择规则.md",
+    "line": 40,
+    "col": null,
+    "regex": "top-1 是 ([0-9.]+)%",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "21.5",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f1"
+  },
+  {
+   "id": "fcn/top1_s1",
+   "value": 21.7,
+   "src": {
+    "kind": "mdre",
+    "file": "memory_logs/2026-10-02_主模型编码器_预先写下的选择规则.md",
+    "line": 40,
+    "col": null,
+    "regex": "top-1 是 [0-9.]+%、([0-9.]+)%",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "21.7",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f1"
+  },
+  {
+   "id": "fcn/top1_s2",
+   "value": 22.1,
+   "src": {
+    "kind": "mdre",
+    "file": "memory_logs/2026-10-02_主模型编码器_预先写下的选择规则.md",
+    "line": 40,
+    "col": null,
+    "regex": "top-1 是 [0-9.]+%、[0-9.]+%、([0-9.]+)%",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "22.1",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f1"
+  },
+  {
+   "id": "fcn/verdict",
+   "value": "Not met; the pooled encoder is the main model",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_主模型编码器_预先写下的选择规则.md",
+    "line": 43,
+    "must_contain": "判定不变，主模型用原编码器"
+   },
+   "display": "Not met; the pooled encoder is the main model",
+   "cell": [
+    8,
+    5
+   ],
+   "fmt": null
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "memory_logs/2026-10-02_两通道统一模型_预先写下的判定标准.md": "31decf079f1cd2192b154a63f0c2252f",
+  "memory_logs/2026-10-02_主模型编码器_预先写下的选择规则.md": "922d9936c1dbc143c80d30abfe62ebd1",
+  "memory_logs/2026-10-02_加厚标量统一模型_预先写下的判定标准.md": "6c4b799aec658631f3d71facd56db416",
+  "memory_logs/2026-10-02_拼接版落点干预对照_预先写下的判定标准.md": "837b618475bd5e01ad5fc18dde7e5151",
+  "memory_logs/2026-10-02_硬门控实验_预先写下的判定标准.md": "770f3774590325b8a0b8d18edfb40eee",
+  "memory_logs/2026-10-02_门控代价实验_预先写下的判定标准.md": "3b3d98dc5d725d2e6c580f06b5ae59d0"
+ }
+}

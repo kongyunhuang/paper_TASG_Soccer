@@ -1,0 +1,1120 @@
+{
+ "name": "tab_destination",
+ "items": [
+  {
+   "id": "rule/2425/top1",
+   "value": 0.1578,
+   "src": {
+    "kind": "md",
+    "file": "audit/dest_rule_baselines.md",
+    "line": 11,
+    "col": "top1",
+    "part": "value"
+   },
+   "display": "0.1578",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2425/skill",
+   "value": 0.2888,
+   "src": {
+    "kind": "md",
+    "file": "audit/dest_rule_baselines.md",
+    "line": 11,
+    "col": "skill",
+    "part": "value"
+   },
+   "display": "0.2888",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2425/top3",
+   "value": 0.3527,
+   "src": {
+    "kind": "md",
+    "file": "audit/dest_rule_baselines.md",
+    "line": 11,
+    "col": "top3",
+    "part": "value"
+   },
+   "display": "0.3527",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2526/top1",
+   "value": 0.15809,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/dest_rules_holdout.json",
+    "path": [
+     "条件表乘队友再除对手（a=2，b=0.5）",
+     "top1"
+    ]
+   },
+   "display": "0.1581",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2526/skill",
+   "value": 0.27994,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/dest_rules_holdout.json",
+    "path": [
+     "条件表乘队友再除对手（a=2，b=0.5）",
+     "skill"
+    ]
+   },
+   "display": "0.2799",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "rule/2526/top3",
+   "value": 0.34856,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/dest_rules_holdout.json",
+    "path": [
+     "条件表乘队友再除对手（a=2，b=0.5）",
+     "top3"
+    ]
+   },
+   "display": "0.3486",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1",
+   "value": 0.0947,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M2_MLP_360",
+    "part": "paren"
+   },
+   "display": "0.0947",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/top1_sd",
+   "value": 0.0016809958253002637,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/dest_M2_MLP_360_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（5 个种子，重算均值 0.0947 等于汇总表）"
+   },
+   "display": "0.0017",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill",
+   "value": 0.271,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M2_MLP_360",
+    "part": "mean"
+   },
+   "display": "0.2710",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2425/skill_sd",
+   "value": 0.0004,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M2_MLP_360",
+    "part": "sd"
+   },
+   "display": "0.0004",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1",
+   "value": 0.09510429153680172,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.0951",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/top1_sd",
+   "value": 0.001472452096131412,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0015",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill",
+   "value": 0.2641125099891231,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.2641",
+   "cell": [
+    1,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M2_MLP_360/2526/skill_sd",
+   "value": 0.0004156935315715359,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M2_MLP_360|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0004",
+   "cell": [
+    1,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1",
+   "value": 0.1004,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M2_MLP_360",
+    "part": "paren"
+   },
+   "display": "0.1004",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/top1_sd",
+   "value": 0.0025884960806702973,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean_rich/preds/dest_M2_MLP_360_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（3 个种子，重算均值 0.1004 等于汇总表）"
+   },
+   "display": "0.0026",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill",
+   "value": 0.2769,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M2_MLP_360",
+    "part": "mean"
+   },
+   "display": "0.2769",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2425/skill_sd",
+   "value": 0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M2_MLP_360",
+    "part": "sd"
+   },
+   "display": "0.0002",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1",
+   "value": 0.1013719065505208,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1014",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/top1_sd",
+   "value": 0.0026342323991674693,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0026",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill",
+   "value": 0.26972190492455994,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.2697",
+   "cell": [
+    2,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M2_MLP_360/2526/skill_sd",
+   "value": 0.0003829445304995864,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M2_MLP_360|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0004",
+   "cell": [
+    2,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2425/top1",
+   "value": 0.1402,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M4_CNN_Full",
+    "part": "paren"
+   },
+   "display": "0.1402",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2425/top1_sd",
+   "value": 0.00304551014281326,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/dest_M4_CNN_Full_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（5 个种子，重算均值 0.1402 等于汇总表）"
+   },
+   "display": "0.0030",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2425/skill",
+   "value": 0.3133,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M4_CNN_Full",
+    "part": "mean"
+   },
+   "display": "0.3133",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2425/skill_sd",
+   "value": 0.0017,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "M4_CNN_Full",
+    "part": "sd"
+   },
+   "display": "0.0017",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2526/top1",
+   "value": 0.13912570926236714,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M4_CNN_Full|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1391",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2526/top1_sd",
+   "value": 0.0027915049653709965,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M4_CNN_Full|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0028",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2526/skill",
+   "value": 0.3050021077929303,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M4_CNN_Full|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3050",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/M4_CNN_Full/2526/skill_sd",
+   "value": 0.0015546597827860054,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single|M4_CNN_Full|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0016",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2425/top1",
+   "value": 0.1403,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M4_CNN_Full",
+    "part": "paren"
+   },
+   "display": "0.1403",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2425/top1_sd",
+   "value": 0.007766879879473166,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean_rich/preds/dest_M4_CNN_Full_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（3 个种子，重算均值 0.1403 等于汇总表）"
+   },
+   "display": "0.0078",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2425/skill",
+   "value": 0.3142,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M4_CNN_Full",
+    "part": "mean"
+   },
+   "display": "0.3142",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2425/skill_sd",
+   "value": 0.0035,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "M4_CNN_Full",
+    "part": "sd"
+   },
+   "display": "0.0035",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2526/top1",
+   "value": 0.13974799541809851,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M4_CNN_Full|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1397",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2526/top1_sd",
+   "value": 0.008386988183171497,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M4_CNN_Full|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0084",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2526/skill",
+   "value": 0.3061345192435419,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M4_CNN_Full|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3061",
+   "cell": [
+    4,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/M4_CNN_Full/2526/skill_sd",
+   "value": 0.0037749724833806833,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "single_rich|M4_CNN_Full|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0038",
+   "cell": [
+    4,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/G1_Gating/2425/top1",
+   "value": 0.1441,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "G1_Gating",
+    "part": "paren"
+   },
+   "display": "0.1441",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/G1_Gating/2425/top1_sd",
+   "value": 0.003956375140362219,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean/preds/dest_G1_Gating_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（5 个种子，重算均值 0.1441 等于汇总表）"
+   },
+   "display": "0.0040",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/G1_Gating/2425/skill",
+   "value": 0.3175,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "G1_Gating",
+    "part": "mean"
+   },
+   "display": "0.3175",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/G1_Gating/2425/skill_sd",
+   "value": 0.0028,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 575,
+    "col": "G1_Gating",
+    "part": "sd"
+   },
+   "display": "0.0028",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/G1_Gating/2425/top1",
+   "value": 0.1437,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "G1_Gating",
+    "part": "paren"
+   },
+   "display": "0.1437",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/G1_Gating/2425/top1_sd",
+   "value": 0.00419446618030252,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/single_clean_rich/preds/dest_G1_Gating_s*.npz 的 top1 对 dest_test_meta.npz 的 y，限 202 场，逐种子 top-1 的样本标准差（3 个种子，重算均值 0.1437 等于汇总表）"
+   },
+   "display": "0.0042",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/G1_Gating/2425/skill",
+   "value": 0.3178,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "G1_Gating",
+    "part": "mean"
+   },
+   "display": "0.3178",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/G1_Gating/2425/skill_sd",
+   "value": 0.0028,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 626,
+    "col": "G1_Gating",
+    "part": "sd"
+   },
+   "display": "0.0028",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1",
+   "value": 0.1509,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "test_mean",
+    "part": "value"
+   },
+   "display": "0.1509",
+   "cell": [
+    7,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/top1_sd",
+   "value": 0.0016,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "test_sd",
+    "part": "value"
+   },
+   "display": "0.0016",
+   "cell": [
+    7,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill",
+   "value": 0.3211,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "dest_skill_mean",
+    "part": "value"
+   },
+   "display": "0.3211",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2425/skill_sd",
+   "value": 0.0014366870886667897,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/u1_clean/u1_s*.npz 的 dest_logp_true，限 202 场，逐种子 skill 的样本标准差（4 个种子，重算均值 0.3211 等于汇总表），用 summarize_u1_clean.load_runs 重算"
+   },
+   "display": "0.0014",
+   "cell": [
+    7,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1",
+   "value": 0.14907296411731796,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.1491",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/top1_sd",
+   "value": 0.0016237687545621801,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0016",
+   "cell": [
+    7,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill",
+   "value": 0.31333629830052834,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3133",
+   "cell": [
+    7,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/2526/skill_sd",
+   "value": 0.001057731988452295,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0011",
+   "cell": [
+    7,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1",
+   "value": 0.2177,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 150,
+    "col": "test_mean",
+    "part": "value"
+   },
+   "display": "0.2177",
+   "cell": [
+    8,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/top1_sd",
+   "value": 0.0028,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 150,
+    "col": "test_sd",
+    "part": "value"
+   },
+   "display": "0.0028",
+   "cell": [
+    8,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill",
+   "value": 0.3661,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 150,
+    "col": "dest_skill_mean",
+    "part": "value"
+   },
+   "display": "0.3661",
+   "cell": [
+    8,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2425/skill_sd",
+   "value": 0.0010681873012589457,
+   "src": {
+    "kind": "perevent",
+    "how": "data/cache/u1_clean/u1fcn_s*.npz 的 dest_logp_true，限 202 场，逐种子 skill 的样本标准差（3 个种子，重算均值 0.3661 等于汇总表），用 summarize_u1_clean.load_runs 重算"
+   },
+   "display": "0.0011",
+   "cell": [
+    8,
+    3
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1",
+   "value": 0.21470204320839661,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "mean"
+    ]
+   },
+   "display": "0.2147",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/top1_sd",
+   "value": 0.002106175137557948,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "top1",
+     "sd"
+    ]
+   },
+   "display": "0.0021",
+   "cell": [
+    8,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill",
+   "value": 0.3566735184524945,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "mean"
+    ]
+   },
+   "display": "0.3567",
+   "cell": [
+    8,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "u1fcn/2526/skill_sd",
+   "value": 0.0014802592415187597,
+   "src": {
+    "kind": "json",
+    "file": "data/cache/holdout_2526/summary.json",
+    "path": [
+     "metrics",
+     "unified|u1fcn|dest",
+     "skill",
+     "sd"
+    ]
+   },
+   "display": "0.0015",
+   "cell": [
+    8,
+    5
+   ],
+   "fmt": "f4"
+  }
+ ],
+ "notes": [
+  "single|G1_Gating|dest 不在 holdout summary.json 的 metrics 里，表里写 n.e.",
+  "single_rich|G1_Gating|dest 不在 holdout summary.json 的 metrics 里，表里写 n.e."
+ ],
+ "source_md5": {
+  "audit/dest_rule_baselines.md": "5c5d521cc3e6d954908c2b0f117b629f",
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c",
+  "data/cache/holdout_2526/dest_rules_holdout.json": "da41736a34df69db51a87253b9bf233a",
+  "data/cache/holdout_2526/summary.json": "96d5671a9606a4e64de5c6e46c24b263"
+ }
+}

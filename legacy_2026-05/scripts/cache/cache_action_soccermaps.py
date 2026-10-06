@@ -2,30 +2,27 @@
 """
 Cache SoccerMaps (7×8×12) for 8 action types
 ============================================================================
-从 L1 事件缓存 + 原始 StatsBomb 360 JSON 生成 SoccerMap 空间张量。
-v3: 适配 L1_events_v3.parquet, 7 通道 A-G (对齐 un-xPass pass success p.4-5)。
+Generate SoccerMap spatial tensors from the L1 event cache and the raw StatsBomb 360 JSON files.
+v3: adapted to L1_events_v3.parquet, 7 channels A-G (aligned with un-xPass pass success p.4-5).
 
-通道定义 (见 create_soccermap):
-  Ch0 (A): 队友位置, Ch1 (B): 对手位置
-  Ch2 (C): 每格到球距离, Ch3 (D): 每格到球门距离
-  Ch4 (E): sin(到球角度), Ch5 (F): cos(到球角度), Ch6 (G): 到球门角度
+Channel definitions (see create_soccermap):
+  Ch0 (A): teammate positions, Ch1 (B): opponent positions
+  Ch2 (C): per-cell distance to ball, Ch3 (D): per-cell distance to goal
+  Ch4 (E): sin(angle to ball), Ch5 (F): cos(angle to ball), Ch6 (G): angle to goal
 
-8 个动作类型: Pass, Dribble, Ball Receipt*, Pressure, Shot, Duel, Interception, Ball Recovery
+8 action types: Pass, Dribble, Ball Receipt*, Pressure, Shot, Duel, Interception, Ball Recovery
 
-输入:
-  - data/cache/L1_events_v3.parquet  (事件缓存)
-  - StatsBomb 360 JSON 文件 (Google Drive datos/ 目录)
+Inputs:
+  - data/L1_events_v3.parquet  (event cache)
+  - StatsBomb 360 JSON files (Google Drive datos/ directory)
 
-输出 (每种动作类型一组):
-  - data/cache/action_soccermaps_{type}.npy         (N, 7, 8, 12) float32
-  - data/cache/action_soccermaps_{type}_idx.parquet  event_id 索引
+Outputs (one set per action type):
+  - data/action_soccermaps_{type}.npy         (N, 7, 8, 12) float32
+  - data/action_soccermaps_{type}_idx.parquet  event_id index
 
 Usage:
-  conda activate kronos
-  export STATSBOMB_DATA_DIR=/path/to/statsbomb
-  PYTHONPATH=. PYTHONUNBUFFERED=1 python scripts/cache/cache_action_soccermaps.py
+  PYTHONUNBUFFERED=1 python scripts/cache/cache_action_soccermaps.py
 
-Last modified: 2026-10-06 (public release: data directory from STATSBOMB_DATA_DIR; logic unchanged since 2026-04-26)
 """
 
 from __future__ import annotations
@@ -39,18 +36,26 @@ import numpy as np
 import pandas as pd
 
 
-# ── SoccerMap 网格常量 ─────────────────────────────────────────────────────
+# ── SoccerMap grid constants ──────────────────────────────────────────────
 GRID_WIDTH = 12
 GRID_HEIGHT = 8
-PITCH_LENGTH = 120.0  # StatsBomb 坐标 yards
+PITCH_LENGTH = 120.0  # StatsBomb coordinates in yards
 PITCH_WIDTH = 80.0
-N_CHANNELS = 7  # 对齐 un-xPass pass success A-G (已读原文 p.4-5)
+N_CHANNELS = 7  # aligned with un-xPass pass success A-G (verified against original p.4-5)
 
-CACHE_DIR = Path("data/cache")
-# Directory with the raw StatsBomb files, one sub-directory per season. Set the
-# STATSBOMB_DATA_DIR environment variable; the default is data/statsbomb under the
-# repository root. The data are not distributed with this repository (see README).
-DATA_DIR = Path(os.environ.get("STATSBOMB_DATA_DIR", "data/statsbomb"))
+CACHE_DIR = Path("data")
+
+# Path to the local directory containing the StatsBomb match-level 360 JSON
+# files (one folder per season). Set the STATSBOMB_DATA_DIR environment
+# variable before running this script.
+_data_dir_env = os.environ.get("STATSBOMB_DATA_DIR", "")
+if not _data_dir_env:
+    raise RuntimeError(
+        "STATSBOMB_DATA_DIR is not set. Export it to the local directory "
+        "containing the StatsBomb 360 JSON files, e.g.\n"
+        "    export STATSBOMB_DATA_DIR=/path/to/statsbomb/datos"
+    )
+DATA_DIR = Path(_data_dir_env)
 
 
 def find_360_file(match_id: int) -> Path | None:
@@ -74,19 +79,19 @@ def create_soccermap(
     teammates_coords: list | None = None,
     opponents_coords: list | None = None,
 ) -> np.ndarray:
-    """构造 7 通道 SoccerMap (7, 8, 12)。
+    """Construct a 7-channel SoccerMap (7, 8, 12).
 
-    对齐 un-xPass pass success 的通道 A-G (已读原文 p.4-5):
-      Ch0 (A): 队友位置 — 每个队友所在网格 += 1
-      Ch1 (B): 对手位置 — 每个对手所在网格 += 1
-      Ch2 (C): 每格到球的距离 — 网格中心到 (ball_x, ball_y) 的欧氏距离
-      Ch3 (D): 每格到球门的距离 — 网格中心到 (120, 40) 的欧氏距离
-      Ch4 (E): 每格到球的角度 sin — sin(arctan2(ball_y - cy, ball_x - cx))
-      Ch5 (F): 每格到球的角度 cos — cos(arctan2(ball_y - cy, ball_x - cx))
-      Ch6 (G): 每格到球门的角度 — arctan2(40 - cy, 120 - cx)
+    Aligned with un-xPass pass success channels A-G (verified against original p.4-5):
+      Ch0 (A): teammate positions: each teammate's cell += 1
+      Ch1 (B): opponent positions: each opponent's cell += 1
+      Ch2 (C): per-cell distance to ball: Euclidean distance from cell centre to (ball_x, ball_y)
+      Ch3 (D): per-cell distance to goal: Euclidean distance from cell centre to (120, 40)
+      Ch4 (E): per-cell sin of angle to ball: sin(arctan2(ball_y - cy, ball_x - cx))
+      Ch5 (F): per-cell cos of angle to ball: cos(arctan2(ball_y - cy, ball_x - cx))
+      Ch6 (G): per-cell angle to goal: arctan2(40 - cy, 120 - cx)
 
-    注意: 不排除 actor (un-xPass p.4 原文 "attacking and defending team" 包含 actor)
-    坐标系: StatsBomb 120×80 yards
+    Note: the actor is not excluded (un-xPass p.4 wording "attacking and defending team" includes the actor).
+    Coordinate system: StatsBomb 120×80 yards.
     """
     smap = np.zeros((N_CHANNELS, GRID_HEIGHT, GRID_WIDTH), dtype=np.float32)
     cell_w = PITCH_LENGTH / GRID_WIDTH    # 10.0
@@ -97,12 +102,12 @@ def create_soccermap(
         gy = min(max(int(y / cell_h), 0), GRID_HEIGHT - 1)
         return gx, gy
 
-    # 预计算网格中心坐标
+    # Pre-compute grid cell centre coordinates
     cx = np.arange(GRID_WIDTH) * cell_w + cell_w / 2      # (12,)
     cy = np.arange(GRID_HEIGHT) * cell_h + cell_h / 2     # (8,)
     CX, CY = np.meshgrid(cx, cy)  # both (8, 12)
 
-    # Ch0 (A): 队友位置
+    # Ch0 (A): teammate positions
     if teammates_coords:
         for p in teammates_coords:
             px, py = float(p[0]), float(p[1])
@@ -110,7 +115,7 @@ def create_soccermap(
                 gx, gy = _to_grid(px, py)
                 smap[0, gy, gx] += 1.0
 
-    # Ch1 (B): 对手位置
+    # Ch1 (B): opponent positions
     if opponents_coords:
         for p in opponents_coords:
             px, py = float(p[0]), float(p[1])
@@ -118,24 +123,24 @@ def create_soccermap(
                 gx, gy = _to_grid(px, py)
                 smap[1, gy, gx] += 1.0
 
-    # Ch2 (C): 每格到球的距离
+    # Ch2 (C): per-cell distance to ball
     if np.isfinite(ball_x) and np.isfinite(ball_y):
         smap[2] = np.sqrt((CX - ball_x)**2 + (CY - ball_y)**2)
 
-    # Ch3 (D): 每格到球门的距离
+    # Ch3 (D): per-cell distance to goal
     goal_x, goal_y = 120.0, 40.0
     smap[3] = np.sqrt((CX - goal_x)**2 + (CY - goal_y)**2)
 
-    # Ch4 (E): 每格到球的角度 sin
+    # Ch4 (E): per-cell sin of angle to ball
     if np.isfinite(ball_x) and np.isfinite(ball_y):
         angle_to_ball = np.arctan2(ball_y - CY, ball_x - CX)
         smap[4] = np.sin(angle_to_ball)
 
-    # Ch5 (F): 每格到球的角度 cos
+    # Ch5 (F): per-cell cos of angle to ball
     if np.isfinite(ball_x) and np.isfinite(ball_y):
         smap[5] = np.cos(angle_to_ball)
 
-    # Ch6 (G): 每格到球门的角度
+    # Ch6 (G): per-cell angle to goal
     smap[6] = np.arctan2(goal_y - CY, goal_x - CX)
 
     return smap

@@ -1,0 +1,202 @@
+{
+ "tab_tasks": {
+  "n_ok": 41,
+  "n": 41,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "tab_outcome_main": {
+  "n_ok": 142,
+  "n": 142,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "pass/single_B2_XGB_360 逐事件重算 0.9161 ± 0.0003（5 个种子）和汇总表一致",
+   "pass/single_M2_MLP_360 逐事件重算 0.9080 ± 0.0004（5 个种子）和汇总表一致",
+   "pass/single_M4_CNN_Full 逐事件重算 0.9111 ± 0.0007（5 个种子）和汇总表一致",
+   "pass/single_B2_XGB_360_rich 逐事件重算 0.9194 ± 0.0004（5 个种子）和汇总表一致",
+   "pass/single_M2_MLP_360_rich 逐事件重算 0.9106 ± 0.0003（3 个种子）和汇总表一致",
+   "pass/single_M4_CNN_Full_rich 逐事件重算 0.9122 ± 0.0002（3 个种子）和汇总表一致",
+   "pass/single_G1_Gating_rich 逐事件重算 0.9163 ± 0.0003（3 个种子）和汇总表一致",
+   "pass/unified_u1 逐事件重算 0.9155 ± 0.0003（4 个种子）和汇总表一致",
+   "pass/unified_u1rich 逐事件重算 0.9148 ± 0.0010（4 个种子）和汇总表一致",
+   "shot/single_B2_XGB_360 逐事件重算 0.7463 ± 0.0017（5 个种子）和汇总表一致",
+   "shot/single_M2_MLP_360 逐事件重算 0.7445 ± 0.0010（5 个种子）和汇总表一致",
+   "shot/single_M4_CNN_Full 逐事件重算 0.7475 ± 0.0009（5 个种子）和汇总表一致",
+   "shot/single_B2_XGB_360_rich 逐事件重算 0.7461 ± 0.0019（5 个种子）和汇总表一致",
+   "shot/single_M2_MLP_360_rich 逐事件重算 0.7450 ± 0.0017（3 个种子）和汇总表一致",
+   "shot/single_M4_CNN_Full_rich 逐事件重算 0.7481 ± 0.0031（3 个种子）和汇总表一致",
+   "shot/single_G1_Gating_rich 逐事件重算 0.7511 ± 0.0019（3 个种子）和汇总表一致",
+   "shot/unified_u1 逐事件重算 0.7439 ± 0.0023（4 个种子）和汇总表一致",
+   "shot/unified_u1rich 逐事件重算 0.7404 ± 0.0037（4 个种子）和汇总表一致",
+   "interception/single_B2_XGB_360 逐事件重算 0.6208 ± 0.0021（5 个种子）和汇总表一致",
+   "interception/single_M2_MLP_360 逐事件重算 0.6209 ± 0.0006（5 个种子）和汇总表一致",
+   "interception/single_M4_CNN_Full 逐事件重算 0.6367 ± 0.0073（5 个种子）和汇总表一致",
+   "interception/single_B2_XGB_360_rich 逐事件重算 0.6410 ± 0.0060（5 个种子）和汇总表一致",
+   "interception/single_M2_MLP_360_rich 逐事件重算 0.6364 ± 0.0003（3 个种子）和汇总表一致",
+   "interception/single_M4_CNN_Full_rich 逐事件重算 0.6477 ± 0.0054（3 个种子）和汇总表一致",
+   "interception/single_G1_Gating_rich 逐事件重算 0.6448 ± 0.0091（3 个种子）和汇总表一致",
+   "interception/unified_u1 逐事件重算 0.6446 ± 0.0037（4 个种子）和汇总表一致",
+   "interception/unified_u1rich 逐事件重算 0.6420 ± 0.0021（4 个种子）和汇总表一致",
+   "ball_recovery/single_B2_XGB_360 逐事件重算 0.6973 ± 0.0020（5 个种子）和汇总表一致",
+   "ball_recovery/single_M2_MLP_360 逐事件重算 0.6946 ± 0.0015（5 个种子）和汇总表一致",
+   "ball_recovery/single_M4_CNN_Full 逐事件重算 0.7004 ± 0.0026（5 个种子）和汇总表一致",
+   "ball_recovery/single_B2_XGB_360_rich 逐事件重算 0.7030 ± 0.0015（5 个种子）和汇总表一致",
+   "ball_recovery/single_M2_MLP_360_rich 逐事件重算 0.6995 ± 0.0018（3 个种子）和汇总表一致",
+   "ball_recovery/single_M4_CNN_Full_rich 逐事件重算 0.7041 ± 0.0018（3 个种子）和汇总表一致",
+   "ball_recovery/single_G1_Gating_rich 逐事件重算 0.7062 ± 0.0016（3 个种子）和汇总表一致",
+   "ball_recovery/unified_u1 逐事件重算 0.7026 ± 0.0019（4 个种子）和汇总表一致",
+   "ball_recovery/unified_u1rich 逐事件重算 0.7030 ± 0.0032（4 个种子）和汇总表一致",
+   "pressure/single_B2_XGB_360 逐事件重算 0.5822 ± 0.0010（5 个种子）和汇总表一致",
+   "pressure/single_M2_MLP_360 逐事件重算 0.5826 ± 0.0004（5 个种子）和汇总表一致",
+   "pressure/single_M4_CNN_Full 逐事件重算 0.6081 ± 0.0007（5 个种子）和汇总表一致",
+   "pressure/single_B2_XGB_360_rich 逐事件重算 0.6047 ± 0.0009（5 个种子）和汇总表一致",
+   "pressure/single_M2_MLP_360_rich 逐事件重算 0.6042 ± 0.0009（3 个种子）和汇总表一致",
+   "pressure/single_M4_CNN_Full_rich 逐事件重算 0.6066 ± 0.0009（3 个种子）和汇总表一致",
+   "pressure/single_G1_Gating_rich 逐事件重算 0.6074 ± 0.0002（3 个种子）和汇总表一致",
+   "pressure/unified_u1 逐事件重算 0.6099 ± 0.0024（4 个种子）和汇总表一致",
+   "pressure/unified_u1rich 逐事件重算 0.6074 ± 0.0023（4 个种子）和汇总表一致",
+   "dribble/single_B2_XGB_360 逐事件重算 0.6500 ± 0.0030（5 个种子）和汇总表一致",
+   "dribble/single_M2_MLP_360 逐事件重算 0.6537 ± 0.0006（5 个种子）和汇总表一致",
+   "dribble/single_M4_CNN_Full 逐事件重算 0.6591 ± 0.0014（5 个种子）和汇总表一致",
+   "dribble/single_B2_XGB_360_rich 逐事件重算 0.6606 ± 0.0023（5 个种子）和汇总表一致",
+   "dribble/single_M2_MLP_360_rich 逐事件重算 0.6581 ± 0.0002（3 个种子）和汇总表一致",
+   "dribble/single_M4_CNN_Full_rich 逐事件重算 0.6640 ± 0.0008（3 个种子）和汇总表一致",
+   "dribble/single_G1_Gating_rich 逐事件重算 0.6640 ± 0.0013（3 个种子）和汇总表一致",
+   "dribble/unified_u1 逐事件重算 0.6556 ± 0.0020（4 个种子）和汇总表一致",
+   "dribble/unified_u1rich 逐事件重算 0.6584 ± 0.0013（4 个种子）和汇总表一致",
+   "tackle/single_B2_XGB_360 逐事件重算 0.6031 ± 0.0010（5 个种子）和汇总表一致",
+   "tackle/single_M2_MLP_360 逐事件重算 0.5954 ± 0.0009（5 个种子）和汇总表一致",
+   "tackle/single_M4_CNN_Full 逐事件重算 0.6072 ± 0.0026（5 个种子）和汇总表一致",
+   "tackle/single_B2_XGB_360_rich 逐事件重算 0.6157 ± 0.0013（5 个种子）和汇总表一致",
+   "tackle/single_M2_MLP_360_rich 逐事件重算 0.6033 ± 0.0010（3 个种子）和汇总表一致",
+   "tackle/single_M4_CNN_Full_rich 逐事件重算 0.6198 ± 0.0015（3 个种子）和汇总表一致",
+   "tackle/single_G1_Gating_rich 逐事件重算 0.6203 ± 0.0039（3 个种子）和汇总表一致",
+   "tackle/unified_u1 逐事件重算 0.6159 ± 0.0019（4 个种子）和汇总表一致",
+   "tackle/unified_u1rich 逐事件重算 0.6151 ± 0.0032（4 个种子）和汇总表一致"
+  ]
+ },
+ "tab_destination": {
+  "n_ok": 62,
+  "n": 62,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "single|G1_Gating|dest 不在 holdout summary.json 的 metrics 里，表里写 n.e.",
+   "single_rich|G1_Gating|dest 不在 holdout summary.json 的 metrics 里，表里写 n.e."
+  ]
+ },
+ "tab_interventions": {
+  "n_ok": 66,
+  "n": 66,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "shuf_dest/s0 七个其余任务和落点的变化与拖累表 L493 逐格一致",
+   "shuf_dest/s1 七个其余任务和落点的变化与拖累表 L495 逐格一致",
+   "shuf_dest/s2 七个其余任务和落点的变化与拖累表 L497 逐格一致"
+  ]
+ },
+ "tab_holdout": {
+  "n_ok": 98,
+  "n": 98,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "tab_gate_variants_supp": {
+  "n_ok": 63,
+  "n": 63,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "tab_application_supp": {
+  "n_ok": 26,
+  "n": 26,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "fig_overview": {
+  "n_ok": 26,
+  "n": 26,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "示意图事件 901cb9ad-e904-553c-9ccb-08a45f9d5895，Real Sociedad Arsen Zakharyan 在 (107.7, 24.1) 的完成传球，定格帧可见 20 人；u1 种子 3 落点任务 64 维门控均值重算 0.822496，u1_s3.npz 存的 0.822496",
+   "版式自动检查  22 处文字压框或重叠  [\"文字压框  'Event scalar features $x_{even'  框 (0.42,8.00)-(3.55,9.30) 实线\", \"文字压框  'task embedding $e_t \\\\\\\\in \\\\\\\\mathb'  框 (4.05,10.42)-(8.40,11.92) 实线\", \"文字压框  '$h_e \\\\\\\\in \\\\\\\\mathbb{R}^{64}$'  框 (3.88,6.15)-(8.18,10.10) 实线\", \"文字压框  '$h_e \\\\\\\\in \\\\\\\\mathbb{R}^{64}$'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  'Conv 3×3, 32→64 + BN + ReLU + '  框 (3.45,2.75)-(7.35,5.15) 实线\", \"文字压框  'flatten (256)'  框 (3.45,2.75)-(7.35,5.15) 实线\", \"文字压框  '$h_{fused} = g \\\\\\\\odot h_s + (1-'  框 (9.42,5.38)-(12.74,5.84) 实线\", \"文字压框  '$h_{fused} \\\\\\\\in \\\\\\\\mathbb{R}^{64}'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  '(4) PREDICTION HEAD'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  '(4) PREDICTION HEAD'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'ELU → Dropout(0.3)'  框 (13.27,9.25)-(15.75,11.70) 实线\", \"文字压框  '(real value)'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'Linear 32 → 96'  框 (14.58,7.00)-(15.70,8.95) 实线\", \"文字压框  'BCE for the seven outcome task'  框 (13.24,2.45)-(15.78,5.78) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.24,2.45)-(15.78,5.78) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.28,2.62)-(14.48,5.17) 实线\", \"文字压框  'Softmax over 96 cells for pass'  框 (14.54,2.62)-(15.74,5.17) 实线\", \"文字重叠  'Conv 3×3, 7→32 + BN + ReLU + M' 和 'Conv 3×3, 32→64 + BN + ReLU + '\", \"文字重叠  'flatten (256)' 和 'Linear + Tanh'\", \"文字重叠  '$g$, gate value per dimension' 和 '$h_s$, spatial embedding'\", \"文字重叠  '$h_s$, spatial embedding' 和 '$h_e$, event embedding'\"]"
+  ]
+ },
+ "fig_outcome_vs_scalars": {
+  "n_ok": 113,
+  "n": 113,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "single_clean pass 逐种子差 [-0.005, -0.0053, -0.0045, -0.0058, -0.0047]，均值 -0.0050，和汇总表 L590 一致",
+   "single_clean shot 逐种子差 [0.0027, 0.0017, 0.0012, 0.0012, -0.0011]，均值 0.0011，和汇总表 L597 一致",
+   "single_clean interception 逐种子差 [0.0229, 0.003, 0.0234, 0.021, 0.0091]，均值 0.0159，和汇总表 L601 一致",
+   "single_clean ball_recovery 逐种子差 [-0.0002, 0.0012, 0.0073, 0.0047, 0.0021]，均值 0.0030，和汇总表 L605 一致",
+   "single_clean pressure 逐种子差 [0.0237, 0.0275, 0.0252, 0.0267, 0.0268]，均值 0.0260，和汇总表 L609 一致",
+   "single_clean dribble 逐种子差 [0.0085, 0.0045, 0.0105, 0.0133, 0.0085]，均值 0.0091，和汇总表 L613 一致",
+   "single_clean tackle 逐种子差 [0.0063, 0.006, 0.0016, -0.0002, 0.0064]，均值 0.0040，和汇总表 L617 一致",
+   "single_clean_rich pass 逐种子差 [-0.0072, -0.0071, -0.0068]，均值 -0.0070，和汇总表 L641 一致",
+   "single_clean_rich shot 逐种子差 [0.0012, 0.0034, 0.0034]，均值 0.0026，和汇总表 L648 一致",
+   "single_clean_rich interception 逐种子差 [0.0143, 0.0098, 0.0036]，均值 0.0093，和汇总表 L652 一致",
+   "single_clean_rich ball_recovery 逐种子差 [0.0024, 0.0004, 0.0015]，均值 0.0015，和汇总表 L656 一致",
+   "single_clean_rich pressure 逐种子差 [0.0016, 0.0006, 0.0022]，均值 0.0015，和汇总表 L660 一致",
+   "single_clean_rich dribble 逐种子差 [0.0051, -0.0009, 0.0044]，均值 0.0029，和汇总表 L664 一致",
+   "single_clean_rich tackle 逐种子差 [0.0058, 0.0039, 0.0021]，均值 0.0039，和汇总表 L668 一致",
+   "y 轴范围 -0.0107 到 0.0310，两图共用"
+  ]
+ },
+ "fig_destination": {
+  "n_ok": 81,
+  "n": 81,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "fig_gate": {
+  "n_ok": 117,
+  "n": 117,
+  "style": [],
+  "mismatches": [],
+  "notes": [
+   "shuf_dest 种子 0 到 2 的八个任务门控和干预表的 gate_base、gate_shuffled_run 四位一致",
+   "shuf_tackle 种子 0 到 2 的八个任务门控和干预表的 gate_base、gate_shuffled_run 四位一致",
+   "shuf_dest 名次（基准到干预）[(1, 8), (1, 8), (1, 8)]",
+   "shuf_tackle 名次（基准到干预）[(2, 7), (3, 8), (4, 7)]"
+  ]
+ },
+ "fig_holdout": {
+  "n_ok": 79,
+  "n": 79,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "figS1_gate_vs_shuffle": {
+  "n_ok": 137,
+  "n": 137,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "figS2_soft_penalty": {
+  "n_ok": 53,
+  "n": 53,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ },
+ "figS3_player_preference": {
+  "n_ok": 31,
+  "n": 31,
+  "style": [],
+  "mismatches": [],
+  "notes": []
+ }
+}

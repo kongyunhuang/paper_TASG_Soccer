@@ -1,48 +1,28 @@
 # Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-.pytest_cache/
 .ipynb_checkpoints/
 
 # macOS
 .DS_Store
 
-# Editors
-.vscode/
-.idea/
+# Generated tables, figures and provenance report (run scripts/paper_v2/make_all.sh)
+outputs/
 
-# Local
-.env
-*.log
-
-# Raw StatsBomb-derived data (NOT to be redistributed)
-*.parquet
+# Licensed raw StatsBomb data and every cache derived from it
+data/statsbomb/
+data/cache/*
+!data/cache/holdout_2526/
+data/cache/holdout_2526/*
+!data/cache/holdout_2526/summary.json
+!data/cache/holdout_2526/dest_rules_holdout.json
+audit/raw_scan/
+audit/raw_scan_limit*/
+audit/figs/
+logs/*
+!logs/u1_clean_u1_s0_2026-10-02.log
+*.npz
 *.npy
-data/L1_events_v3.parquet
-data/action_soccermaps_*.npy
-data/action_soccermaps_*_idx.parquet
-
-# Prediction files containing StatsBomb event IDs (PRIVATE)
-data/predictions/*_relaxed.npz
-data/predictions/*_with_ids.npz
-data/predictions/u1_per_task.npz
-
-# Case-study artefacts containing raw pitch coordinates and event identifiers
-# (excluded per StatsBomb licence; see data/DATA_AVAILABILITY.md)
-data/gradcam_dribble_examples.npz
-data/results_failure_analysis.json
-data/results_what_if_simulation.json
-
-# Compiled / generated
-build/
-dist/
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.synctex.gz
+*.parquet
+*.pt
+*.jsonl

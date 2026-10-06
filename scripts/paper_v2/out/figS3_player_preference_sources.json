@@ -1,0 +1,462 @@
+{
+ "name": "figS3_player_preference",
+ "items": [
+  {
+   "id": "全体球员/D",
+   "value": -0.00267,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "D 合并",
+    "part": "value"
+   },
+   "display": "-0.00267",
+   "cell": null,
+   "fmt": "f5"
+  },
+  {
+   "id": "全体球员/D_recomputed",
+   "value": -0.0026682388642409456,
+   "src": {
+    "kind": "perevent",
+    "how": "fold*_s*_players.parquet 里 M3 减 M2，按球员和折对三个种子取平均，再按 n_test 加权平均"
+   },
+   "display": "-0.00267",
+   "cell": null,
+   "fmt": "f5"
+  },
+  {
+   "id": "全体球员/rows",
+   "value": 869.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "球员数（两折合计行数）",
+    "part": "value"
+   },
+   "display": "869",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "全体球员/n_points",
+   "value": 869.0,
+   "src": {
+    "kind": "perevent",
+    "how": "逐球员点的个数（球员乘折）"
+   },
+   "display": "869",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "全体球员/lo",
+   "value": -0.00381,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "95% 区间",
+    "regex": "^\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00381",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/hi",
+   "value": -0.00153,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "95% 区间",
+    "regex": ", ([-+]?[0-9.]+)\\]$",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00153",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold1",
+   "value": -0.00281,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折一",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00281",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold1_lo",
+   "value": -0.00416,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折一",
+    "regex": "\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00416",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold1_hi",
+   "value": -0.00153,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折一",
+    "regex": ", ([-+]?[0-9.]+)\\]",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00153",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold2",
+   "value": -0.00215,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折二",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00215",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold2_lo",
+   "value": -0.00418,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折二",
+    "regex": "\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00418",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold2_hi",
+   "value": -0.00022,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折二",
+    "regex": ", ([-+]?[0-9.]+)\\]",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00022",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed0",
+   "value": -0.00247,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00247",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed1",
+   "value": -0.00228,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00228",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed2",
+   "value": -0.00326,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00326",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/D",
+   "value": -0.00142,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "D 合并",
+    "part": "value"
+   },
+   "display": "-0.00142",
+   "cell": null,
+   "fmt": "f5"
+  },
+  {
+   "id": "换队球员/D_recomputed",
+   "value": -0.0014159308529265824,
+   "src": {
+    "kind": "perevent",
+    "how": "fold*_s*_players.parquet 里 M3 减 M2，按球员和折对三个种子取平均，再按 n_test 加权平均"
+   },
+   "display": "-0.00142",
+   "cell": null,
+   "fmt": "f5"
+  },
+  {
+   "id": "换队球员/rows",
+   "value": 152.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "球员数（两折合计行数）",
+    "part": "value"
+   },
+   "display": "152",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "换队球员/n_points",
+   "value": 152.0,
+   "src": {
+    "kind": "perevent",
+    "how": "逐球员点的个数（球员乘折）"
+   },
+   "display": "152",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "换队球员/lo",
+   "value": -0.00462,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "95% 区间",
+    "regex": "^\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00462",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/hi",
+   "value": 0.00171,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "95% 区间",
+    "regex": ", ([-+]?[0-9.]+)\\]$",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00171",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold1",
+   "value": -0.00193,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折一",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00193",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold1_lo",
+   "value": -0.0057,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折一",
+    "regex": "\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00570",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold1_hi",
+   "value": 0.00176,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折一",
+    "regex": ", ([-+]?[0-9.]+)\\]",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00176",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold2",
+   "value": 0.00055,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折二",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00055",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold2_lo",
+   "value": -0.00509,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折二",
+    "regex": "\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00509",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold2_hi",
+   "value": 0.00619,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折二",
+    "regex": ", ([-+]?[0-9.]+)\\]",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00619",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed0",
+   "value": -0.00168,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00168",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed1",
+   "value": 0.00052,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00052",
+   "cell": null,
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed2",
+   "value": -0.00308,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00308",
+   "cell": null,
+   "fmt": "sf5"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/player_decision_preference_summary.md": "3a948df8d50af7f00bfaf46aa3e09bee"
+ },
+ "data_csv": "scripts/paper_v2/out/figS3_player_preference_data.csv"
+}

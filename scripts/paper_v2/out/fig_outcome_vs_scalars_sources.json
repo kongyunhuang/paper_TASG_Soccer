@@ -1,0 +1,1426 @@
+{
+ "name": "fig_outcome_vs_scalars",
+ "items": [
+  {
+   "id": "single_clean/pass/mean",
+   "value": -0.005,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 590,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "-0.0050",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/sd",
+   "value": 0.0005,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 590,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0005",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/min",
+   "value": -0.0058,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 590,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0058",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/max",
+   "value": -0.0045,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 590,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "-0.0045",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/s0",
+   "value": -0.005007499301740936,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pass_M4_CNN_Full_s0.npz 减 pass_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "-0.0050",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/s1",
+   "value": -0.005287715296527273,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pass_M4_CNN_Full_s1.npz 减 pass_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "-0.0053",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/s2",
+   "value": -0.004491406759147387,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pass_M4_CNN_Full_s2.npz 减 pass_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "-0.0045",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/s3",
+   "value": -0.0057713108649101175,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pass_M4_CNN_Full_s3.npz 减 pass_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "-0.0058",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pass/s4",
+   "value": -0.0046556838283215995,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pass_M4_CNN_Full_s4.npz 减 pass_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "-0.0047",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/mean",
+   "value": 0.0011,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 597,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0011",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/sd",
+   "value": 0.0014,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 597,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0014",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/min",
+   "value": -0.0011,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 597,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0011",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/max",
+   "value": 0.0027,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 597,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0027",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/s0",
+   "value": 0.002726026132932491,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/shot_M4_CNN_Full_s0.npz 减 shot_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0027",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/s1",
+   "value": 0.001661797585613689,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/shot_M4_CNN_Full_s1.npz 减 shot_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0017",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/s2",
+   "value": 0.0012257464197655832,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/shot_M4_CNN_Full_s2.npz 减 shot_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0012",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/s3",
+   "value": 0.0011598207575422848,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/shot_M4_CNN_Full_s3.npz 减 shot_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "0.0012",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/shot/s4",
+   "value": -0.0010609322642075592,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/shot_M4_CNN_Full_s4.npz 减 shot_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "-0.0011",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/mean",
+   "value": 0.0159,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 601,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0159",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/sd",
+   "value": 0.0093,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 601,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0093",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/min",
+   "value": 0.003,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 601,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0030",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/max",
+   "value": 0.0234,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 601,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0234",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/s0",
+   "value": 0.022947685638861737,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/interception_M4_CNN_Full_s0.npz 减 interception_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0229",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/s1",
+   "value": 0.0029835709857408688,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/interception_M4_CNN_Full_s1.npz 减 interception_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0030",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/s2",
+   "value": 0.02342984420934746,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/interception_M4_CNN_Full_s2.npz 减 interception_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0234",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/s3",
+   "value": 0.02101561406315622,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/interception_M4_CNN_Full_s3.npz 减 interception_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "0.0210",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/interception/s4",
+   "value": 0.009093829370237727,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/interception_M4_CNN_Full_s4.npz 减 interception_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "0.0091",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/mean",
+   "value": 0.003,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 605,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0030",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/sd",
+   "value": 0.003,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 605,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0030",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/min",
+   "value": -0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 605,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/max",
+   "value": 0.0073,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 605,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0073",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/s0",
+   "value": -0.0002320093949638169,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/ball_recovery_M4_CNN_Full_s0.npz 减 ball_recovery_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "-0.0002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/s1",
+   "value": 0.0012381704458961362,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/ball_recovery_M4_CNN_Full_s1.npz 减 ball_recovery_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0012",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/s2",
+   "value": 0.007310552025483474,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/ball_recovery_M4_CNN_Full_s2.npz 减 ball_recovery_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0073",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/s3",
+   "value": 0.004708972231434405,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/ball_recovery_M4_CNN_Full_s3.npz 减 ball_recovery_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "0.0047",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/ball_recovery/s4",
+   "value": 0.002051724873374683,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/ball_recovery_M4_CNN_Full_s4.npz 减 ball_recovery_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "0.0021",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/mean",
+   "value": 0.026,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 609,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0260",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/sd",
+   "value": 0.0015,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 609,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/min",
+   "value": 0.0237,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 609,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0237",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/max",
+   "value": 0.0275,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 609,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0275",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/s0",
+   "value": 0.02373780755711774,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pressure_M4_CNN_Full_s0.npz 减 pressure_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0237",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/s1",
+   "value": 0.027491790340428368,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pressure_M4_CNN_Full_s1.npz 减 pressure_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0275",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/s2",
+   "value": 0.02521228763913308,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pressure_M4_CNN_Full_s2.npz 减 pressure_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0252",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/s3",
+   "value": 0.026682064863633448,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pressure_M4_CNN_Full_s3.npz 减 pressure_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "0.0267",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/pressure/s4",
+   "value": 0.026756492872485826,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/pressure_M4_CNN_Full_s4.npz 减 pressure_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "0.0268",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/mean",
+   "value": 0.0091,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 613,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0091",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/sd",
+   "value": 0.0032,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 613,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0032",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/min",
+   "value": 0.0045,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 613,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0045",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/max",
+   "value": 0.0133,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 613,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0133",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/s0",
+   "value": 0.008520890288745586,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/dribble_M4_CNN_Full_s0.npz 减 dribble_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0085",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/s1",
+   "value": 0.004506180504989521,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/dribble_M4_CNN_Full_s1.npz 减 dribble_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0045",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/s2",
+   "value": 0.010522914185402077,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/dribble_M4_CNN_Full_s2.npz 减 dribble_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0105",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/s3",
+   "value": 0.013257479543089756,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/dribble_M4_CNN_Full_s3.npz 减 dribble_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "0.0133",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/dribble/s4",
+   "value": 0.0085165000573868,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/dribble_M4_CNN_Full_s4.npz 减 dribble_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "0.0085",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/mean",
+   "value": 0.004,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 617,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0040",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/sd",
+   "value": 0.0031,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 617,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0031",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/min",
+   "value": -0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 617,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/max",
+   "value": 0.0064,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 617,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0064",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/s0",
+   "value": 0.006270952658097961,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/tackle_M4_CNN_Full_s0.npz 减 tackle_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0063",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/s1",
+   "value": 0.006021594496148142,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/tackle_M4_CNN_Full_s1.npz 减 tackle_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0060",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/s2",
+   "value": 0.001635474515947144,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/tackle_M4_CNN_Full_s2.npz 减 tackle_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0016",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/s3",
+   "value": -0.00019966783974356694,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/tackle_M4_CNN_Full_s3.npz 减 tackle_B2_XGB_360_s3.npz 的 AUC，202 场"
+   },
+   "display": "-0.0002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean/tackle/s4",
+   "value": 0.0063863679218769676,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean/preds/tackle_M4_CNN_Full_s4.npz 减 tackle_B2_XGB_360_s4.npz 的 AUC，202 场"
+   },
+   "display": "0.0064",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/mean",
+   "value": -0.007,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 641,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "-0.0070",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/sd",
+   "value": 0.0002,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 641,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/min",
+   "value": -0.0072,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 641,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0072",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/max",
+   "value": -0.0068,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 641,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "-0.0068",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/s0",
+   "value": -0.007165343077925823,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pass_M4_CNN_Full_s0.npz 减 pass_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "-0.0072",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/s1",
+   "value": -0.007116315985476129,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pass_M4_CNN_Full_s1.npz 减 pass_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "-0.0071",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pass/s2",
+   "value": -0.00678783632808877,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pass_M4_CNN_Full_s2.npz 减 pass_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "-0.0068",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/mean",
+   "value": 0.0026,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 648,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0026",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/sd",
+   "value": 0.0013,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 648,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0013",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/min",
+   "value": 0.0012,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 648,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0012",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/max",
+   "value": 0.0034,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 648,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0034",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/s0",
+   "value": 0.001166413323764659,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/shot_M4_CNN_Full_s0.npz 减 shot_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0012",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/s1",
+   "value": 0.0034271926404358943,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/shot_M4_CNN_Full_s1.npz 减 shot_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0034",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/shot/s2",
+   "value": 0.0033549098607840167,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/shot_M4_CNN_Full_s2.npz 减 shot_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0034",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/mean",
+   "value": 0.0093,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 652,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0093",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/sd",
+   "value": 0.0054,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 652,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0054",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/min",
+   "value": 0.0036,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 652,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0036",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/max",
+   "value": 0.0143,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 652,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0143",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/s0",
+   "value": 0.014347576645401205,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/interception_M4_CNN_Full_s0.npz 减 interception_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0143",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/s1",
+   "value": 0.0098090989540629,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/interception_M4_CNN_Full_s1.npz 减 interception_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0098",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/interception/s2",
+   "value": 0.0036035337879728457,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/interception_M4_CNN_Full_s2.npz 减 interception_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0036",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/mean",
+   "value": 0.0015,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 656,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/sd",
+   "value": 0.001,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 656,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0010",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/min",
+   "value": 0.0004,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 656,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0004",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/max",
+   "value": 0.0024,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 656,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0024",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/s0",
+   "value": 0.0024231392801927765,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/ball_recovery_M4_CNN_Full_s0.npz 减 ball_recovery_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0024",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/s1",
+   "value": 0.00043154167199865867,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/ball_recovery_M4_CNN_Full_s1.npz 减 ball_recovery_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0004",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/ball_recovery/s2",
+   "value": 0.0015009255453939385,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/ball_recovery_M4_CNN_Full_s2.npz 减 ball_recovery_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/mean",
+   "value": 0.0015,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 660,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0015",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/sd",
+   "value": 0.0008,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 660,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0008",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/min",
+   "value": 0.0006,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 660,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0006",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/max",
+   "value": 0.0022,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 660,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0022",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/s0",
+   "value": 0.001572019625073251,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pressure_M4_CNN_Full_s0.npz 减 pressure_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0016",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/s1",
+   "value": 0.0006474077328646466,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pressure_M4_CNN_Full_s1.npz 减 pressure_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0006",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/pressure/s2",
+   "value": 0.0022394917984768226,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/pressure_M4_CNN_Full_s2.npz 减 pressure_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0022",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/mean",
+   "value": 0.0029,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 664,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0029",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/sd",
+   "value": 0.0033,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 664,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0033",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/min",
+   "value": -0.0009,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 664,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "-0.0009",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/max",
+   "value": 0.0051,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 664,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0051",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/s0",
+   "value": 0.005136727483914361,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/dribble_M4_CNN_Full_s0.npz 减 dribble_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0051",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/s1",
+   "value": -0.0009276715655376355,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/dribble_M4_CNN_Full_s1.npz 减 dribble_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "-0.0009",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/dribble/s2",
+   "value": 0.004407321902425099,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/dribble_M4_CNN_Full_s2.npz 减 dribble_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0044",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/mean",
+   "value": 0.0039,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 668,
+    "col": "mean",
+    "part": "value"
+   },
+   "display": "0.0039",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/sd",
+   "value": 0.0019,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 668,
+    "col": "sd",
+    "part": "value"
+   },
+   "display": "0.0019",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/min",
+   "value": 0.0021,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 668,
+    "col": "min",
+    "part": "value"
+   },
+   "display": "0.0021",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/max",
+   "value": 0.0058,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 668,
+    "col": "max",
+    "part": "value"
+   },
+   "display": "0.0058",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/s0",
+   "value": 0.0057709898266855575,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/tackle_M4_CNN_Full_s0.npz 减 tackle_B2_XGB_360_s0.npz 的 AUC，202 场"
+   },
+   "display": "0.0058",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/s1",
+   "value": 0.0038617369334282836,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/tackle_M4_CNN_Full_s1.npz 减 tackle_B2_XGB_360_s1.npz 的 AUC，202 场"
+   },
+   "display": "0.0039",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "single_clean_rich/tackle/s2",
+   "value": 0.002064613056871667,
+   "src": {
+    "kind": "perevent",
+    "how": "single_clean_rich/preds/tackle_M4_CNN_Full_s2.npz 减 tackle_B2_XGB_360_s2.npz 的 AUC，202 场"
+   },
+   "display": "0.0021",
+   "cell": null,
+   "fmt": "f4"
+  }
+ ],
+ "notes": [
+  "single_clean pass 逐种子差 [-0.005, -0.0053, -0.0045, -0.0058, -0.0047]，均值 -0.0050，和汇总表 L590 一致",
+  "single_clean shot 逐种子差 [0.0027, 0.0017, 0.0012, 0.0012, -0.0011]，均值 0.0011，和汇总表 L597 一致",
+  "single_clean interception 逐种子差 [0.0229, 0.003, 0.0234, 0.021, 0.0091]，均值 0.0159，和汇总表 L601 一致",
+  "single_clean ball_recovery 逐种子差 [-0.0002, 0.0012, 0.0073, 0.0047, 0.0021]，均值 0.0030，和汇总表 L605 一致",
+  "single_clean pressure 逐种子差 [0.0237, 0.0275, 0.0252, 0.0267, 0.0268]，均值 0.0260，和汇总表 L609 一致",
+  "single_clean dribble 逐种子差 [0.0085, 0.0045, 0.0105, 0.0133, 0.0085]，均值 0.0091，和汇总表 L613 一致",
+  "single_clean tackle 逐种子差 [0.0063, 0.006, 0.0016, -0.0002, 0.0064]，均值 0.0040，和汇总表 L617 一致",
+  "single_clean_rich pass 逐种子差 [-0.0072, -0.0071, -0.0068]，均值 -0.0070，和汇总表 L641 一致",
+  "single_clean_rich shot 逐种子差 [0.0012, 0.0034, 0.0034]，均值 0.0026，和汇总表 L648 一致",
+  "single_clean_rich interception 逐种子差 [0.0143, 0.0098, 0.0036]，均值 0.0093，和汇总表 L652 一致",
+  "single_clean_rich ball_recovery 逐种子差 [0.0024, 0.0004, 0.0015]，均值 0.0015，和汇总表 L656 一致",
+  "single_clean_rich pressure 逐种子差 [0.0016, 0.0006, 0.0022]，均值 0.0015，和汇总表 L660 一致",
+  "single_clean_rich dribble 逐种子差 [0.0051, -0.0009, 0.0044]，均值 0.0029，和汇总表 L664 一致",
+  "single_clean_rich tackle 逐种子差 [0.0058, 0.0039, 0.0021]，均值 0.0039，和汇总表 L668 一致",
+  "y 轴范围 -0.0107 到 0.0310，两图共用"
+ ],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c"
+ },
+ "data_csv": "scripts/paper_v2/out/fig_outcome_vs_scalars_data.csv"
+}

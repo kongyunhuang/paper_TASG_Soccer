@@ -1,0 +1,1081 @@
+{
+ "name": "tab_interventions",
+ "items": [
+  {
+   "id": "shuf_dest/s0/gate_base",
+   "value": 0.8256,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.8256",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s0/gate_after",
+   "value": 0.2716,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.2716",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s0/rank_base",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s0/rank_after",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s0/metric_base",
+   "value": 0.1495,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.1495",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s0/metric_after",
+   "value": 0.1101,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1101",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s0/metric_change",
+   "value": -0.039423293534579865,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 减 u1_s0.npz 的 dest 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L388 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0394",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s0/others_max_change",
+   "value": -0.006920209787412701,
+   "src": {
+    "kind": "perevent",
+    "how": "interception 上 shuf_dest_s0 减 u1_s0 的 AUC（202 场，未四舍五入），是其余 7 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L387 到 L394"
+   },
+   "display": "-0.0069",
+   "cell": [
+    0,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/gate_base",
+   "value": 0.7817,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.7817",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/gate_after",
+   "value": 0.2412,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.2412",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/rank_base",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s1/rank_after",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s1/metric_base",
+   "value": 0.153,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.1530",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/metric_after",
+   "value": 0.1076,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1076",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/metric_change",
+   "value": -0.04539310655553053,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 减 u1_s1.npz 的 dest 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L396 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0454",
+   "cell": [
+    1,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s1/others_max_change",
+   "value": -0.009505054696718251,
+   "src": {
+    "kind": "perevent",
+    "how": "interception 上 shuf_dest_s1 减 u1_s1 的 AUC（202 场，未四舍五入），是其余 7 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L395 到 L402"
+   },
+   "display": "-0.0095",
+   "cell": [
+    1,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/gate_base",
+   "value": 0.8115,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.8115",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/gate_after",
+   "value": 0.2785,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.2785",
+   "cell": [
+    2,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/rank_base",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s2/rank_after",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": [
+    2,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/s2/metric_base",
+   "value": 0.1513,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.1513",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/metric_after",
+   "value": 0.1115,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1115",
+   "cell": [
+    2,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/metric_change",
+   "value": -0.039836299466846886,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 减 u1_s2.npz 的 dest 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L404 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0398",
+   "cell": [
+    2,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/s2/others_max_change",
+   "value": -0.013191708497490184,
+   "src": {
+    "kind": "perevent",
+    "how": "interception 上 shuf_dest_s2 减 u1_s2 的 AUC（202 场，未四舍五入），是其余 7 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L403 到 L410"
+   },
+   "display": "-0.0132",
+   "cell": [
+    2,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/gate_base",
+   "value": 0.429,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.4290",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/gate_after",
+   "value": 0.1813,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1813",
+   "cell": [
+    3,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/rank_base",
+   "value": 2.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "2",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s0/rank_after",
+   "value": 7.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "7",
+   "cell": [
+    3,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s0/metric_base",
+   "value": 0.6157,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.6157",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/metric_after",
+   "value": 0.5908,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.5908",
+   "cell": [
+    3,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/metric_change",
+   "value": -0.024964769164939615,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 减 u1_s0.npz 的 tackle 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L426 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0250",
+   "cell": [
+    3,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/others_max_change",
+   "value": 0.0026585180303324574,
+   "src": {
+    "kind": "perevent",
+    "how": "pressure 上 shuf_tackle_s0 减 u1_s0 的 AUC（202 场，未四舍五入），是其余 6 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L419 到 L425"
+   },
+   "display": "0.0027",
+   "cell": [
+    3,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s0/dest_change",
+   "value": 0.0022903056243898656,
+   "src": {
+    "kind": "perevent",
+    "how": "dest 上 shuf_tackle_s0 减 u1_s0 的 top-1（202 场，未四舍五入），两端见干预表 L420"
+   },
+   "display": "0.0023",
+   "cell": [
+    3,
+    7
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/gate_base",
+   "value": 0.3942,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.3942",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/gate_after",
+   "value": 0.1335,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1335",
+   "cell": [
+    4,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/rank_base",
+   "value": 3.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "3",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s1/rank_after",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": [
+    4,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s1/metric_base",
+   "value": 0.6138,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.6138",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/metric_after",
+   "value": 0.5925,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.5925",
+   "cell": [
+    4,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/metric_change",
+   "value": -0.021249100248213693,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 减 u1_s1.npz 的 tackle 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L434 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0212",
+   "cell": [
+    4,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/others_max_change",
+   "value": -0.001981916780576798,
+   "src": {
+    "kind": "perevent",
+    "how": "pressure 上 shuf_tackle_s1 减 u1_s1 的 AUC（202 场，未四舍五入），是其余 6 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L427 到 L433"
+   },
+   "display": "-0.0020",
+   "cell": [
+    4,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s1/dest_change",
+   "value": 0.0002628219568971968,
+   "src": {
+    "kind": "perevent",
+    "how": "dest 上 shuf_tackle_s1 减 u1_s1 的 top-1（202 场，未四舍五入），两端见干预表 L428"
+   },
+   "display": "0.0003",
+   "cell": [
+    4,
+    7
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/gate_base",
+   "value": 0.4101,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.4101",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/gate_after",
+   "value": 0.1805,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.1805",
+   "cell": [
+    5,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/rank_base",
+   "value": 4.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "4",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s2/rank_after",
+   "value": 7.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "7",
+   "cell": [
+    5,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/s2/metric_base",
+   "value": 0.6184,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.6184",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/metric_after",
+   "value": 0.5908,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.5908",
+   "cell": [
+    5,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/metric_change",
+   "value": -0.02766158816842268,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 减 u1_s2.npz 的 tackle 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L442 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0277",
+   "cell": [
+    5,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/others_max_change",
+   "value": -0.00461909785412884,
+   "src": {
+    "kind": "perevent",
+    "how": "interception 上 shuf_tackle_s2 减 u1_s2 的 AUC（202 场，未四舍五入），是其余 6 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L435 到 L441"
+   },
+   "display": "-0.0046",
+   "cell": [
+    5,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/s2/dest_change",
+   "value": 0.0006382818953217795,
+   "src": {
+    "kind": "perevent",
+    "how": "dest 上 shuf_tackle_s2 减 u1_s2 的 top-1（202 场，未四舍五入），两端见干预表 L436"
+   },
+   "display": "0.0006",
+   "cell": [
+    5,
+    7
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/gate_base",
+   "value": 0.3122,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "gate_base",
+    "part": "value"
+   },
+   "display": "0.3122",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/gate_after",
+   "value": 0.2538,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "gate_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.2538",
+   "cell": [
+    6,
+    2
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/rank_base",
+   "value": 6.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "6",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_pressure/s0/rank_after",
+   "value": 6.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "6",
+   "cell": [
+    6,
+    3
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_pressure/s0/metric_base",
+   "value": 0.6085,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "metric_base",
+    "part": "value"
+   },
+   "display": "0.6085",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/metric_after",
+   "value": 0.5801,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 416,
+    "col": "metric_shuffled_run",
+    "part": "value"
+   },
+   "display": "0.5801",
+   "cell": [
+    6,
+    4
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/metric_change",
+   "value": -0.028307569322398085,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_pressure_s0.npz 减 u1_s0.npz 的 pressure 指标，202 场，用未四舍五入的值相减（两者四舍五入后分别等于干预表 L416 的 metric_shuffled_run 和 metric_base）"
+   },
+   "display": "-0.0283",
+   "cell": [
+    6,
+    5
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/others_max_change",
+   "value": -0.006177691232383431,
+   "src": {
+    "kind": "perevent",
+    "how": "tackle 上 shuf_pressure_s0 减 u1_s0 的 AUC（202 场，未四舍五入），是其余 6 个 AUC 任务里绝对值最大的；各任务两端的值见干预表 L411 到 L418"
+   },
+   "display": "-0.0062",
+   "cell": [
+    6,
+    6
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_pressure/s0/dest_change",
+   "value": 0.0025531275812870624,
+   "src": {
+    "kind": "perevent",
+    "how": "dest 上 shuf_pressure_s0 减 u1_s0 的 top-1（202 场，未四舍五入），两端见干预表 L412"
+   },
+   "display": "0.0026",
+   "cell": [
+    6,
+    7
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/门控/s0",
+   "value": -0.0027,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 493,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0027",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/门控/s1",
+   "value": -0.0028,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 495,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0028",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/门控/s2",
+   "value": -0.0056,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 497,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0056",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/拼接/s0",
+   "value": -0.0043,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 494,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0043",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/拼接/s1",
+   "value": -0.0041,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 496,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0041",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  },
+  {
+   "id": "drag/拼接/s2",
+   "value": -0.0053,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 498,
+    "col": "other7_avg_change",
+    "part": "value"
+   },
+   "display": "-0.0053",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f4"
+  }
+ ],
+ "notes": [
+  "shuf_dest/s0 七个其余任务和落点的变化与拖累表 L493 逐格一致",
+  "shuf_dest/s1 七个其余任务和落点的变化与拖累表 L495 逐格一致",
+  "shuf_dest/s2 七个其余任务和落点的变化与拖累表 L497 逐格一致"
+ ],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c"
+ }
+}

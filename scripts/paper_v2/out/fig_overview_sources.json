@@ -1,0 +1,376 @@
+{
+ "name": "fig_overview",
+ "items": [
+  {
+   "id": "arch/n_scalar",
+   "value": 20.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/n_rich",
+   "value": 15.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/task_dim",
+   "value": 16.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/n_tasks",
+   "value": 8.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/enc_in",
+   "value": 36.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/enc_h",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/enc_out",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/act_e",
+   "value": "['Linear', 'ELU', 'Dropout', 'Linear', 'Tanh']",
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/act_s",
+   "value": "['Conv2d', 'BatchNorm2d', 'ReLU', 'MaxPool2d', 'Conv2d', 'BatchNorm2d', 'ReLU', 'AdaptiveAvgPool2d', 'Flatten', 'Linear', 'Tanh']",
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/c_in",
+   "value": 7.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/c1",
+   "value": 32.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/k1",
+   "value": 3.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/c2",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/k2",
+   "value": 3.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/pool",
+   "value": "(2, 2)",
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/lin_s_in",
+   "value": 256.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/lin_s_out",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/gate_in",
+   "value": 128.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/gate_out",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/hid_in",
+   "value": 64.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/hid_out",
+   "value": 32.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/out_bin",
+   "value": 1.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/out_dest",
+   "value": 96.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/n_dest",
+   "value": 96.0,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/grid",
+   "value": "(8, 12)",
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  },
+  {
+   "id": "arch/dropout",
+   "value": 0.3,
+   "src": {
+    "kind": "code",
+    "file": "scripts/training/train_unified_clean.py",
+    "where": "UnifiedGatingClean 实例的层属性"
+   },
+   "display": null,
+   "cell": null,
+   "fmt": null
+  }
+ ],
+ "notes": [
+  "示意图事件 901cb9ad-e904-553c-9ccb-08a45f9d5895，Real Sociedad Arsen Zakharyan 在 (107.7, 24.1) 的完成传球，定格帧可见 20 人；u1 种子 3 落点任务 64 维门控均值重算 0.822496，u1_s3.npz 存的 0.822496",
+  "版式自动检查  22 处文字压框或重叠  [\"文字压框  'Event scalar features $x_{even'  框 (0.42,8.00)-(3.55,9.30) 实线\", \"文字压框  'task embedding $e_t \\\\\\\\in \\\\\\\\mathb'  框 (4.05,10.42)-(8.40,11.92) 实线\", \"文字压框  '$h_e \\\\\\\\in \\\\\\\\mathbb{R}^{64}$'  框 (3.88,6.15)-(8.18,10.10) 实线\", \"文字压框  '$h_e \\\\\\\\in \\\\\\\\mathbb{R}^{64}$'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  'Conv 3×3, 32→64 + BN + ReLU + '  框 (3.45,2.75)-(7.35,5.15) 实线\", \"文字压框  'flatten (256)'  框 (3.45,2.75)-(7.35,5.15) 实线\", \"文字压框  '$h_{fused} = g \\\\\\\\odot h_s + (1-'  框 (9.42,5.38)-(12.74,5.84) 实线\", \"文字压框  '$h_{fused} \\\\\\\\in \\\\\\\\mathbb{R}^{64}'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  '(4) PREDICTION HEAD'  框 (9.15,3.45)-(13.02,12.38) 虚线\", \"文字压框  '(4) PREDICTION HEAD'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'ELU → Dropout(0.3)'  框 (13.27,9.25)-(15.75,11.70) 实线\", \"文字压框  '(real value)'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'Linear 32 → 96'  框 (14.58,7.00)-(15.70,8.95) 实线\", \"文字压框  'BCE for the seven outcome task'  框 (13.24,2.45)-(15.78,5.78) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.10,2.30)-(15.92,12.38) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.24,2.45)-(15.78,5.78) 虚线\", \"文字压框  'Softmax over 96 cells for pass'  框 (13.28,2.62)-(14.48,5.17) 实线\", \"文字压框  'Softmax over 96 cells for pass'  框 (14.54,2.62)-(15.74,5.17) 实线\", \"文字重叠  'Conv 3×3, 7→32 + BN + ReLU + M' 和 'Conv 3×3, 32→64 + BN + ReLU + '\", \"文字重叠  'flatten (256)' 和 'Linear + Tanh'\", \"文字重叠  '$g$, gate value per dimension' 和 '$h_s$, spatial embedding'\", \"文字重叠  '$h_s$, spatial embedding' 和 '$h_e$, event embedding'\"]"
+ ],
+ "source_md5": {
+  "scripts/training/train_unified_clean.py": "bd1198a0871d8ffb58d37fefb78cf72e"
+ },
+ "arch": {
+  "n_scalar": 20,
+  "n_rich": 15,
+  "task_dim": 16,
+  "n_tasks": 8,
+  "enc_in": 36,
+  "enc_h": 64,
+  "enc_out": 64,
+  "act_e": [
+   "Linear",
+   "ELU",
+   "Dropout",
+   "Linear",
+   "Tanh"
+  ],
+  "act_s": [
+   "Conv2d",
+   "BatchNorm2d",
+   "ReLU",
+   "MaxPool2d",
+   "Conv2d",
+   "BatchNorm2d",
+   "ReLU",
+   "AdaptiveAvgPool2d",
+   "Flatten",
+   "Linear",
+   "Tanh"
+  ],
+  "c_in": 7,
+  "c1": 32,
+  "k1": 3,
+  "c2": 64,
+  "k2": 3,
+  "pool": [
+   2,
+   2
+  ],
+  "lin_s_in": 256,
+  "lin_s_out": 64,
+  "gate_in": 128,
+  "gate_out": 64,
+  "hid_in": 64,
+  "hid_out": 32,
+  "out_bin": 1,
+  "out_dest": 96,
+  "n_dest": 96,
+  "grid": [
+   8,
+   12
+  ],
+  "dropout": 0.3
+ }
+}

@@ -1,0 +1,754 @@
+{
+ "name": "figS2_soft_penalty",
+ "items": [
+  {
+   "id": "rich/explore/lam0/outcome_gate",
+   "value": 0.304,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 512,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.3040",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0/dest_gate",
+   "value": 0.801,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 512,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.8010",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0/drop_all",
+   "value": 0.0626,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 512,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0626",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0/gate_zero",
+   "value": 0.0314,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 512,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0314",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.01/outcome_gate",
+   "value": 0.103,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 513,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.1030",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.01/dest_gate",
+   "value": 0.659,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 513,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.6590",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.01/drop_all",
+   "value": 0.0537,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 513,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0537",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.01/gate_zero",
+   "value": 0.0288,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 513,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0288",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.03/outcome_gate",
+   "value": 0.027,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 514,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.0270",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.03/dest_gate",
+   "value": 0.473,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 514,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.4730",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.03/drop_all",
+   "value": 0.0421,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 514,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0421",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/explore/lam0.03/gate_zero",
+   "value": 0.0179,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 514,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0179",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s1/outcome_gate",
+   "value": 0.093,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.0930",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s1/dest_gate",
+   "value": 0.593,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.5930",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s1/drop_all",
+   "value": 0.0643,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0643",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s1/gate_zero",
+   "value": 0.0428,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 522,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0428",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s2/outcome_gate",
+   "value": 0.08,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.0800",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s2/dest_gate",
+   "value": 0.6,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.6000",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s2/drop_all",
+   "value": 0.0448,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0448",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s2/gate_zero",
+   "value": 0.028,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 523,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0280",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s3/outcome_gate",
+   "value": 0.112,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.1120",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s3/dest_gate",
+   "value": 0.681,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.6810",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s3/drop_all",
+   "value": 0.0542,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0542",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/s3/gate_zero",
+   "value": 0.0287,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 524,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0287",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "rich/confirm/mean/outcome_gate",
+   "value": 0.09499999999999999,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "rich/confirm/s1/outcome_gate",
+     "rich/confirm/s2/outcome_gate",
+     "rich/confirm/s3/outcome_gate"
+    ]
+   },
+   "display": "0.095",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "rich/confirm/mean/dest_gate",
+   "value": 0.6246666666666667,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "rich/confirm/s1/dest_gate",
+     "rich/confirm/s2/dest_gate",
+     "rich/confirm/s3/dest_gate"
+    ]
+   },
+   "display": "0.625",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "rich/confirm/mean/drop_all",
+   "value": 0.054433333333333334,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "rich/confirm/s1/drop_all",
+     "rich/confirm/s2/drop_all",
+     "rich/confirm/s3/drop_all"
+    ]
+   },
+   "display": "0.054",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "rich/confirm/mean/gate_zero",
+   "value": 0.03316666666666667,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "rich/confirm/s1/gate_zero",
+     "rich/confirm/s2/gate_zero",
+     "rich/confirm/s3/gate_zero"
+    ]
+   },
+   "display": "0.033",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "thin/explore/lam0/outcome_gate",
+   "value": 0.323,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 532,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.3230",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0/dest_gate",
+   "value": 0.826,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 532,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.8260",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.01/outcome_gate",
+   "value": 0.106,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 533,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.1060",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.01/dest_gate",
+   "value": 0.697,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 533,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.6970",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.01/drop_all",
+   "value": 0.0718,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 533,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0718",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.01/gate_zero",
+   "value": 0.0411,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 533,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0411",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.03/outcome_gate",
+   "value": 0.04,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 534,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.0400",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/explore/lam0.03/dest_gate",
+   "value": 0.404,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 534,
+    "col": "g_dest",
+    "part": "value"
+   },
+   "display": "0.4040",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s1/outcome_gate",
+   "value": 0.113,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.1130",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s1/dest_gate",
+   "value": 0.674,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.6740",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s1/drop_all",
+   "value": 0.0759,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0759",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s1/gate_zero",
+   "value": 0.0589,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 542,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0589",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s2/outcome_gate",
+   "value": 0.112,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.1120",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s2/dest_gate",
+   "value": 0.678,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.6780",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s2/drop_all",
+   "value": 0.0657,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0657",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s2/gate_zero",
+   "value": 0.0473,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 543,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0473",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s3/outcome_gate",
+   "value": 0.087,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "outcome_gate_avg",
+    "part": "value"
+   },
+   "display": "0.0870",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s3/dest_gate",
+   "value": 0.661,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "dest_gate",
+    "part": "value"
+   },
+   "display": "0.6610",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s3/drop_all",
+   "value": 0.0723,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "drop_all_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0723",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/s3/gate_zero",
+   "value": 0.0436,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 544,
+    "col": "gate_zero_outcome_avg",
+    "part": "value"
+   },
+   "display": "0.0436",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "thin/confirm/mean/outcome_gate",
+   "value": 0.104,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "thin/confirm/s1/outcome_gate",
+     "thin/confirm/s2/outcome_gate",
+     "thin/confirm/s3/outcome_gate"
+    ]
+   },
+   "display": "0.104",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "thin/confirm/mean/dest_gate",
+   "value": 0.6709999999999999,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "thin/confirm/s1/dest_gate",
+     "thin/confirm/s2/dest_gate",
+     "thin/confirm/s3/dest_gate"
+    ]
+   },
+   "display": "0.671",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "thin/confirm/mean/drop_all",
+   "value": 0.0713,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "thin/confirm/s1/drop_all",
+     "thin/confirm/s2/drop_all",
+     "thin/confirm/s3/drop_all"
+    ]
+   },
+   "display": "0.071",
+   "cell": null,
+   "fmt": "f3"
+  },
+  {
+   "id": "thin/confirm/mean/gate_zero",
+   "value": 0.04993333333333333,
+   "src": {
+    "kind": "derived",
+    "formula": "这几个种子的均值",
+    "inputs": [
+     "thin/confirm/s1/gate_zero",
+     "thin/confirm/s2/gate_zero",
+     "thin/confirm/s3/gate_zero"
+    ]
+   },
+   "display": "0.050",
+   "cell": null,
+   "fmt": "f3"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c"
+ },
+ "data_csv": "scripts/paper_v2/out/figS2_soft_penalty_data.csv"
+}

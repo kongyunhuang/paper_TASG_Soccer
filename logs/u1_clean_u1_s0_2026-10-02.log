@@ -1,0 +1,45 @@
+[data] pass           dev 100,000 test 30,000 mean label dev 0.805 test 0.812  (10s)
+[data] dest           dev 100,000 test 30,000 mean label dev 47.866 test 47.637  (11s)
+[data] shot           dev  37,498 test  5,154 mean label dev 0.099 test 0.093  (2s)
+[data] interception   dev  27,997 test  3,002 mean label dev 0.598 test 0.619  (0s)
+[data] ball_recovery  dev 100,000 test 18,995 mean label dev 0.923 test 0.926  (1s)
+[data] pressure       dev 100,000 test 30,000 mean label dev 0.235 test 0.228  (5s)
+[data] dribble        dev  38,374 test  5,725 mean label dev 0.533 test 0.527  (4s)
+[data] tackle         dev  46,841 test  6,922 mean label dev 0.615 test 0.618  (4s)
+[split] train 440,552 val 110,158 test 129,798  features 20  (66s)
+[epoch  1] loss 1.2684  val score 0.6132 *  elapsed 2.5 min
+[epoch  2] loss 1.1982  val score 0.6213 *  elapsed 3.8 min
+[epoch  3] loss 1.1858  val score 0.6261 *  elapsed 5.3 min
+[epoch  4] loss 1.1773  val score 0.6269 *  elapsed 6.7 min
+[epoch  5] loss 1.1705  val score 0.6312 *  elapsed 8.0 min
+[epoch  6] loss 1.1644  val score 0.6320 *  elapsed 9.3 min
+[epoch  7] loss 1.1589  val score 0.6352 *  elapsed 10.5 min
+[epoch  8] loss 1.1545  val score 0.6360 *  elapsed 11.8 min
+[epoch  9] loss 1.1508  val score 0.6384 *  elapsed 13.1 min
+[epoch 10] loss 1.1478  val score 0.6390 *  elapsed 14.6 min
+[epoch 11] loss 1.1439  val score 0.6397 *  elapsed 16.2 min
+[epoch 12] loss 1.1409  val score 0.6404 *  elapsed 17.5 min
+[epoch 13] loss 1.1387  val score 0.6400  elapsed 19.0 min
+[epoch 14] loss 1.1360  val score 0.6414 *  elapsed 20.3 min
+[epoch 15] loss 1.1347  val score 0.6422 *  elapsed 21.6 min
+[epoch 16] loss 1.1320  val score 0.6429 *  elapsed 22.8 min
+[epoch 17] loss 1.1303  val score 0.6426  elapsed 24.1 min
+[epoch 18] loss 1.1280  val score 0.6446 *  elapsed 25.3 min
+[epoch 19] loss 1.1264  val score 0.6434  elapsed 26.3 min
+[epoch 20] loss 1.1247  val score 0.6423  elapsed 27.3 min
+[epoch 21] loss 1.1240  val score 0.6456 *  elapsed 28.2 min
+[epoch 22] loss 1.1217  val score 0.6442  elapsed 29.2 min
+[epoch 23] loss 1.1217  val score 0.6455  elapsed 30.1 min
+[epoch 24] loss 1.1200  val score 0.6452  elapsed 31.1 min
+[epoch 25] loss 1.1189  val score 0.6437  elapsed 32.0 min
+
+task                             test        val  gate_mean  gate_sd  n_test
+pass                       auc 0.9148     0.9086     0.2543   0.0942   30000
+dest             top1 0.150 nll 3.104     0.3128     0.8256   0.0547   30000
+shot                       auc 0.7421     0.7629     0.3721   0.0347    5154
+interception               auc 0.6333     0.6233     0.4125   0.0652    3002
+ball_recovery              auc 0.6989     0.7158     0.1566   0.0455   18995
+pressure                   auc 0.6067     0.5918     0.3122   0.0515   30000
+dribble                    auc 0.6562     0.6245     0.3225   0.0795    5725
+tackle                     auc 0.6152     0.6250     0.4292   0.0727    6922
+[done] 32.2 min  data/cache/u1_clean/u1_s0.json

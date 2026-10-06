@@ -1,0 +1,1399 @@
+{
+ "name": "fig_gate",
+ "items": [
+  {
+   "id": "u1/pass/gate_mean",
+   "value": 0.237,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 66,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2370",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pass/s0",
+   "value": 0.25426971912384033,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2543",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pass/s1",
+   "value": 0.22228674590587616,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2223",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pass/s2",
+   "value": 0.24177688360214233,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2418",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pass/s3",
+   "value": 0.22975467145442963,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2298",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dest/gate_mean",
+   "value": 0.8047,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 67,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.8047",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dest/s0",
+   "value": 0.8255824446678162,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.8256",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dest/s1",
+   "value": 0.7816739082336426,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7817",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dest/s2",
+   "value": 0.8114817142486572,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.8115",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dest/s3",
+   "value": 0.8002403378486633,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.8002",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/shot/gate_mean",
+   "value": 0.4429,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 68,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4429",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/shot/s0",
+   "value": 0.37223267555236816,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3722",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/shot/s1",
+   "value": 0.5340419411659241,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.5340",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/shot/s2",
+   "value": 0.42777547240257263,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4278",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/shot/s3",
+   "value": 0.4376944601535797,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4377",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/interception/gate_mean",
+   "value": 0.4143,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 69,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4143",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/interception/s0",
+   "value": 0.4126010239124298,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4126",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/interception/s1",
+   "value": 0.3778018057346344,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.3778",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/interception/s2",
+   "value": 0.45364928245544434,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4536",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/interception/s3",
+   "value": 0.4133477807044983,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4133",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/ball_recovery/gate_mean",
+   "value": 0.1882,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 70,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.1882",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/ball_recovery/s0",
+   "value": 0.15664759278297424,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1566",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/ball_recovery/s1",
+   "value": 0.18590225279331207,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1859",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/ball_recovery/s2",
+   "value": 0.19427913427352905,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1943",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/ball_recovery/s3",
+   "value": 0.2157781571149826,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.2158",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pressure/gate_mean",
+   "value": 0.2801,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 71,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2801",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pressure/s0",
+   "value": 0.31222108006477356,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3122",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pressure/s1",
+   "value": 0.32076141238212585,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3208",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pressure/s2",
+   "value": 0.23088446259498596,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2309",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/pressure/s3",
+   "value": 0.2566106617450714,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2566",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dribble/gate_mean",
+   "value": 0.3172,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 72,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.3172",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dribble/s0",
+   "value": 0.3225580155849457,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3226",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dribble/s1",
+   "value": 0.31042155623435974,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3104",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dribble/s2",
+   "value": 0.34807419776916504,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3481",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/dribble/s3",
+   "value": 0.2876684367656708,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2877",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/tackle/gate_mean",
+   "value": 0.4011,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 73,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4011",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/tackle/s0",
+   "value": 0.42899608612060547,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s0.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4290",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/tackle/s1",
+   "value": 0.39421766996383667,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s1.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.3942",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/tackle/s2",
+   "value": 0.41012731194496155,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s2.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4101",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "u1/tackle/s3",
+   "value": 0.3710355758666992,
+   "src": {
+    "kind": "perevent",
+    "how": "u1_s3.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.3710",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pass/gate_mean",
+   "value": 0.3664,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 9,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.3664",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pass/s0",
+   "value": 0.342325896024704,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3423",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pass/s1",
+   "value": 0.39118027687072754,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3912",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pass/s2",
+   "value": 0.36570483446121216,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.3657",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dest/gate_mean",
+   "value": 0.2638,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 10,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2638",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dest/s0",
+   "value": 0.2715538442134857,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.2716",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dest/s1",
+   "value": 0.24122823774814606,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.2412",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dest/s2",
+   "value": 0.27846959233283997,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.2785",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/shot/gate_mean",
+   "value": 0.3618,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 11,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.3618",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/shot/s0",
+   "value": 0.3672694265842438,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3673",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/shot/s1",
+   "value": 0.3260982632637024,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3261",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/shot/s2",
+   "value": 0.3921354413032532,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3921",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/interception/gate_mean",
+   "value": 0.4523,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 12,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4523",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/interception/s0",
+   "value": 0.4522884488105774,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.4523",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/interception/s1",
+   "value": 0.5119640231132507,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.5120",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/interception/s2",
+   "value": 0.39268141984939575,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.3927",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/ball_recovery/gate_mean",
+   "value": 0.3268,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 13,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.3268",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/ball_recovery/s0",
+   "value": 0.3474732041358948,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.3475",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/ball_recovery/s1",
+   "value": 0.3075792193412781,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.3076",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/ball_recovery/s2",
+   "value": 0.3254595398902893,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.3255",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pressure/gate_mean",
+   "value": 0.4193,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 14,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4193",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pressure/s0",
+   "value": 0.4387710988521576,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.4388",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pressure/s1",
+   "value": 0.4380718469619751,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.4381",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/pressure/s2",
+   "value": 0.3810705244541168,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.3811",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dribble/gate_mean",
+   "value": 0.4436,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 15,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4436",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dribble/s0",
+   "value": 0.45143699645996094,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.4514",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dribble/s1",
+   "value": 0.485624760389328,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.4856",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/dribble/s2",
+   "value": 0.3936406672000885,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.3936",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/tackle/gate_mean",
+   "value": 0.4556,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 16,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4556",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/tackle/s0",
+   "value": 0.4259447455406189,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s0.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4259",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/tackle/s1",
+   "value": 0.5332827568054199,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s1.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.5333",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/tackle/s2",
+   "value": 0.40767383575439453,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_dest_s2.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.4077",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pass/gate_mean",
+   "value": 0.2225,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 47,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2225",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pass/s0",
+   "value": 0.2351725995540619,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2352",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pass/s1",
+   "value": 0.19353586435317993,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.1935",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pass/s2",
+   "value": 0.23869387805461884,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 pass 的 202 场测试事件上取平均"
+   },
+   "display": "0.2387",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dest/gate_mean",
+   "value": 0.7886,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 48,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.7886",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dest/s0",
+   "value": 0.7855656147003174,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7856",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dest/s1",
+   "value": 0.7928982973098755,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7929",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dest/s2",
+   "value": 0.7873974442481995,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 dest 的 202 场测试事件上取平均"
+   },
+   "display": "0.7874",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/shot/gate_mean",
+   "value": 0.4541,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 49,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.4541",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/shot/s0",
+   "value": 0.4135277271270752,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.4135",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/shot/s1",
+   "value": 0.5622427463531494,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.5622",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/shot/s2",
+   "value": 0.38655051589012146,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 shot 的 202 场测试事件上取平均"
+   },
+   "display": "0.3866",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/interception/gate_mean",
+   "value": 0.3259,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 50,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.3259",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/interception/s0",
+   "value": 0.32987722754478455,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.3299",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/interception/s1",
+   "value": 0.2993163466453552,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.2993",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/interception/s2",
+   "value": 0.3485158681869507,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 interception 的 202 场测试事件上取平均"
+   },
+   "display": "0.3485",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/ball_recovery/gate_mean",
+   "value": 0.1445,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 51,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.1445",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/ball_recovery/s0",
+   "value": 0.12388401478528976,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1239",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/ball_recovery/s1",
+   "value": 0.15585817396640778,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1559",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/ball_recovery/s2",
+   "value": 0.1536325067281723,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 ball_recovery 的 202 场测试事件上取平均"
+   },
+   "display": "0.1536",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pressure/gate_mean",
+   "value": 0.2575,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 52,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2575",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pressure/s0",
+   "value": 0.278538316488266,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2785",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pressure/s1",
+   "value": 0.269031286239624,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2690",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/pressure/s2",
+   "value": 0.224981427192688,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 pressure 的 202 场测试事件上取平均"
+   },
+   "display": "0.2250",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dribble/gate_mean",
+   "value": 0.2412,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 53,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.2412",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dribble/s0",
+   "value": 0.22040055692195892,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2204",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dribble/s1",
+   "value": 0.25462037324905396,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2546",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/dribble/s2",
+   "value": 0.24872402846813202,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 dribble 的 202 场测试事件上取平均"
+   },
+   "display": "0.2487",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/tackle/gate_mean",
+   "value": 0.1651,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 54,
+    "col": "gate_mean",
+    "part": "value"
+   },
+   "display": "0.1651",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/tackle/s0",
+   "value": 0.1813243180513382,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s0.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.1813",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/tackle/s1",
+   "value": 0.1334567815065384,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s1.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.1335",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_tackle/tackle/s2",
+   "value": 0.18051888048648834,
+   "src": {
+    "kind": "perevent",
+    "how": "shuf_tackle_s2.npz 的 gate_mean 在 tackle 的 202 场测试事件上取平均"
+   },
+   "display": "0.1805",
+   "cell": null,
+   "fmt": "f4"
+  },
+  {
+   "id": "shuf_dest/rank_base/s0",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/rank_after/s0",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 388,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/rank_base/s1",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/rank_after/s1",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 396,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/rank_base/s2",
+   "value": 1.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "1",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_dest/rank_after/s2",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 404,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_base/s0",
+   "value": 2.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "2",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_after/s0",
+   "value": 7.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 426,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "7",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_base/s1",
+   "value": 3.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "3",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_after/s1",
+   "value": 8.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 434,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "8",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_base/s2",
+   "value": 4.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "rank_base",
+    "part": "value"
+   },
+   "display": "4",
+   "cell": null,
+   "fmt": "int"
+  },
+  {
+   "id": "shuf_tackle/rank_after/s2",
+   "value": 7.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/u1_clean_summary.md",
+    "line": 442,
+    "col": "rank_shuffled_run",
+    "part": "value"
+   },
+   "display": "7",
+   "cell": null,
+   "fmt": "int"
+  }
+ ],
+ "notes": [
+  "shuf_dest 种子 0 到 2 的八个任务门控和干预表的 gate_base、gate_shuffled_run 四位一致",
+  "shuf_tackle 种子 0 到 2 的八个任务门控和干预表的 gate_base、gate_shuffled_run 四位一致",
+  "shuf_dest 名次（基准到干预）[(1, 8), (1, 8), (1, 8)]",
+  "shuf_tackle 名次（基准到干预）[(2, 7), (3, 8), (4, 7)]"
+ ],
+ "source_md5": {
+  "audit/u1_clean_summary.md": "aea28711dcdc86a03be6b94d4a66399c"
+ },
+ "data_csv": "scripts/paper_v2/out/fig_gate_data.csv"
+}

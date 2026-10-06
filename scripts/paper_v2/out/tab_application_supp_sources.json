@@ -1,0 +1,482 @@
+{
+ "name": "tab_application_supp",
+ "items": [
+  {
+   "id": "全体球员/rows",
+   "value": 869.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "球员数（两折合计行数）",
+    "part": "value"
+   },
+   "display": "869",
+   "cell": [
+    0,
+    1
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "全体球员/D",
+   "value": -0.00267,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "D 合并",
+    "part": "value"
+   },
+   "display": "-0.00267",
+   "cell": [
+    0,
+    2
+   ],
+   "fmt": "f5"
+  },
+  {
+   "id": "全体球员/D_lo",
+   "value": -0.00381,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "95% 区间",
+    "regex": "^\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00381",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/D_hi",
+   "value": -0.00153,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "95% 区间",
+    "regex": ", ([-+]?[0-9.]+)\\]$",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00153",
+   "cell": [
+    0,
+    3
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold1",
+   "value": -0.00281,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折一",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00281",
+   "cell": [
+    0,
+    4
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/fold2",
+   "value": -0.00215,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "折二",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00215",
+   "cell": [
+    0,
+    5
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed0",
+   "value": -0.00247,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00247",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed1",
+   "value": -0.00228,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00228",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/seed2",
+   "value": -0.00326,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00326",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "全体球员/pct",
+   "value": -0.09,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "col": "D 占全局模型对数损失",
+    "regex": "^([-+]?[0-9.]+)%",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.09",
+   "cell": [
+    0,
+    6
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "全体球员/verdict_summary",
+   "value": "Supported",
+   "src": {
+    "kind": "text",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 11,
+    "must_contain": "成立"
+   },
+   "display": "Supported",
+   "cell": [
+    0,
+    7
+   ],
+   "fmt": null
+  },
+  {
+   "id": "全体球员/verdict_criteria_file",
+   "value": "Supported",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_球员决策偏好_预先写下的判定标准.md",
+    "line": 80,
+    "must_contain": "成立"
+   },
+   "display": "Supported",
+   "cell": [
+    0,
+    7
+   ],
+   "fmt": null
+  },
+  {
+   "id": "换队球员/rows",
+   "value": 152.0,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "球员数（两折合计行数）",
+    "part": "value"
+   },
+   "display": "152",
+   "cell": [
+    1,
+    1
+   ],
+   "fmt": "int"
+  },
+  {
+   "id": "换队球员/D",
+   "value": -0.00142,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "D 合并",
+    "part": "value"
+   },
+   "display": "-0.00142",
+   "cell": [
+    1,
+    2
+   ],
+   "fmt": "f5"
+  },
+  {
+   "id": "换队球员/D_lo",
+   "value": -0.00462,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "95% 区间",
+    "regex": "^\\[([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00462",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/D_hi",
+   "value": 0.00171,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "95% 区间",
+    "regex": ", ([-+]?[0-9.]+)\\]$",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00171",
+   "cell": [
+    1,
+    3
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold1",
+   "value": -0.00193,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折一",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00193",
+   "cell": [
+    1,
+    4
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/fold2",
+   "value": 0.00055,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "折二",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00055",
+   "cell": [
+    1,
+    5
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed0",
+   "value": -0.00168,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00168",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed1",
+   "value": 0.00052,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "+0.00052",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/seed2",
+   "value": -0.00308,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "各种子合并点估计",
+    "regex": "^\\S+\\s+\\S+\\s+([-+]?[0-9.]+)",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.00308",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "sf5"
+  },
+  {
+   "id": "换队球员/pct",
+   "value": -0.05,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "col": "D 占全局模型对数损失",
+    "regex": "^([-+]?[0-9.]+)%",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "-0.05",
+   "cell": [
+    1,
+    6
+   ],
+   "fmt": "f2"
+  },
+  {
+   "id": "换队球员/verdict_summary",
+   "value": "Inconclusive",
+   "src": {
+    "kind": "text",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 13,
+    "must_contain": "不确定"
+   },
+   "display": "Inconclusive",
+   "cell": [
+    1,
+    7
+   ],
+   "fmt": null
+  },
+  {
+   "id": "换队球员/verdict_criteria_file",
+   "value": "Inconclusive",
+   "src": {
+    "kind": "text",
+    "file": "memory_logs/2026-10-02_球员决策偏好_预先写下的判定标准.md",
+    "line": 81,
+    "must_contain": "不确定"
+   },
+   "display": "Inconclusive",
+   "cell": [
+    1,
+    7
+   ],
+   "fmt": null
+  },
+  {
+   "id": "留队球员/D",
+   "value": -0.00292,
+   "src": {
+    "kind": "md",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 12,
+    "col": "D 合并",
+    "part": "value"
+   },
+   "display": "-0.00292",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f5"
+  },
+  {
+   "id": "ratio_movers_stayers",
+   "value": 0.49,
+   "src": {
+    "kind": "mdre",
+    "file": "audit/player_decision_preference_summary.md",
+    "line": 15,
+    "col": null,
+    "regex": "留队球员的 ([0-9.]+) 倍",
+    "group": 1,
+    "sign": 1
+   },
+   "display": "0.49",
+   "cell": [
+    "note",
+    0
+   ],
+   "fmt": "f2"
+  }
+ ],
+ "notes": [],
+ "source_md5": {
+  "audit/player_decision_preference_summary.md": "3a948df8d50af7f00bfaf46aa3e09bee",
+  "memory_logs/2026-10-02_球员决策偏好_预先写下的判定标准.md": "fa717ea04c499fd2ac0ad0e7860b8ed0"
+ }
+}
