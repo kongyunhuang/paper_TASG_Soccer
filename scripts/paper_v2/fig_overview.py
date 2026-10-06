@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-图 fig_overview  方法示意图，把用户 5 月手画的 Figure 1（the hand-drawn Figure 1 of the manuscript）复刻成矢量版
+图 fig_overview  方法示意图，把作者 5 月手画的 Figure 1（the hand-drawn Figure 1 of the manuscript）复刻成矢量版
 ============================
-布局、配色、字体风格和框里的文字照原图，按 2026-10-04 主会话转达的用户要求改四处  Loss head 换成七个结果任务的 BCE 和落点 96 格 softmax
+布局、配色、字体风格和框里的文字照原图，按 2026-10-04 负责人转达的作者要求改四处  Loss head 换成七个结果任务的 BCE 和落点 96 格 softmax
 （从 32 单元层另出一个 Linear 32 to 96），Concatenate 框加任务嵌入 e_t，记号写 h_e 和 h_s，字号缩到版心后不小于 7 pt。
 结构和层宽从 scripts/training/train_unified_clean.py 的 UnifiedGatingClean 实例读出（arch()，带断言）。
 图里的真实数据都来自同一次传球事件（EVENT_ID，24/25 的 202 场干净比赛之一）

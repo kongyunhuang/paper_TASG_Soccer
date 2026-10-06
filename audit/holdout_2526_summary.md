@@ -241,4 +241,4 @@
 | ball_recovery | 11,997 | 0.919 |
 | pressure | 47,803 | 0.229 |
 
-事后注（2026-10-03 02:40，xcv2-c4）。上表“24/25”参照列是 02:06 前从当时的 u1_clean 和 single_clean{_rich}/preds 算的，其中 u1rich 是三个种子（Pass 0.9152）；01:45 之后权威汇总表 audit/u1_clean_summary.md 里 u1rich 已是四个种子（Pass 0.9148）。留出集上 u1rich 用的也是 s0 到 s2 三个种子，和参照列同口径，判定不用 u1rich。本行是跑完后追加的唯一改动，其余内容和 02:06 生成时相同。
+事后注（2026-10-03 02:40，）。上表“24/25”参照列是 02:06 前从当时的 u1_clean 和 single_clean{_rich}/preds 算的，其中 u1rich 是三个种子（Pass 0.9152）；01:45 之后权威汇总表 audit/u1_clean_summary.md 里 u1rich 已是四个种子（Pass 0.9148）。留出集上 u1rich 用的也是 s0 到 s2 三个种子，和参照列同口径，判定不用 u1rich。本行是跑完后追加的唯一改动，其余内容和 02:06 生成时相同。

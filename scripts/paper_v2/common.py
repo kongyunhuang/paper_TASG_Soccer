@@ -60,7 +60,7 @@ TASK_NAME = {"pass": "Pass", "dest": "Destination", "shot": "Shot", "interceptio
 
 
 def rel(p: Path) -> str:
-    """相对 xCV2 根目录的路径，出处里统一这样写"""
+    """相对仓库根目录的路径，出处里统一这样写"""
     return str(Path(p).resolve().relative_to(ROOT))
 
 
@@ -366,7 +366,7 @@ def set_style():
     })
 
 
-# 5 月旧图（scripts/plotting/plot_main_heatmap.py、plot_gate_vs_delta_auc.py）的配色和样式，10-04 用户要求四张数据图照它重做
+# 5 月旧图（scripts/plotting/plot_main_heatmap.py、plot_gate_vs_delta_auc.py）的配色和样式，10-04 作者要求四张数据图照它重做
 OLD = dict(navy="#1F4E79", red="#CC3311", gray="#888888", lgray="#A0A0A0", stem="#D7DEE8", grid="#E6E6E6",
            edge="#333333", ink="#1A1A1A", ring="#222222", magenta="#882255", band="#EEEEEE", navy_l="#9DB4CC", red_l="#E8A595")
 

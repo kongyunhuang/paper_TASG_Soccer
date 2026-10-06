@@ -14,7 +14,7 @@ Usage
   conda activate kronos
   PYTHONPATH=. python -u scripts/paper_v2/tab_destination.py
 
-Last modified 2026-10-06（表注措辞按 Miguel 10-05 修订）
+Last modified 2026-10-06（表注措辞按合作者 10-05 修订）
 """
 from scripts.paper_v2.common import (SRC, Registry, json_value, md_find, md_row, mean_sd, single_seed_values, tex,
                                      unified_seed_values, write_table)

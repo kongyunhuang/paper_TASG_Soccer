@@ -6,7 +6,7 @@ Code and result summaries for the paper
 Kongyun Huang, Yingzhe Song, Miguel-Ángel Gómez-Ruano, Javier M. Buldú
 Submitted to Knowledge-Based Systems, October 2026.
 
-This repository holds the code that produced every number, table and figure in the manuscript and its supplementary material, together with the result summaries the manuscript was written from. The raw StatsBomb data are not included (see Data below). The earlier May 2026 version of this repository is kept in `legacy_2026-05/` and is superseded (see Legacy below).
+This repository holds the code that produced every number, table and figure in the manuscript and its supplementary material, together with the result summaries the manuscript was written from. The raw StatsBomb data are not included (see Data below). An earlier May 2026 release of this repository is superseded and is no longer part of the tree (see Legacy below).
 
 ## Layout
 
@@ -25,7 +25,6 @@ paper_TASG_Soccer/
   memory_logs/    decision criteria written down before each experiment was run
   logs/           training log of the unified model, seed 0 (read by tab_tasks.py)
   data/cache/holdout_2526/   the two JSON summaries of the hold-out confirmation
-  legacy_2026-05/ the superseded May 2026 release
 ```
 
 All commands below run from the repository root with `PYTHONPATH=.` set, inside the Python environment described under Environment.
@@ -173,7 +172,7 @@ Each `scripts/paper_v2/out/<name>_sources.json` lists every number of that table
 
 ## Legacy
 
-`legacy_2026-05/` is the repository as released in May 2026. It was built before the audit of the raw 360 frames, on data in which the freeze frames of failed dribbles and lost duels were recorded from the opponent's viewpoint (documented in `audit/frame_perspective_report.md` and `audit/raw_360_check_tables.md`). Its Dribble, Ball Receipt and Duel results are therefore not valid, and none of its code, numbers or figures is used in the submitted manuscript. It is kept for the record only and should not be run.
+The repository as released in May 2026 (git history up to commit a82cb3f) was built before the audit of the raw 360 frames, on data in which the freeze frames of failed dribbles and lost duels were recorded from the opponent's viewpoint (documented in `audit/frame_perspective_report.md` and `audit/raw_360_check_tables.md`). Its Dribble, Ball Receipt and Duel results are therefore not valid, and none of its code, numbers or figures is used in the submitted manuscript. It remains in the git history for the record only and should not be run.
 
 ## Licence
 

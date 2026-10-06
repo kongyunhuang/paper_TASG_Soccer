@@ -13,7 +13,7 @@ Usage
   conda activate kronos
   PYTHONPATH=. python -u scripts/paper_v2/tab_outcome_main.py
 
-Last modified 2026-10-06（表注措辞按 Miguel 10-05 修订，末尾加配对自助区间一句，数见 audit/2026-10-06_paired_bootstrap_2425.md）
+Last modified 2026-10-06（表注措辞按合作者 10-05 修订，末尾加配对自助区间一句，数见 audit/2026-10-06_paired_bootstrap_2425.md）
 """
 from scripts.paper_v2.common import (OUTCOME, SRC, TASK_NAME, Registry, md_find, md_row, mean_sd, single_seed_values,
                                      tex, unified_seed_values, write_table)

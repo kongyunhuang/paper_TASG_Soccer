@@ -15,7 +15,7 @@ Usage
   conda activate kronos
   PYTHONPATH=. python -u scripts/paper_v2/tab_holdout.py
 
-Last modified 2026-10-06（C4 的 24/25 门控范围改从逐种子原值舍入，shuf_dest 最大值由 0.279 改为 0.278；表注 C2 句措辞按 Miguel 10-05 修订）
+Last modified 2026-10-06（C4 的 24/25 门控范围改从逐种子原值舍入，shuf_dest 最大值由 0.279 改为 0.278；表注 C2 句措辞按合作者 10-05 修订）
 """
 import re
 

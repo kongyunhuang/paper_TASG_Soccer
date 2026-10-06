@@ -13,7 +13,7 @@ Usage
   conda activate kronos
   PYTHONPATH=. python -u scripts/paper_v2/tab_interventions.py
 
-Last modified 2026-10-06（表注措辞按 Miguel 10-05 修订）
+Last modified 2026-10-06（表注措辞按合作者 10-05 修订）
 """
 from scripts.paper_v2.common import (SRC, TASK_NAME, TASKS, Registry, fmt_num, md_find, md_value, tex, unified_seed_values,
                                      write_table)
