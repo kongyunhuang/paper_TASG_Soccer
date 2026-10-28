@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+"""
+dest_rule_baselines.py, rule baselines for the pass destination task
+====================================================================
+Measures how far simple rules, without any learned model, get on the 96-cell destination task.
+The data are the dest task of train_unified_clean.build_dataset, so events, labels and test set are the same as for the
+unified and single-task models. Metrics are computed on the 202 clean matches of 2024/25, as in summarize_u1_clean.py.
+  Uniform                           1/96 for every cell
+  Marginal                          frequency of each destination cell in the training seasons
+  Start-cell table                  destination distribution of the start cell of the pass (smoothing 0.2)
+  Table times teammates             p proportional to table x (1 + a x teammates in the cell); a is chosen by log loss on
+                                    held-out matches of the training seasons, never on the test set
+  Table times teammates over        p proportional to table x (1 + a x teammates) / (1 + b x opponents); a and b chosen
+  opponents                         the same way
+A model that has learned more than the rules should beat the last two rows in both top-1 and log loss.
+
+Inputs   as train_unified_clean.py, plus data/raw_scan/match_state_2425.parquet
+Outputs  results/dest_rule_baselines.md
+
+Usage
+  PYTHONPATH=. python -u scripts/eval/dest_rule_baselines.py
+
+Last modified 2026-10-28
+"""
+import itertools
+import math
+import time
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+from scripts.eval.summarize_u1_clean import clean_matches
+from scripts.training.train_unified_clean import N_DEST, build_dataset
+
+OUT = Path("results/dest_rule_baselines.md")
+SMOOTH = 0.2
+GRID_A = [0, 0.5, 1, 2, 3, 5, 10, 20]
+GRID_B = [0, 0.5, 1, 2, 5]
+
+
+def start_cell(X):
+    """Cell of the pass start, on the same 8x12 grid as the label (10 yards per cell, row-major)"""
+    return np.clip((X[:, 1] / 10).astype(int), 0, 7) * 12 + np.clip((X[:, 0] / 10).astype(int), 0, 11)
+
+
+def table(start, y):
+    T = np.full((N_DEST, N_DEST), SMOOTH)
+    np.add.at(T, (start, y), 1)
+    return T / T.sum(1, keepdims=True)
+
+
+def rule(T, start, mates, opps, a, b):
+    P = T[start] * (1 + a * mates) / (1 + b * opps)
+    return P / P.sum(1, keepdims=True)
+
+
+def scores(P, y):
+    n = np.arange(len(y))
+    return dict(top1=float((P.argmax(1) == y).mean()), top3=float((np.argsort(-P, 1)[:, :3] == y[:, None]).any(1).mean()),
+                logloss=float(-np.log(P[n, y]).mean()))
+
+
+def main():
+    t0 = time.time()
+    d = build_dataset()["dest"]
+    dev, test = d["dev"], d["test"]
+    clean = clean_matches()
+    ok = np.array([int(m) in clean for m in test["match"]])
+    Xt, yt, smt = test["X"][ok], test["y"][ok].astype(int), test["sm"][ok]
+    yd = dev["y"].astype(int)
+    sd, st = start_cell(dev["X"]), start_cell(Xt)
+    flat = lambda sm, c: np.asarray(sm[:, c]).reshape(len(sm), -1)
+    md, od, mt, ot = flat(dev["sm"], 0), flat(dev["sm"], 1), flat(smt, 0), flat(smt, 1)
+    print(f"[data] dev {len(yd):,}  test (202 matches) {len(yt):,}  ({time.time() - t0:.0f}s)", flush=True)
+
+    # a and b are chosen on a fifth of the training-season matches held out from the table
+    matches = np.sort(np.unique(dev["match"]))
+    perm = np.random.RandomState(20261002).permutation(len(matches))
+    tr = np.isin(dev["match"], matches[perm[:int(0.8 * len(matches))]])
+    va = ~tr
+    Ttr = table(sd[tr], yd[tr])
+    grid = []
+    for a, b in itertools.product(GRID_A, GRID_B):
+        grid.append((scores(rule(Ttr, sd[va], md[va], od[va], a, b), yd[va])["logloss"], a, b))
+    best_a = min((g for g in grid if g[2] == 0), key=lambda g: g[0])
+    best_ab = min(grid, key=lambda g: g[0])
+    print(f"[select] validation matches  teammates only a={best_a[1]} logloss {best_a[0]:.4f}   teammates and opponents a={best_ab[1]} b={best_ab[2]} logloss {best_ab[0]:.4f}", flush=True)
+
+    T = table(sd, yd)
+    pm = (np.bincount(yd, minlength=N_DEST) + 1.0)
+    pm = pm / pm.sum()
+    rows = []
+    for name, P in [("Uniform", np.full((len(yt), N_DEST), 1 / N_DEST)),
+                    ("Marginal", np.tile(pm, (len(yt), 1))),
+                    ("Start-cell table", T[st]),
+                    (f"Table times teammates (a={best_a[1]})", rule(T, st, mt, ot, best_a[1], 0)),
+                    (f"Table times teammates over opponents (a={best_ab[1]}, b={best_ab[2]})", rule(T, st, mt, ot, best_ab[1], best_ab[2]))]:
+        s = scores(P, yt)
+        rows.append(dict(rule=name, top1=round(s["top1"], 4), top3=round(s["top3"], 4), logloss=round(s["logloss"], 4),
+                         skill=round(1 - s["logloss"] / math.log(N_DEST), 4)))
+        print(f"[rule] {name:30s} top1 {s['top1']:.4f} top3 {s['top3']:.4f} logloss {s['logloss']:.4f}", flush=True)
+    same = float((st == yt).mean())
+    lines = ["# Rule baselines for the pass destination task", "",
+             f"Generated by `scripts/eval/dest_rule_baselines.py`. The data are the dest task of the unified model, event by event, with a training-season sample of {len(yd):,} passes "
+             f"and {len(yt):,} test passes from the 202 test matches of 2024/25. a and b are chosen by log loss on a fifth of the training-season matches held out from the table, never on the test set.", "",
+             pd.DataFrame(rows).to_markdown(index=False), "",
+             f"Share of passes that end in their start cell {same:.4f}. The skill column is 1 minus log loss over ln96, the quantity the unified model uses for model selection.", ""]
+    OUT.write_text("\n".join(lines), encoding="utf8")
+    print(f"[done] {(time.time() - t0) / 60:.1f} min  saved {OUT}", flush=True)
+
+
+if __name__ == "__main__":
+    main()

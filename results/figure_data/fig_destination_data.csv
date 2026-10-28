@@ -1,0 +1,65 @@
+method,season,metric,seed,value
+Strongest rule,2425,top1,0,0.1578
+Strongest rule,2526,top1,0,0.15809
+Strongest rule,2425,skill,0,0.2888
+Strongest rule,2526,skill,0,0.27994
+"MLP, thin scalars",2425,top1,0,0.093339
+"MLP, thin scalars",2425,top1,1,0.096531
+"MLP, thin scalars",2425,top1,2,0.095404
+"MLP, thin scalars",2425,top1,3,0.095517
+"MLP, thin scalars",2425,top1,4,0.092476
+"MLP, thin scalars",2526,top1,0,0.095565
+"MLP, thin scalars",2526,top1,1,0.096516
+"MLP, thin scalars",2526,top1,2,0.095996
+"MLP, thin scalars",2526,top1,3,0.094686
+"MLP, thin scalars",2526,top1,4,0.09276
+"MLP, thin scalars",2425,skill,0,0.270927
+"MLP, thin scalars",2425,skill,1,0.271015
+"MLP, thin scalars",2425,skill,2,0.271471
+"MLP, thin scalars",2425,skill,3,0.270958
+"MLP, thin scalars",2425,skill,4,0.270484
+"MLP, thin scalars",2526,skill,0,0.264353
+"MLP, thin scalars",2526,skill,1,0.264173
+"MLP, thin scalars",2526,skill,2,0.26444
+"MLP, thin scalars",2526,skill,3,0.264201
+"MLP, thin scalars",2526,skill,4,0.263395
+"MLP, enriched scalars",2425,top1,0,0.102163
+"MLP, enriched scalars",2425,top1,1,0.097394
+"MLP, enriched scalars",2425,top1,2,0.101524
+"MLP, enriched scalars",2526,top1,0,0.103964
+"MLP, enriched scalars",2526,top1,1,0.098697
+"MLP, enriched scalars",2526,top1,2,0.101454
+"MLP, enriched scalars",2425,skill,0,0.27693
+"MLP, enriched scalars",2425,skill,1,0.276679
+"MLP, enriched scalars",2425,skill,2,0.277133
+"MLP, enriched scalars",2526,skill,0,0.270103
+"MLP, enriched scalars",2526,skill,1,0.269337
+"MLP, enriched scalars",2526,skill,2,0.269726
+"Unified model, pooled encoder",2425,top1,0,0.149546
+"Unified model, pooled encoder",2425,top1,1,0.152962
+"Unified model, pooled encoder",2425,top1,2,0.151348
+"Unified model, pooled encoder",2425,top1,3,0.149846
+"Unified model, pooled encoder",2526,top1,0,0.14843
+"Unified model, pooled encoder",2526,top1,1,0.150731
+"Unified model, pooled encoder",2526,top1,2,0.147111
+"Unified model, pooled encoder",2526,top1,3,0.15002
+"Unified model, pooled encoder",2425,skill,0,0.321383
+"Unified model, pooled encoder",2425,skill,1,0.321074
+"Unified model, pooled encoder",2425,skill,2,0.319137
+"Unified model, pooled encoder",2425,skill,3,0.322606
+"Unified model, pooled encoder",2526,skill,0,0.313361
+"Unified model, pooled encoder",2526,skill,1,0.313762
+"Unified model, pooled encoder",2526,skill,2,0.311871
+"Unified model, pooled encoder",2526,skill,3,0.31435
+Resolution-preserving variant,2425,top1,0,0.215101
+Resolution-preserving variant,2425,top1,1,0.217354
+Resolution-preserving variant,2425,top1,2,0.220733
+Resolution-preserving variant,2526,top1,0,0.213162
+Resolution-preserving variant,2526,top1,1,0.217102
+Resolution-preserving variant,2526,top1,2,0.213842
+Resolution-preserving variant,2425,skill,0,0.365492
+Resolution-preserving variant,2425,skill,1,0.367352
+Resolution-preserving variant,2425,skill,2,0.365511
+Resolution-preserving variant,2526,skill,0,0.356484
+Resolution-preserving variant,2526,skill,1,0.358239
+Resolution-preserving variant,2526,skill,2,0.355297

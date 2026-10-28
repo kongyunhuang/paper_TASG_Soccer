@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Generated tables, figures and provenance records (scripts/paper/make_all.sh)
+outputs/
+
+# Licensed raw StatsBomb data and every cache derived from it
+data/
+*.npz
+*.npy
+*.parquet
+*.pt
+*.jsonl
+
+# Logs other than the training log read by scripts/paper/tab_tasks.py
+logs/*
+!logs/u1_s0_training.log

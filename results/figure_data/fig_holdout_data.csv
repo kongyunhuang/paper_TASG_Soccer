@@ -1,0 +1,69 @@
+claim,quantity,season,seed,value,lo,hi
+C1,"Variant minus rule
+(≥ 0.030)",2425,,0.0599,,
+C1,"Variant minus rule
+(≥ 0.030)",2526,,0.0566,0.0546,0.0587
+C1,"Variant minus
+enriched MLP (≥ 0.060)",2425,,0.1173,,
+C1,"Variant minus
+enriched MLP (≥ 0.060)",2526,,0.1133,0.1107,0.1161
+C2,"Enriched XGBoost
+minus thin CNN (≥ −0.003)",2425,,0.0025,,
+C2,"Enriched XGBoost
+minus thin CNN (≥ −0.003)",2526,,-0.0002,-0.0029,0.0025
+C2,"Enriched gain
+ (≤ 0.010)",2425,,0.0029,,
+C2,"Enriched gain
+ (≤ 0.010)",2526,,0.0037,0.0023,0.0051
+C2,"Gain, thin scalars
+(reference for enriched gain)",2425,,0.0115,,
+C2,"Gain, thin scalars
+(reference for enriched gain)",2526,,0.0103,0.0084,0.0122
+C2,"Pressure gain,
+thin (≥ 0.010)",2425,,0.0255,,
+C2,"Pressure gain,
+thin (≥ 0.010)",2526,,0.0272,0.0226,0.0319
+C2,"Pressure enriched
+gain (≤ 0.010)",2425,,0.0024,,
+C2,"Pressure enriched
+gain (≤ 0.010)",2526,,0.0091,0.0064,0.0118
+C3,Pass (|d| ≤ 0.006),2425,,-0.0039,,
+C3,Pass (|d| ≤ 0.006),2526,,-0.0048,-0.0053,-0.0042
+C3,Pressure (|d| ≤ 0.006),2425,,0.0052,,
+C3,Pressure (|d| ≤ 0.006),2526,,0.0083,0.0047,0.0118
+C3,"Ball recovery
+(|d| ≤ 0.015)",2425,,-0.0004,,
+C3,"Ball recovery
+(|d| ≤ 0.015)",2526,,0.0031,-0.0031,0.0091
+C3,"Mean of three
+(|d| ≤ 0.006)",2425,,0.0003,,
+C3,"Mean of three
+(|d| ≤ 0.006)",2526,,0.0022,-0.0002,0.0045
+C4,"Unified model
+(≥ 0.60)",2425,0,0.8255824446678162,,
+C4,"Unified model
+(≥ 0.60)",2425,1,0.7816739082336426,,
+C4,"Unified model
+(≥ 0.60)",2425,2,0.8114817142486572,,
+C4,"Unified model
+(≥ 0.60)",2425,3,0.8002403378486633,,
+C4,"Unified model
+(≥ 0.60)",2526,0,0.8251998181924406,,
+C4,"Unified model
+(≥ 0.60)",2526,1,0.7811746036278528,,
+C4,"Unified model
+(≥ 0.60)",2526,2,0.8118348338745351,,
+C4,"Unified model
+(≥ 0.60)",2526,3,0.8004137525662885,,
+C4,"Destination shuffled
+(≤ 0.35)",2425,0,0.2715538442134857,,
+C4,"Destination shuffled
+(≤ 0.35)",2425,1,0.24122823774814606,,
+C4,"Destination shuffled
+(≤ 0.35)",2425,2,0.27846959233283997,,
+C4,"Destination shuffled
+(≤ 0.35)",2526,0,0.27168442878309773,,
+C4,"Destination shuffled
+(≤ 0.35)",2526,1,0.24144933374843788,,
+C4,"Destination shuffled
+(≤ 0.35)",2526,2,0.27923918405730386,,

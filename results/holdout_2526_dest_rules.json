@@ -1,0 +1,40 @@
+{
+ "Uniform": {
+  "top1": 0.00113,
+  "top3": 0.02228,
+  "logloss": 4.56435,
+  "skill": 0.0
+ },
+ "Marginal": {
+  "top1": 0.0202,
+  "top3": 0.05947,
+  "logloss": 4.44652,
+  "skill": 0.02581
+ },
+ "Start-cell table": {
+  "top1": 0.10647,
+  "top3": 0.26295,
+  "logloss": 3.39041,
+  "skill": 0.2572
+ },
+ "Table times teammates (a=1)": {
+  "top1": 0.1463,
+  "top3": 0.33376,
+  "logloss": 3.30545,
+  "skill": 0.27581
+ },
+ "Table times teammates over opponents (a=2, b=0.5)": {
+  "top1": 0.15809,
+  "top3": 0.34856,
+  "logloss": 3.28662,
+  "skill": 0.27994
+ },
+ "_rule_order": [
+  "Uniform",
+  "Marginal",
+  "Start-cell table",
+  "Table times teammates (a=1)",
+  "Table times teammates over opponents (a=2, b=0.5)"
+ ],
+ "_n_holdout": 125130
+}
